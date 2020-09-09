@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index')->name('/');
+Route::view('/','pages.quienes-somos')->name('/');
 
 Auth::routes();
 

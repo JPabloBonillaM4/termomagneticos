@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light row py-2 px-4">
-    <div class="col-md-3 d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-2 px-4 sticky-top">
+    <div class="col-lg-3 d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="{{ route('/') }}">
             <img src="{{ asset('images/logo.png') }}" alt="logo" style="max-width: 150px">
         </a>
@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-    <div class="collapse navbar-collapse col-md-9" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse col-lg-9" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">

@@ -56,3 +56,60 @@
 .t-13{
     font-size: 13px !important;
 }
+
+.title{
+    font-size: 4rem;
+}
+.title_2{
+    font-size: 3rem;
+}
+
+.line_mobile{
+    line-height: 3rem;
+}
+
+.dis-flex{
+    display: flex !important;
+}
+
+.parallax{
+    background: #ffffff fixed no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.background-shadow{
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.section1{
+    background-image: url(../images/section_1.jpg);
+}
+.section2{
+    background-image: url(../images/section_2.jpg);
+}
+.section3{
+    background-image: url(../images/section_3.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+    .title,.title_2{
+        font-size: 2rem;
+    }
+
+    .columnFlex{
+        flex-direction: column;
+    }
+
+    .r1_mobile{
+        font-size: 1rem;
+    }
+
+    .hide_on_mobile{
+        display: none;
+    }
+
+    .line_mobile{
+        line-height: 2rem;
+    }
+}
