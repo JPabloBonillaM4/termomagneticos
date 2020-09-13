@@ -12,9 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::view('/','pages.quienes-somos')->name('/');
-
+// Public routes
 Auth::routes();
-
+Route::view('/','pages.quienes-somos')->name('/');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('componentes', 'ComponenteController')->names('componentes')->only(['index','show']);

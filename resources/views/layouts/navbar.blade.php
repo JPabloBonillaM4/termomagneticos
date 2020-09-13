@@ -19,7 +19,7 @@
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">venta componentes</a>
                     <div class="dropdown-content t-13">
-                        <a href="#" class="text-uppercase">componentes</a>
+                        <a href="{{ route('componentes.index') }}" class="text-uppercase">componentes</a>
                         <a href="#" class="text-uppercase">tableros de distribución</a>
                         <a href="#" class="text-uppercase">Calidad de la energía</a>
                     </div>
