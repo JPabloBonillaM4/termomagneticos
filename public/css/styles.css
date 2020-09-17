@@ -8,7 +8,7 @@
     display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 15rem;
+    max-width: 10rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 0;
     color: black;
@@ -81,7 +81,7 @@
 .parallax-medium{
     background: #ffffff fixed no-repeat 50% 50%;
     background-size: cover;
-    height: 50vh;
+    height: 35vh;
     width: 100%;
 }
 
@@ -112,6 +112,10 @@
     transform: scale(1.2);
 }
 
+.sizeCarousel{
+    width: 550px;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;
@@ -126,7 +130,7 @@
     }
 
     .r2_mobile{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .hide_on_mobile{
@@ -139,5 +143,9 @@
 
     .parallax-medium{
         height: 100vh;
+    }
+
+    .sizeCarousel{
+        width: 100%;
     }
 }

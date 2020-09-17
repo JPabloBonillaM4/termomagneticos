@@ -16,7 +16,15 @@ class Componente extends Model
         'imagen'
     ];
 
+    public function images(){
+        return $this->hasMany('App\Models\CarouselImage');
+    }
+
     public function scopeGetAllComponents($query){
-        return $this->all();
+        return $this->paginate(6);
+    }
+
+    public function scopeGetComponent($query,$id){
+        return $query->find($id);
     }
 }

@@ -57,17 +57,16 @@
                         </div>
                     </li>
                 @else
-                    <li class="nav-item d-flex justify-content-center py-3">
-                        <div class="dropdown">
-                            <a class="linehover nav-link text-uppercase text-dark t-13" href="{{ route('login') }}">Iniciar sesión</a>
-                        </div>
-                    </li>
                     @if (Route::has('register'))
-                        {{-- <li class="nav-item d-flex justify-content-center">
+                        <li class="nav-item d-flex justify-content-center py-3">
                             <div class="dropdown">
-                                <a class="linehover nav-link text-uppercase text-dark" href="{{ route('register') }}">Registrarse</a>
+                                <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">Acceso</a>
+                                <div class="dropdown-content t-13">
+                                    <a href="{{ route('login') }}" class="text-uppercase">Iniciar sesión</a>
+                                    <a href="{{ route('register') }}" class="text-uppercase">Registrarse</a>
+                                </div>
                             </div>
-                        </li> --}}
+                        </li>
                     @endif
                 @endauth
             @endif

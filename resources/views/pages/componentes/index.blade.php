@@ -13,7 +13,7 @@
         <div class="row">
             @forelse ($components as $component)
                 <div class="col-md-4 text-center mt-5">
-                    <a href="{{ route('componentes.show',$component->id) }}" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" class="text-decoration-none text-dark showComponent" data-route="{{ route('componentes.show',$component->id) }}">
                         <div class="animationScale">
                             <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-img" alt="img_componente">
                         </div>
@@ -27,6 +27,16 @@
                     </div>
                 </div>
             @endforelse
+            <div class="d-flex align-items-center justify-content-center col-md-12">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <p>{{ $components->render() }}</p>
+                    <div class="alert alert-primary text-center" role="alert">
+                        Componentes disponibles: {{ $components->total() }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+@include('pages.componentes.show')
 @endsection
