@@ -29,10 +29,12 @@
             @endforelse
             <div class="d-flex align-items-center justify-content-center col-md-12">
                 <div class="d-flex align-items-center justify-content-center flex-column">
-                    <p>{{ $components->render() }}</p>
-                    <div class="alert alert-primary text-center" role="alert">
-                        Componentes disponibles: {{ $components->total() }}
-                    </div>
+                    @if($components->count() > 0)
+                        <p>{{ $components->render() }}</p>
+                        <div class="alert alert-primary text-center" role="alert">
+                            Componentes disponibles: {{ $components->total() }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

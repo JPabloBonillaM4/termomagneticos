@@ -81,7 +81,7 @@
 .parallax-medium{
     background: #ffffff fixed no-repeat 50% 50%;
     background-size: cover;
-    height: 35vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -114,6 +114,16 @@
 
 .sizeCarousel{
     width: 550px;
+}
+
+.img-size{
+    width: 250px;
+    max-height: 230px;
+}
+
+.img-little{
+    width: 50px;
+    max-height: 50px;
 }
 
 @media only screen and (max-width: 768px) {

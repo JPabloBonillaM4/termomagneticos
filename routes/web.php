@@ -17,3 +17,5 @@ Auth::routes();
 Route::view('/','pages.quienes-somos')->name('/');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('componentes', 'ComponenteController')->names('componentes')->only(['index','show']);
+Route::get('tableros-distribucion', 'TablerosController@index')->name('tableros_distribucion');
+Route::get('calidad-energía', 'CalidadController@index')->name('calidad_energía');

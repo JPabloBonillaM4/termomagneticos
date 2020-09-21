@@ -49,29 +49,6 @@
             <div class="modal-body bg-light">
                 <p class="text-justify" id="component_description"></p>
             </div>
-            <div class="modal-footer d-flex justify-content-center align-items-center">
-                <div id="carouselComponentImages" class="carousel slide" data-ride="carousel" style="max-width: 400px;max-height: 200px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{ asset('images/section_1.jpg') }}" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/section_2.jpg') }}" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/section_3.jpg') }}" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselComponentImages" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselComponentImages" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </div>
