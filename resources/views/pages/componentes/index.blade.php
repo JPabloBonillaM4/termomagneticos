@@ -15,7 +15,7 @@
                 <div class="col-md-4 text-center mt-5">
                     <a href="javascript:void(0)" class="text-decoration-none text-dark showComponent" data-route="{{ route('componentes.show',$component->id) }}">
                         <div class="animationScale">
-                            <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-img" alt="img_componente">
+                            <img src="{{ asset($component->imagen) }}" class="rounded-img" alt="img_componente">
                         </div>
                         <p class="text-uppercase font-weight-bold mt-3">{{ $component->nombre }}</p>
                     </a>

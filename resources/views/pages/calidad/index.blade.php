@@ -9,32 +9,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 m-auto">
-                <div class="row text-center">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">bancos de capacitores fijos</h2>
+                <div class="row text-center mb-5">
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">bancos de capacitores fijos</h2>
                     <div class="col-md-4 mt-3">
                         <div>
                             <h4 class="text-uppercase text-success">eks</h4>
                             <p>Conexión a clemas</p>
                         </div>
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/eks.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
                     </div>
                     <div class="col-md-4 mt-3">
                         <div>
                             <h4 class="text-uppercase text-success">eki</h4>
                             <p>Coneción a ITM</p>
                         </div>
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/eki.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
                     </div>
                     <div class="col-md-4 mt-3">
                         <div>
                             <h4 class="text-uppercase text-success">krf</h4>
                             <p>Con ITM y reactores de rechazo</p>
                         </div>
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/krf.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">bancos de capacitores automáticos</h2>
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">bancos de capacitores automáticos</h2>
                     <div class="col-md-3 mt-3">
                         <h4 class="text-uppercase text-success">ka</h4>
                         <p>Conexión a ITM</p>
@@ -52,24 +52,24 @@
                         <p>Con zapatas y reactores de rechazo</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/automaticos_1.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/automaticos_2.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">banco de capacitores / conmutación por tiristores</h2>
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">banco de capacitores / conmutación por tiristores</h2>
                     <p class="text-center col-md-12">Procedimiento de desconexión suave y alta frecuencia</p>
                     <div class="col-md-6 mt-3">
                         <h4 class="text-uppercase text-success">krty</h4>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/krty.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                 </div>
                 <div class="row">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">aplicaciones</h2>
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">aplicaciones</h2>
                     <div class="col-md-4 mt-2 d-flex justify-content-center">
                         <ul class="p-0 list-unstyled">
                             <li>
@@ -101,12 +101,12 @@
                         </ul>
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                     <div class="col-md-4 mt-4">
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                 </div>
                 <div class="row my-5">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">¿cuando usar filtros activos de armónicos?</h2>
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">¿cuando usar filtros activos de armónicos?</h2>
                     <div class="col-md-4 mt-2 d-flex justify-content-center">
                         <ul class="p-0 list-unstyled">
                             <li>
@@ -153,8 +153,8 @@
                         <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
                     </div>
                 </div>
-                <div class="row">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 mb-3 display-5 font-weight-bold r2_mobile">calidad de energía</h2>
+                <div class="row mobile_center">
+                    <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-5 font-weight-bold r2_mobile">calidad de energía</h2>
                     <div class="col-md-6">
                         <div class="row justify-content-center">
                             <div class="col-md-12 row align-items-center">
