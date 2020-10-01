@@ -4,6 +4,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+        <script src="{{ asset('js/simple-lightbox.jquery.min.js') }}"></script>
+        <script src="{{ asset('js/simple-lightbox.min.js') }}"></script>
+        {{-- <script src="{{ asset('js/simple-lightbox.modules.min.js') }}"></script> --}}
         <script src="{{ asset('js/functions.js') }}"></script>
         <script>
             $(window).on('load', function(){

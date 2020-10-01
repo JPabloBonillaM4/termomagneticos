@@ -6,9 +6,6 @@
             <p class="text-uppercase display-1 font-weight-bold r2_mobile text-center">control y distribución</p>
         </div>
     </div>
-    {{-- <div class="pt-5 d-flex justify-content-center align-items-center">
-        <img src="{{ asset('images/logo-white_2.png') }}" alt="">
-    </div> --}}
     <div class="container">
         <div class="row">
             <div class="col-md-10 m-auto">

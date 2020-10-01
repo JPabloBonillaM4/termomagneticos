@@ -29,8 +29,8 @@
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">ingeniería eléctrica</a>
                     <div class="dropdown-content t-13">
-                        <a href="#" class="text-uppercase">contrucción</a>
-                        <a href="#" class="text-uppercase">casos de éxito</a>
+                        <a href="{{ route('construccion') }}" class="text-uppercase">contrucción</a>
+                        <a href="{{ route('casos-exito') }}" class="text-uppercase">casos de éxito</a>
                     </div>
                 </div>
             </li>

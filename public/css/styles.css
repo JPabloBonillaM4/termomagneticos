@@ -157,6 +157,15 @@
     object-fit: contain;
 }
 
+.img-gallery{
+    transition: all .5s ease-in-out;
+    width: 250px;
+    height: 250px;
+}
+.img-gallery:hover{
+    transform: scale(1.1);
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;

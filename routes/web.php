@@ -19,3 +19,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('componentes', 'ComponenteController')->names('componentes')->only(['index','show']);
 Route::get('tableros-distribucion', 'TablerosController@index')->name('tableros_distribucion');
 Route::get('calidad-energía', 'CalidadController@index')->name('calidad_energía');
+Route::view('construccion','pages.construccion.index')->name('construccion');
+Route::view('casos-exito','pages.casos-exito.index')->name('casos-exito');
