@@ -21,4 +21,5 @@
     $('.energy-gallery-1 a').simpleLightbox();
     $('.energy-gallery-2 a').simpleLightbox();
     $('.energy-gallery-3 a').simpleLightbox();
+    $('.energy-gallery-4 a').simpleLightbox();
 })();
