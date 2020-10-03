@@ -90,6 +90,12 @@
     height: 50vh;
     width: 100%;
 }
+.parallax-simple{
+    background: #ffffff fixed no-repeat 50% 50%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
 .background-shadow{
     background-color: rgba(0,0,0, 0.6);
@@ -105,8 +111,8 @@
 .section3{
     background-image: url(../images/seccion_inicio/section_3.jpg);
 }
-.section_distribution{
-    /* background-image: url(../images/control_distribucion_energia/fondo.jpg); */
+.section_cases{
+    background-image: url(../images/casos-exito/FONDO.jpg);
 }
 
 .rounded-img{
@@ -164,6 +170,10 @@
 }
 .img-gallery:hover{
     transform: scale(1.1);
+}
+
+.hide-section{
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {

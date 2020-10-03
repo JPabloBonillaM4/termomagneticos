@@ -21,3 +21,4 @@ Route::get('tableros-distribucion', 'TablerosController@index')->name('tableros_
 Route::get('calidad-energía', 'CalidadController@index')->name('calidad_energía');
 Route::view('construccion','pages.construccion.index')->name('construccion');
 Route::view('casos-exito','pages.casos-exito.index')->name('casos-exito');
+Route::view('blindaje','pages.blindaje.index')->name('blindaje');

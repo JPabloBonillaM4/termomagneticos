@@ -11,15 +11,28 @@
             "cache"  : false,
             success : function(response) {
                 $('#modalComponent #component_name').text(response.nombre)
-                $('#modalComponent #component_description').text(response.descripcion);
+                // $('#modalComponent #component_description').text(response.descripcion);
+
+                // CÓDIGO MOMENTÁNEO
+                $('.hide-section').hide();
+                switch (response.id) {
+                    case 1:
+                            $('#componente_1').show();
+                        break;
+                
+                    default:
+                        break;
+                }
+
                 $('#modalComponent').modal('show');
             }
         });
     })
 
     // SIMPLE-LIGHT.BOX
-    $('.energy-gallery-1 a').simpleLightbox();
-    $('.energy-gallery-2 a').simpleLightbox();
-    $('.energy-gallery-3 a').simpleLightbox();
-    $('.energy-gallery-4 a').simpleLightbox();
+    // CASOS DE ÉXITO
+    $('.cases-gallery-1 a').simpleLightbox();
+    $('.cases-gallery-2 a').simpleLightbox();
+    $('.cases-gallery-3 a').simpleLightbox();
+    $('.cases-gallery-4 a').simpleLightbox();
 })();

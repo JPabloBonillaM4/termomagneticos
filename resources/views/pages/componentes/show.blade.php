@@ -47,7 +47,44 @@
                 </button>
             </div>
             <div class="modal-body bg-light">
-                <p class="text-justify" id="component_description"></p>
+                {{-- <p class="text-justify" id="component_description"></p> --}}
+
+                {{-- CÓDIGO MOMENTÁNEO --}}
+                {{-- 1.- Protección electromagnética --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_1">
+                        <div class="row text-center">
+                            <div class="col-md-6 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </div>
+                        </div>
+                        <div class="text-justify container">
+                            <h5>Circuit-breakers IZM up to 6300 A Switch-disconnectors up to 6300A</h5>
+                            <p class="text-muted">Con la nueva serie IZM, EATON presenta una oferta completa de interruptores automáticos de aire (ACB) hasta 6300 A, cinco tamaños de construcción permiten seleccionar el swith más económico para cada proyecto.</p>
+                            <p class="text-muted">La nueva estrella son los interruptores automáticos IZMX16. Este concepto innovadorpermite la contrucción económica de dos interruptores automáticos con un ancho de campo de 600mm.</p>
+                            <p class="text-muted">No hay mayor rendimiento en un espacio tan pequeño.</p>
+                        </div>
+                        <div class="text-justify container">
+                            <h5>Dispositivos básicos IZM</h5>
+                            <p class="text-muted">Capacidad de conmutación 440 V AC, Icu = Ics de 42 - 100kA +++ 3 o 4 polos +++ Disparadores electrónicos para protección del sistema, protección selectiva y universal, protección universal con medida de potencia +++ Corriente de operación nominal de 630-6300 A +++ Tensión nominal de funcionamiento Ue 1100 V para IZM32 ...3200-1100V.</p>
+                        </div>
+                        <div class="text-justify container">
+                            <h5>Completos accesorios de montaje fijo</h5>
+                            <p class="text-muted">Operador de motor IZM ... M ... +++ Disparador de derivación IZM ... ST +++ Cierre real IZM ...- SR ... ++++ Subtensión real IZM ...- UV ... +++ Auxiliar contacto IZM ...- AS ... +++ Conmutador de enclavamiento IZM ... LCS ... +++ Conmutador auxiliar de bloqueo IZM ...- OTS +++ Enclavamientos mecánicos.</p>
+                        </div>
+                        <div class="text-justify container">
+                            <h5>Novedad mundial ARMS: mayor seguridad para el personal de mantenimiento</h5>
+                            <p class="text-muted">Si hay un arco accidental, el sistema ARMS (Sistema de Mantenimiento de Reducción de Arcflash).</p>
+                            <p class="text-muted">Se apaga más rápido que un dispositivo de disparo por cortocircuito. En relación con IZM, los componentes adicionales del sistema de protección de arco accidental ARCON proporcionan una protección incremental contra el arco accidental.</p>
+                        </div>
+                        <div class="row">
+                            <img src="{{ asset('images/componentes/componente-1.jpg') }}" class="col-md-12 img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
