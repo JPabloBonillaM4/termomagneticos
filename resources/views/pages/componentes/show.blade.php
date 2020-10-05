@@ -85,6 +85,56 @@
                         </div>
                     </div>
                 </div>
+                {{-- 2.- mcb´s y equipos de control --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_2">
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </div>
+                        </div>
+                        <div class="text-justify container">
+                            {{-- <h5>Circuit-breakers IZM up to 6300 A Switch-disconnectors up to 6300A</h5> --}}
+                            <p class="text-muted">La calidad probada, las aprobaciones y la clasificación de envío representan la funcionalidad y la seguridad adecuadas para los mercados mundiales con interruptores automáticos industriales en miniatura. además de una amplia gama de dispositivos de corriente residual, LV h.b.c. Se suministran bases de fusibles e interruptores-seccionadores de fusibles.</p>
+                            <h5>Interruptores automáticos FAZ</h5>
+                            <p class="text-muted">Solo altura 80 mm +++ Montaje y desmontaje sin desmontaje del carril +++ Terminal doble confort elevador / garra +++ Terminal con protección de enchufe trasero.</p>
+                            <h5>Devici de corriente residual digital</h5>
+                            <p class="text-muted">Información preventiva +++ Advertencia antes de disparo +++ Contacto auxiliar integrado +++ Pantalla para disparo de falta a tierra.</p>
+                            <h5>Fusible de base</h5>
+                            <p class="text-muted">Integrar cubiertas termianales +++ Terminales dobles.</p>
+                        </div>
+                    </div>
+                </div>
+                {{-- 3.- protección electromagnética --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_1">
+
+                    </div>
+                </div>
+                {{-- 4.- contactores y guardamotores --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_1">
+
+                    </div>
+                </div>
+                {{-- 5.- arrancadores para motores --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_1">
+
+                    </div>
+                </div>
+                {{-- 6.- tabladores de distribución alumbrado/contactos --}}
+                <div class="container">
+                    <div class="hide-section" id="componente_1">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

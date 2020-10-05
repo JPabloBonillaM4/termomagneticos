@@ -11,7 +11,7 @@
         <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">proyectos</h2>
         <p class="text-uppercase text-center col-md-12 mt-3 font-weight-bold">hospital</p>
         <div class="col-md-12 mb-5 mt-3">
-            <div class="cases-gallery-1 row">
+            <div class="cases-gallery-1 row m-auto">
                 <a href="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="col-md-3 mb-4">
                     <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
                 </a>

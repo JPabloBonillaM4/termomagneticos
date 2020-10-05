@@ -39,8 +39,8 @@
                     <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">física de radiaciones</a>
                     <div class="dropdown-content t-13">
                         <a href="{{ route('blindaje') }}" class="text-uppercase">blindaje</a>
-                        <a href="#" class="text-uppercase">cristales</a>
-                        <a href="#" class="text-uppercase">puertas</a>
+                        <a href="{{ route('cristales') }}" class="text-uppercase">cristales</a>
+                        <a href="{{ route('puertas') }}" class="text-uppercase">puertas</a>
                     </div>
                 </div>
             </li>
