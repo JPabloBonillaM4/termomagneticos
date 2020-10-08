@@ -22,8 +22,10 @@
                                 <li class="list-group-item"><i class="fas fa-angle-right text-muted mr-3"></i> Montaje</li>
                                 <li class="list-group-item"><i class="fas fa-angle-right text-muted mr-3"></i> Cubiertas para protección contra contactos accidentales</li>
                             </ul>
-                            <div class="col-md-6 pt-2 d-flex justify-content-center align-items-center">
-                                <img src="{{ asset('images/section_3.jpg') }}" alt="" class="img-fluid img-size" />
+                            <div class="cases-gallery-1 col-md-6 pt-2 d-flex justify-content-center align-items-center">
+                                <a href="{{ asset('images/section_3.jpg') }}">
+                                    <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid img-size" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -52,16 +54,24 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row mt-3 mb-5">
-                        <img src="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="col-md-6 img-fluid mt-2" alt="">
-                        <img src="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="col-md-6 img-fluid mt-2" alt="">
+                    <div class="cases-gallery-2 row mt-3 mb-5">
+                        <a href="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="col-md-6">
+                            <img src="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                        </a>
+                        <a href="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="col-md-6">
+                            <img src="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="img-fluid mt-2" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-12 mb-5">
                     <h3 class="text-center">Policarbonato de alto impacto IP 66</h3>
-                    <div class="row mt-3 mb-5">
-                        <img src="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="col-md-6 img-fluid mt-2" alt="">
-                        <img src="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="col-md-6 img-fluid mt-2" alt="">
+                    <div class="cases-gallery-3 row mt-3 mb-5">
+                        <a href="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="col-md-6">
+                            <img src="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="img-fluid mt-2" alt="">
+                        </a>
+                        <a href="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="col-md-6">
+                            <img src="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="img-fluid mt-2" alt="">
+                        </a>
                     </div>
                     <div class="row">
                         <h4 class="col-md-12 text-center mt-3 mb-5">Flexible, confiable y seguro</h4>
@@ -71,12 +81,16 @@
                                     <p>Unidad extraíble sin la interrupción del proceso.</p>
                                     <p>Mecanismo de interlock para modo seguro de operación / desconexión / posición de pruebas.</p>
                                 </div>
-                                <div class="">
-                                    <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                                <div class="cases-gallery-4">
+                                    <a href="{{ asset('images/section_3.jpg') }}">
+                                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-7">
-                                <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                            <div class="cases-gallery-5 col-lg-7">
+                                <a href="{{ asset('images/section_3.jpg') }}">
+                                    <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>

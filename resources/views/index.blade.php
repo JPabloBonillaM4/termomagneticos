@@ -2,6 +2,8 @@
 @include('layouts.header')
 {{-- NAVBAR --}}
 @include('layouts.navbar')
+{{-- FLOAT MENU --}}
+@include('layouts.float-options')
 {{-- CONTENT --}}
 @yield('content')
 {{-- FOOT --}}

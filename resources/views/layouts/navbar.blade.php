@@ -49,7 +49,7 @@
                     <a class="linehover nav-link text-uppercase text-dark t-13" href="#">contacto</a>
                 </div>
             </li>
-            @if (Route::has('login'))
+            {{-- @if (Route::has('login'))
                 @auth
                     <li class="nav-item d-flex justify-content-center py-3">
                         <div class="dropdown">
@@ -69,7 +69,7 @@
                         </li>
                     @endif
                 @endauth
-            @endif
+            @endif --}}
         </ul>
     </div>
 </nav>

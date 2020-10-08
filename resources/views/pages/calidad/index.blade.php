@@ -16,21 +16,33 @@
                             <h4 class="text-uppercase text-success">eks</h4>
                             <p>Conexión a clemas</p>
                         </div>
-                        <img src="{{ asset('images/calidad_energia/eks.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                        <div class="cases-gallery-1">
+                            <a href="{{ asset('images/calidad_energia/eks.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/eks.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-3">
                         <div>
                             <h4 class="text-uppercase text-success">eki</h4>
                             <p>Coneción a ITM</p>
                         </div>
-                        <img src="{{ asset('images/calidad_energia/eki.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                        <div class="cases-gallery-1">
+                            <a href="{{ asset('images/calidad_energia/eki.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/eki.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-3">
                         <div>
                             <h4 class="text-uppercase text-success">krf</h4>
                             <p>Con ITM y reactores de rechazo</p>
                         </div>
-                        <img src="{{ asset('images/calidad_energia/krf.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                        <div class="cases-gallery-1">
+                            <a href="{{ asset('images/calidad_energia/krf.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/krf.jpg') }}" class="img-fluid img-capacitor mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -52,10 +64,18 @@
                         <p>Con zapatas y reactores de rechazo</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/calidad_energia/automaticos_1.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-2">
+                            <a href="{{ asset('images/calidad_energia/automaticos_1.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/automaticos_1.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/calidad_energia/automaticos_2.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-2">
+                            <a href="{{ asset('images/calidad_energia/automaticos_2.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/automaticos_2.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -65,7 +85,11 @@
                         <h4 class="text-uppercase text-success">krty</h4>
                     </div>
                     <div class="col-md-6">
-                        <img src="{{ asset('images/calidad_energia/krty.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-3">
+                            <a href="{{ asset('images/calidad_energia/krty.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/krty.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -101,12 +125,20 @@
                         </ul>
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-4">
+                            <a href="{{ asset('images/calidad_energia/aplicaciones.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-4">
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-4">
+                            <a href="{{ asset('images/calidad_energia/aplicaciones.jpg') }}">
+                                <img src="{{ asset('images/calidad_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row my-5">
@@ -145,12 +177,20 @@
                         </ul>
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-5">
+                            <a href="{{ asset('images/section_3.jpg') }}">
+                                <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-4">
                     </div>
                     <div class="col-md-4 mt-4">
-                        <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                        <div class="cases-gallery-5">
+                            <a href="{{ asset('images/section_3.jpg') }}">
+                                <img src="{{ asset('images/section_3.jpg') }}" class="img-fluid mt-2" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row mobile_center">

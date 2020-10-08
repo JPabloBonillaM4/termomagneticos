@@ -176,6 +176,42 @@
     display: none;
 }
 
+.menu-float{
+    position: fixed;
+    top: 25%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.menu-float a{
+    background-color: orangered;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: linear .2s;
+    width: 45px;
+}
+
+.menu-float a:hover{
+    width: 130px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-float span{
+    display: none;
+}
+
+.menu-float a:hover span{
+    display: block;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;
