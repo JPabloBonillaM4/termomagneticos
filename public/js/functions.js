@@ -41,6 +41,11 @@
         });
     })
 
+    // Solo números
+    $('.onlyNumeric').on('input', function (event) { 
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     $('.cases-gallery-1 a').simpleLightbox();
@@ -51,4 +56,5 @@
     $('.cases-gallery-6 a').simpleLightbox();
     $('.cases-gallery-7 a').simpleLightbox();
     $('.cases-gallery-8 a').simpleLightbox();
+
 })();

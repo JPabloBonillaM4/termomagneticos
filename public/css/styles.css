@@ -212,6 +212,10 @@
     display: block;
 }
 
+.icon-resize{
+    font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;

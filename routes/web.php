@@ -24,3 +24,4 @@ Route::view('casos-exito','pages.casos-exito.index')->name('casos-exito');
 Route::view('blindaje','pages.blindaje.index')->name('blindaje');
 Route::view('cristales','pages.cristales.index')->name('cristales');
 Route::view('puertas','pages.puertas.index')->name('puertas');
+Route::view('contacto','pages.contacto.index')->name('contacto');

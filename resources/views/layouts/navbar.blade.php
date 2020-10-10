@@ -46,7 +46,7 @@
             </li>
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a class="linehover nav-link text-uppercase text-dark t-13" href="#">contacto</a>
+                    <a class="linehover nav-link text-uppercase text-dark t-13" href="{{ route('contacto') }}">contacto</a>
                 </div>
             </li>
             {{-- @if (Route::has('login'))
