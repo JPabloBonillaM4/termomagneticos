@@ -3,12 +3,12 @@
         <i class="fas fa-calendar-alt"></i>
         <span>Calendario</span>
     </a>
-    <a href="{{ route('contacto') }}" title="Calendario">
+    <a href="{{ url('contacto#cotizacion') }}" title="Calendario">
         <i class="fas fa-file-alt"></i>
         <span>Cotización</span>
     </a>
-    <a href="javascript:void(0)">
-        <i class="fas fa-phone-volume"></i>
-        <span>Llámenos</span>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=522361201744&text=hola,%20estoy%20interesado%20en%20...">
+        <i class="fab fa-whatsapp"></i>
+        <span>Whatsapp</span>
     </a>
 </div>

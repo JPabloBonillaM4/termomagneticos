@@ -37,28 +37,28 @@
             <div class="container px-5 w-75">
                 <div class="row">
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/volkswagen_logo.jpg') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/volkswagen_logo.jpg') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/sons_logo.jpg') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/sons_logo.jpg') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/walmart_logo.png') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/walmart_logo.png') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/modelo_logo.jpg') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/modelo_logo.jpg') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/sep_logo.png') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/sep_logo.png') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/saltillo_logo.png') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/saltillo_logo.png') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/audi_logo.jpg') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/audi_logo.jpg') }}" class="img_client img-effect" alt="">
                     </div>
                     <div class="col-md-3 d-flex justify-content-center">
-                        <img src="{{ asset('images/seccion_inicio/laquinta_logo.jpg') }}" class="img_client" alt="">
+                        <img src="{{ asset('images/seccion_inicio/laquinta_logo.jpg') }}" class="img_client img-effect" alt="">
                     </div>
                 </div>
             </div>

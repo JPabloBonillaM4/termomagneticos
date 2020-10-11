@@ -46,6 +46,19 @@
         this.value = this.value.replace(/[^0-9]/g, '');
     });
 
+    //MAPA
+    if(document.getElementById('mapa')){
+        let mapa = L.map('mapa').setView([19.0633196, -98.1989565], 17);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mapa);
+        L.marker([19.0633196, -98.1989565]).addTo(mapa)
+            .bindPopup('Ubicanos aquí')
+            .openPopup()
+            .bindTooltip("Termomagnéticos y control de radiaciones")
+            .openTooltip();
+    }
+
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     $('.cases-gallery-1 a').simpleLightbox();

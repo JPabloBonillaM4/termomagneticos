@@ -11,42 +11,41 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a class="linehover nav-link text-uppercase text-dark t-13" 
-                    href="{{ route('/') }}">¿quienes somos?</a>
+                    <a class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == '/') active-option @endif" href="{{ route('/') }}">¿quienes somos?</a>
                 </div>
             </li>
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">venta componentes</a>
+                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">venta componentes</a>
                     <div class="dropdown-content t-13">
-                        <a href="{{ route('componentes.index') }}" class="text-uppercase">componentes</a>
-                        <a href="{{ route('tableros_distribucion') }}" class="text-uppercase">control y distribución</a>
-                        <a href="{{ route('calidad_energía') }}" class="text-uppercase">Calidad de la energía</a>
+                        <a href="{{ route('componentes.index') }}" class="text-uppercase @if($actual_route == 'componentes.index') font-weight-bold text-dark @endif">componentes</a>
+                        <a href="{{ route('tableros_distribucion') }}" class="text-uppercase @if($actual_route == 'tableros_distribucion') font-weight-bold text-dark @endif">control y distribución</a>
+                        <a href="{{ route('calidad_energía') }}" class="text-uppercase @if($actual_route == 'calidad_energía') font-weight-bold text-dark @endif">Calidad de la energía</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">ingeniería eléctrica</a>
+                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'construccion' || $actual_route == 'casos-exito') active-option @endif">ingeniería eléctrica</a>
                     <div class="dropdown-content t-13">
-                        <a href="{{ route('construccion') }}" class="text-uppercase">contrucción</a>
-                        <a href="{{ route('casos-exito') }}" class="text-uppercase">casos de éxito</a>
+                        <a href="{{ route('construccion') }}" class="text-uppercase @if($actual_route == 'construccion') font-weight-bold text-dark @endif">contrucción</a>
+                        <a href="{{ route('casos-exito') }}" class="text-uppercase @if($actual_route == 'casos-exito') font-weight-bold text-dark @endif">casos de éxito</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13">física de radiaciones</a>
+                    <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'blindaje' || $actual_route == 'cristales' || $actual_route == 'puertas') active-option @endif">física de radiaciones</a>
                     <div class="dropdown-content t-13">
-                        <a href="{{ route('blindaje') }}" class="text-uppercase">blindaje</a>
-                        <a href="{{ route('cristales') }}" class="text-uppercase">cristales</a>
-                        <a href="{{ route('puertas') }}" class="text-uppercase">puertas</a>
+                        <a href="{{ route('blindaje') }}" class="text-uppercase @if($actual_route == 'blindaje') font-weight-bold text-dark @endif">blindaje</a>
+                        <a href="{{ route('cristales') }}" class="text-uppercase @if($actual_route == 'cristales') font-weight-bold text-dark @endif">cristales</a>
+                        <a href="{{ route('puertas') }}" class="text-uppercase @if($actual_route == 'puertas') font-weight-bold text-dark @endif">puertas</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item d-flex justify-content-center mr-3 py-3">
                 <div class="dropdown">
-                    <a class="linehover nav-link text-uppercase text-dark t-13" href="{{ route('contacto') }}">contacto</a>
+                    <a class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'contacto') active-option @endif" href="{{ route('contacto') }}">contacto</a>
                 </div>
             </li>
             {{-- @if (Route::has('login'))

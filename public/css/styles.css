@@ -168,7 +168,12 @@
     width: 250px;
     height: 250px;
 }
-.img-gallery:hover{
+.img-effect{
+    transition: all .5s ease-in-out;
+}
+
+.img-gallery:hover,
+.img-effect:hover{
     transform: scale(1.1);
 }
 
@@ -216,6 +221,12 @@
     font-size: 1.3rem;
 }
 
+.active-option{
+    color: blue !important;
+    /* font-weight: 900; */
+    text-decoration: overline;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;
@@ -256,4 +267,8 @@
     .mobile_center{
         text-align: center;
     }
+}
+
+.mapa{
+    height: 250px;
 }
