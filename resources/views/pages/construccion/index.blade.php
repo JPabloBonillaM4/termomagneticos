@@ -52,5 +52,43 @@
                 </div>
             </div>
         </div>
+        <div class="row text-center">
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">transformadores</h2>
+            <div class="col-md-12 my-5">
+                <div class="cases-gallery-3 row">
+                    <a href="{{ asset('images/construccion/transformadores_1.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/transformadores_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/transformadores_2.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/transformadores_2.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/transformadores_3.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/transformadores_3.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/transformadores_4.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/transformadores_4.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">registros</h2>
+            <div class="col-md-12 my-5">
+                <div class="cases-gallery-4 row">
+                    <a href="{{ asset('images/construccion/registros_1.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/registros_1.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/registros_2.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/registros_2.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/registros_3.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/registros_3.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                    <a href="{{ asset('images/construccion/registros_4.jpg') }}" class="col-md-3 mb-4">
+                        <img src="{{ asset('images/construccion/registros_4.jpg') }}" class="img-fluid img-gallery" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

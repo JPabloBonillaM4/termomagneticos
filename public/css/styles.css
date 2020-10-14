@@ -114,6 +114,9 @@
 .section_cases{
     background-image: url(../images/casos-exito/FONDO.jpg);
 }
+.control_distribucion{
+    background-image: url(../images/control_distribucion_energia/fondo.jpg);
+}
 
 .rounded-img{
     /* border-radius: 50%; */
@@ -191,7 +194,7 @@
 }
 
 .menu-float a{
-    background-color: orangered;
+    background-color: #1f3c88;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
