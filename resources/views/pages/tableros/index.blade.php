@@ -96,7 +96,104 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row my-5">
+                                <h4 class="col-md-12 text-center mt-3 mb-5 text-white">Sistemas inteligentes con variadores de velocidad / arrancadores suaves</h4>
+                                <div class="row">
+                                    <div class="cases-gallery-6 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cases-gallery-6 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <h4 class="col-md-12 text-center mt-3 mb-5 text-white">Sistema TN-S / TN-C</h4>
+                                <div class="row">
+                                    <div class="cases-gallery-6 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cases-gallery-6 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <h2 class="text-uppercase text-center col-md-12 my-5 display-4 font-weight-bold r2_mobile text-white">Transiciones Abiertas (pérdida de energía)</h2>
+                        <div class="col-md-12">
+                            <div class="row text-center">
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-white aplication" href="javascript:void(0)">
+                                        Aplicaciones
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Tecnologías de la información
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Industrial
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Comercial
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cases-gallery-2 row mt-3 mb-5">
+                                <a href="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="col-md-6 m-auto">
+                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="text-uppercase text-center col-md-12 my-5 display-4 font-weight-bold r2_mobile text-white">Transición Cerrada (perdida de energía en la retransferencia)</h2>
+                        <div class="col-md-12">
+                            <div class="row text-center">
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-white" href="javascript:void(0)">
+                                        Aplicaciones: 
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Data centers & IT
+                                    </a>
+                                </div>
+                                <div class="col-md-2 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Industrial
+                                    </a>
+                                </div>
+                                <div class="col-md-2 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Comercial
+                                    </a>
+                                </div>
+                                <div class="col-md-2 mt-2">
+                                    <a class="text-success aplication" href="javascript:void(0)">
+                                        <i class="fas fa-angle-right text-muted mr-3"></i> Gobierno
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cases-gallery-2 row mt-3 mb-5">
+                                <a href="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="col-md-6 m-auto">
+                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                </a>
+                            </div>
+                        </div>
+
                         <div class="pt-3 pb-5">
                             <div class="row">
                                 <div class="col-md-7 mt-5 mobile_center">
@@ -266,6 +363,29 @@
                                 </div>
                             </div>
                             <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-4 font-weight-bold r2_mobile text-white">Solución Panel Builder</h2>
+                            <div class="row">
+                                <div class="col-md-2 mt-3">
+                                    <img src="{{ asset('images/control_distribucion_energia/solucion_panel_1.jpg') }}" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-1 mt-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-plus icon-solution-panel"></i>
+                                </div>
+                                <div class="col-md-2 mt-3">
+                                    <img src="{{ asset('images/control_distribucion_energia/solucion_panel_2.jpg') }}" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-1 mt-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-plus icon-solution-panel"></i>
+                                </div>
+                                <div class="col-md-2 mt-3">
+                                    <img src="{{ asset('images/control_distribucion_energia/solucion_panel_3.jpg') }}" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-1 mt-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-equals icon-solution-panel"></i>
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <img src="{{ asset('images/control_distribucion_energia/solucion_panel_4.jpg') }}" class="img-fluid" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

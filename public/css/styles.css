@@ -230,6 +230,11 @@
     text-decoration: overline;
 }
 
+.icon-solution-panel{
+    font-size: 3rem;
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;
