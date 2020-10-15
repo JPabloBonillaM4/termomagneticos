@@ -362,7 +362,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-4 font-weight-bold r2_mobile text-white">Solución Panel Builder prueba de cambio</h2>
+                            <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-4 font-weight-bold r2_mobile text-white">Solución Panel Builder prueba de retorno</h2>
                             <div class="row">
                                 <div class="col-md-2 mt-3">
                                     <img src="{{ asset('images/control_distribucion_energia/solucion_panel_1.jpg') }}" class="img-fluid" alt="">
