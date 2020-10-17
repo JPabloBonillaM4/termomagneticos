@@ -69,5 +69,5 @@
     $('.cases-gallery-6 a').simpleLightbox();
     $('.cases-gallery-7 a').simpleLightbox();
     $('.cases-gallery-8 a').simpleLightbox();
-
+    $('.cases-gallery-9 a').simpleLightbox();
 })();

@@ -117,9 +117,18 @@
 .control_distribucion{
     background-image: url(../images/control_distribucion_energia/fondo.jpg);
 }
+.background-calidad{
+    background-image: url(../images/calidad_energia/fondo_calidad.jpg);
+}
+.titulo_tableros{
+    background-image: url(../images/control_distribucion_energia/titulo_tableros.jpg);
+}
+.titulo_calidad{
+    background-image: url(../images/control_distribucion_energia/titulo_calidad.jpg);
+}
 
 .rounded-img{
-    /* border-radius: 50%; */
+    border-radius: 50%;
     width: 125px;
     height: 125px;
 }

@@ -1,9 +1,9 @@
 @extends('index')
 @section('title','tableros')
 @section('content')
-    <div class="parallax-medium section1">
-        <div class="text-white h-100 d-flex align-items-center justify-content-center">
-            <p class="text-uppercase display-1 font-weight-bold r2_mobile text-center">control y distribución</p>
+    <div class="parallax-medium titulo_tableros">
+        <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
+            <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">control y distribución</p>
         </div>
     </div>
     <div class="parallax-simple control_distribucion">
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-10 m-auto">
                         <div class="parallax-intermediate section_distribution bg-transparent">
-                            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile text-white">corriente de empleo hasta 1250 A</h2>
+                            <h2 class="text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">corriente de empleo hasta 1250 A</h2>
                             <div class="col-md-12">
                                 <div>
                                     <h4 class="text-uppercase font-weight-bold text-success">beneficios</h4>
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h2 class="text-uppercase text-center col-md-12 my-5 display-4 font-weight-bold r2_mobile text-white">Aplicaciones</h2>
+                        <h2 class="my-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Aplicaciones</h2>
                         <div class="col-md-12">
                             <div class="row text-center">
                                 <div class="col-md-3 mt-2">
@@ -58,25 +58,25 @@
                             </div>
                             <div class="cases-gallery-2 row mt-3 mb-5">
                                 <a href="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="col-md-6">
-                                    <img src="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <img src="{{ asset('images/control_distribucion_energia/aplicaciones.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                                 <a href="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="col-md-6">
-                                    <img src="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <img src="{{ asset('images/control_distribucion_energia/aplicaciones_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-12 mb-5">
-                            <h3 class="text-center text-white">Policarbonato de alto impacto IP 66</h3>
+                            <h3 class="text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Policarbonato de alto impacto IP 66</h3>
                             <div class="cases-gallery-3 row mt-3 mb-5">
                                 <a href="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="col-md-6">
-                                    <img src="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <img src="{{ asset('images/control_distribucion_energia/policarbonato_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                                 <a href="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="col-md-6">
-                                    <img src="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <img src="{{ asset('images/control_distribucion_energia/policarbonato_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                             </div>
                             <div class="row">
-                                <h4 class="col-md-12 text-center mt-3 mb-5 text-white">Flexible, confiable y seguro</h4>
+                                <h4 class="mt-3 mb-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Flexible, confiable y seguro</h4>
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="text-justify text-white">
@@ -85,50 +85,50 @@
                                         </div>
                                         <div class="cases-gallery-4">
                                             <a href="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}">
-                                                <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                                <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="cases-gallery-5 col-lg-7">
                                         <a href="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}">
-                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="row my-5">
-                                <h4 class="col-md-12 text-center mt-3 mb-5 text-white">Sistemas inteligentes con variadores de velocidad / arrancadores suaves</h4>
+                                <h4 class="mt-3 mb-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Sistemas inteligentes con variadores de velocidad / arrancadores suaves</h4>
                                 <div class="row">
                                     <div class="cases-gallery-6 col-lg-6">
-                                        <a href="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}">
-                                            <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                        <a href="{{ asset('images/control_distribucion_energia/sistemas_inteligentes_1.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/sistemas_inteligentes_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
                                     <div class="cases-gallery-6 col-lg-6">
-                                        <a href="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}">
-                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                        <a href="{{ asset('images/control_distribucion_energia/sistemas_inteligentes_2.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/sistemas_inteligentes_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="row my-5">
-                                <h4 class="col-md-12 text-center mt-3 mb-5 text-white">Sistema TN-S / TN-C</h4>
+                                <h4 class="mt-3 mb-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Sistema TN-S / TN-C</h4>
                                 <div class="row">
-                                    <div class="cases-gallery-6 col-lg-6">
-                                        <a href="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}">
-                                            <img src="{{ asset('images/control_distribucion_energia/flexible_1.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <div class="cases-gallery-7 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/tns_1.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/tns_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
-                                    <div class="cases-gallery-6 col-lg-6">
-                                        <a href="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}">
-                                            <img src="{{ asset('images/control_distribucion_energia/flexible_2.jpg') }}" class="img-fluid mt-2" alt="">
+                                    <div class="cases-gallery-7 col-lg-6">
+                                        <a href="{{ asset('images/control_distribucion_energia/tns_2.jpg') }}">
+                                            <img src="{{ asset('images/control_distribucion_energia/tns_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <h2 class="text-uppercase text-center col-md-12 my-5 display-4 font-weight-bold r2_mobile text-white">Transiciones Abiertas (pérdida de energía)</h2>
+                        <h2 class="text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Transiciones Abiertas (pérdida de energía)</h2>
                         <div class="col-md-12">
                             <div class="row text-center">
                                 <div class="col-md-3 mt-2">
@@ -152,13 +152,16 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="cases-gallery-2 row mt-3 mb-5">
-                                <a href="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="col-md-6 m-auto">
-                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="img-fluid mt-2" alt="">
+                            <div class="cases-gallery-8 row mt-3 mb-5">
+                                <a href="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="col-md-6">
+                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
+                                </a>
+                                <a href="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="col-md-6">
+                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <h2 class="text-uppercase text-center col-md-12 my-5 display-4 font-weight-bold r2_mobile text-white">Transición Cerrada (perdida de energía en la retransferencia)</h2>
+                        <h2 class="my-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Transición Cerrada (perdida de energía en la retransferencia)</h2>
                         <div class="col-md-12">
                             <div class="row text-center">
                                 <div class="col-md-3 mt-2">
@@ -187,9 +190,12 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="cases-gallery-2 row mt-3 mb-5">
-                                <a href="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="col-md-6 m-auto">
-                                    <img src="{{ asset('images/control_distribucion_energia/abiertas_2.jpg') }}" class="img-fluid mt-2" alt="">
+                            <div class="cases-gallery-9 row mt-3 mb-5">
+                                <a href="{{ asset('images/control_distribucion_energia/cerrada_1.jpg') }}" class="col-md-6 m-auto">
+                                    <img src="{{ asset('images/control_distribucion_energia/cerrada_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
+                                </a>
+                                <a href="{{ asset('images/control_distribucion_energia/cerrada_2.jpg') }}" class="col-md-6 m-auto">
+                                    <img src="{{ asset('images/control_distribucion_energia/cerrada_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -326,7 +332,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-4 font-weight-bold r2_mobile text-white">Modelo de negocio</h2>
+                            <h2 class="my-5 pt-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Modelo de negocio</h2>
                             <div class="row mt-4 text-white">
                                 <div class="col-md-3">
                                     <div class="text-center">
@@ -362,7 +368,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <h2 class="text-uppercase text-center col-md-12 my-5 pt-5 display-4 font-weight-bold r2_mobile text-white">Solución Panel Builder</h2>
+                            <h2 class="my-5 pt-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Solución Panel Builder</h2>
                             <div class="row">
                                 <div class="col-md-2 mt-3">
                                     <img src="{{ asset('images/control_distribucion_energia/solucion_panel_1.jpg') }}" class="img-fluid" alt="">
