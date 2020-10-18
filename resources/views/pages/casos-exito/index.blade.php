@@ -3,14 +3,14 @@
 @section('content')
     <div class="parallax-medium section1">
         <div class="text-white h-100 d-flex align-items-center justify-content-center">
-            <p class="text-uppercase display-1 font-weight-bold r2_mobile text-center">proyectos específica media y baja tensión</p>
+            <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center container">proyectos específica media y baja tensión</p>
         </div>
     </div>
     <div class="parallax-simple section_cases">
         <div class="background-shadow">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">elementa</h2>
+                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">elementa</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-1 row">
                             <a href="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="col-md-3 mb-4">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">facultad de psicología buap</h2>
+                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">facultad de psicología buap</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-2 row">
                             <a href="{{ asset('images/casos-exito/buap_1.jpg') }}" class="col-md-3 mb-4">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">oficinas y naves cantabrico</h2>
+                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">oficinas y naves cantabrico</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-3 row">
                             <a href="{{ asset('images/casos-exito/cantabrico_1.jpg') }}" class="col-md-3 mb-4">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">almacén con oficinas cervezas modelo en hermosillo</h2>
+                    <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">almacén con oficinas cervezas modelo en hermosillo</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-4 row">
                             <a href="{{ asset('images/casos-exito/cervezeras_1.jpg') }}" class="col-md-3 mb-4">

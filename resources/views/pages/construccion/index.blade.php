@@ -3,12 +3,12 @@
 @section('content')
     <div class="parallax-medium section1">
         <div class="text-white h-100 d-flex align-items-center justify-content-center">
-            <p class="text-uppercase display-1 font-weight-bold r2_mobile text-center">construcción sistema media y baja tensión</p>
+            <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center container">construcción sistema media y baja tensión</p>
         </div>
     </div>
     <div class="container">
         <div class="row text-center">
-            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">energías limpias y sustentables</h2>
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">energías limpias y sustentables</h2>
             <div class="col-md-12 my-5">
                 <div class="cases-gallery-1 row">
                     <a href="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="col-md-3 mb-4">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="row text-center">
-            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">redes eléctricas</h2>
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">redes eléctricas</h2>
             <div class="col-md-12 my-5">
                 <div class="cases-gallery-2 row">
                     <a href="{{ asset('images/construccion/construccion_1.jpg') }}" class="col-md-3 mb-4">
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="row text-center">
-            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">transformadores</h2>
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">transformadores</h2>
             <div class="col-md-12 my-5">
                 <div class="cases-gallery-3 row">
                     <a href="{{ asset('images/construccion/transformadores_1.jpg') }}" class="col-md-3 mb-4">
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="row text-center">
-            <h2 class="text-uppercase text-center col-md-12 mt-5 display-4 font-weight-bold r2_mobile">registros</h2>
+            <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">registros</h2>
             <div class="col-md-12 my-5">
                 <div class="cases-gallery-4 row">
                     <a href="{{ asset('images/construccion/registros_1.jpg') }}" class="col-md-3 mb-4">
