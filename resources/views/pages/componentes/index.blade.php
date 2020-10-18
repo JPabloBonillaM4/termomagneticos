@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     @endforelse
-                    <div class="d-flex align-items-center justify-content-center col-md-12">
+                    {{-- <div class="d-flex align-items-center justify-content-center col-md-12">
                         <div class="d-flex align-items-center justify-content-center flex-column">
                             @if($components->count() > 0)
                                 <p>{{ $components->render() }}</p>
@@ -38,7 +38,7 @@
                                 </div>
                             @endif
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

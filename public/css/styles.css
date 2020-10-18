@@ -127,6 +127,23 @@
     background-image: url(../images/control_distribucion_energia/titulo_calidad.jpg);
 }
 
+/* MODAL BACKGROUNDS */
+.modal_background_1{
+    background-image: url(../images/componentes/modal_componente_2.jpg);
+}
+.modal_background_2{
+    background-image: url(../images/componentes/modal_componente_2-4.jpg);
+}
+.modal_background_3{
+    background-image: url(../images/componentes/modal_componente_3-2.jpg);
+}
+.modal_background_4{
+    background-image: url(../images/componentes/modal_componente_4-6.jpg);
+}
+.modal_background_5{
+    background-image: url(../images/componentes/modal_componente_5-2.jpg);
+}
+
 .rounded-img{
     border-radius: 50%;
     width: 125px;
@@ -242,6 +259,14 @@
 .icon-solution-panel{
     font-size: 3rem;
     color: white;
+}
+
+.fw-900{
+    font-weight: 900 !important;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden !important;
 }
 
 @media only screen and (max-width: 768px) {
