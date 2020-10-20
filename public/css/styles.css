@@ -100,6 +100,11 @@
 .background-shadow{
     background-color: rgba(0,0,0, 0.6);
 }
+.background-simple{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
 
 /* IMAGES BACKGROUND */
 .section1{
@@ -125,6 +130,15 @@
 }
 .titulo_calidad{
     background-image: url(../images/control_distribucion_energia/titulo_calidad.jpg);
+}
+.titulo_blindaje{
+    background-image: url(../images/blindaje/titulo_blindaje.jpg);
+}
+.titulo_contacto{
+    background-image: url(../images/contacto/contacto_titulo.jpg);
+}
+.background_cotizacion{
+    background-image: url(../images/contacto/fondo_cotizacion.jpg);
 }
 
 /* MODAL BACKGROUNDS */
