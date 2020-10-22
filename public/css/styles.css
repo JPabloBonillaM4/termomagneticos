@@ -126,10 +126,10 @@
     background-image: url(../images/calidad_energia/fondo_calidad.jpg);
 }
 .titulo_tableros{
-    background-image: url(../images/control_distribucion_energia/titulo_tableros.jpg);
+    background-image: url(../images/control_distribucion_energia/titulo_control_distribucion.jpg);
 }
 .titulo_calidad{
-    background-image: url(../images/control_distribucion_energia/titulo_calidad.jpg);
+    background-image: url(../images/calidad_energia/titulo_calidad_energia.jpg);
 }
 .titulo_blindaje{
     background-image: url(../images/blindaje/titulo_blindaje.jpg);
@@ -140,10 +140,28 @@
 .background_cotizacion{
     background-image: url(../images/contacto/fondo_cotizacion.jpg);
 }
+.background_componentes{
+    background-image: url(../images/componentes/background_componentes.jpg);
+}
+.titulo_componentes{
+    background-image: url(../images/componentes/titulo_componentes.jpg);
+}
+.titulo_contruccion{
+    background-image: url(../images/construccion/titulo_construccion.jpg);
+}
+.background_contruccion{
+    background-image: url(../images/construccion/fondo_construccion.jpg);
+}
+.titulo_casos_exito{
+    background-image: url(../images/casos-exito/titulo_casos_exito.jpg);
+}
+.background_puertas{
+    background-image: url(../images/puertas/fondo_puertas.jpg);
+}
 
 /* MODAL BACKGROUNDS */
 .modal_background_1{
-    background-image: url(../images/componentes/modal_componente_2.jpg);
+    background-image: url(../images/componentes/fondo_componente_proteccion_electromagnetica.jpg);
 }
 .modal_background_2{
     background-image: url(../images/componentes/modal_componente_2-4.jpg);
@@ -156,6 +174,9 @@
 }
 .modal_background_5{
     background-image: url(../images/componentes/modal_componente_5-2.jpg);
+}
+.modal_background_6{
+    background-image: url(../images/componentes/fondo_tableros_distribucion.jpg);
 }
 
 .rounded-img{

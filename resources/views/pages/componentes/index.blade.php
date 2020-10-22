@@ -1,12 +1,12 @@
 @extends('index')
 @section('title','componentes')
 @section('content')
-    <div class="parallax-medium section1">
+    <div class="parallax-medium titulo_componentes">
         <div class="text-white h-100 d-flex align-items-center justify-content-center">
             <p class="text-uppercase display-4 font-weight-bold r2_mobile">componentes</p>
         </div>
     </div>
-    <div class="parallax-simple">
+    <div class="parallax-simple background_componentes">
         <div class="background-shadow">
             <div class="pt-5 d-flex justify-content-center align-items-center">
                 <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-lg" alt="">

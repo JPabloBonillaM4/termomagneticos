@@ -272,8 +272,193 @@
                         </div>
                     </div>
                     {{-- 6.- tabladores de distribución alumbrado/contactos --}}
-                    <div class="hide-section" id="componente_6">
-
+                    <div class="hide-section parallax-simple modal_background_6" id="componente_6">
+                        <div class="background-shadow text-white">
+                            <div class="text-justify container py-5 text-white">
+                                <h2 class="text-center">Modelos de tableros de distribución Eaton</h2>
+                                <p class="text-center">Existen tres tipos distintos de tableros de distribución Eaton: de alumbrado, tipo panel y autosoportado.</p>
+                                <div class="row container">
+                                    <h3 class="col-md-12 text-center my-5">Tableros de alumbrado Eaton</h3>
+                                    <div class="col-md-6 text-center">
+                                        <img src="{{ asset('images/componentes/alumbrado_eaton_1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <img src="{{ asset('images/componentes/alumbrado_eaton_2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    </div>
+                                    <ul class="list-unstyled pl-3 col-md-12">
+                                        <li class="mt-5">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp;
+                                                <span>Son tableros pequeños en cuanto a dimensiones y capacidad de corriente para aplicaciones menos robustas.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Aceptan interruptores miniatura.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Con voltajes de 240 y 480 volts.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp;
+                                                <span>Los de <strong>240 volts</strong> pueden ser con interruptores enchufables o atornillables, monofásicos y trifásicos.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp;
+                                                <span>Los de <strong>480 volts</strong> pueden ser monofasicos y trifasicos con interruptores únicamente atornillables.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>En ambos pueden ser con zapatas principales o interruptor principal.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Existen modelos de hasta <strong>400 amperes</strong>.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row container">
+                                    <h3 class="col-md-12 my-5">Tableros tipo panel</h3>
+                                    <div class="col-md-6 text-center">
+                                        <img src="{{ asset('images/componentes/tableros_panel_1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <img src="{{ asset('images/componentes/tableros_panel_2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    </div>
+                                    <ul class="list-unstyled pl-3 col-md-12">
+                                        <li class="mt-5">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp;
+                                                <span>Este tipo de tableros es de tamaño y capacidad media.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>No aceptan interruptores miniatura.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Existen modelos de <strong>600 volts</strong> y con zapatas e interruptor principal.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Aceptan interruptores en caja moldeada.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Solo hay modelos trifásicos.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Soportan corrientes de hasta <strong>1200 amperes</strong>.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row container">
+                                    <h3 class="col-md-12 my-5">Tableros de tipo autosoportado</h3>
+                                    <div class="col-md-12 text-center">
+                                        <img src="{{ asset('images/componentes/tablero_autosoportado.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    </div>
+                                    <ul class="list-unstyled pl-3 col-md-12">
+                                        <li class="mt-5">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp;
+                                                <span>Este es el tipo de tablero de mayor capacidad y tamaño.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Componentes:</span>
+                                                <ul class="list-unstyled pl-3 col-md-12">
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span>EDSEB1600: Estructura básica</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span>EDSPINF: Kit de puerta inferior</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span>EDSIQKIT: Kit con silleta de medición</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span>EDSML1600: Kit de zapatas principales</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span>EDSMB160: Kit para interruptor principal</span>
+                                                    </a>
+                                                </ul>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Se conectan con acoplamiento al transformador, con zapatas principales o interruptor principal.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Son trifásicos únicamente.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span>Estos tableros cuentan con la opción de agregar la característica de distintas variables como: medición de corriente, voltaje, potencia, energía, factores de potencia, armónicas, frecuencia, comunicación, etc.</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a class="text-white d-block" href="javascript:void(0)">
+                                                <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                <span><strong>De estos tipos de tablero existen 3 subtipos:</strong></span>
+                                                <ul class="list-unstyled pl-3 col-md-12">
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span><strong>ESección principal:</strong> Solo aceptan interruptores de potencia.</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span><strong>Seccion de distribucion:</strong> Sólo aceptan interruptores de caja moldeada.</span>
+                                                    </a>
+                                                    <a class="text-white d-block" href="javascript:void(0)">
+                                                        <i class="fas fa-angle-right text-white"></i> &nbsp; 
+                                                        <span><strong>Sección principal con chasis de distribución:</strong> Acepta interruptores de potencia y de caja moldeada.</span>
+                                                    </a>
+                                                </ul>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
                     </div>
                 </div>
             </div>
