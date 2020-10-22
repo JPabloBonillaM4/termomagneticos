@@ -21,13 +21,13 @@
                         </a>
                     </p>
                     <p class="mt-3 d-flex align-items-center justify-content-center">
-                        <a href="tel:+2222576165">
+                        <a href="tel:2222576165">
                             <i class="fas fa-phone icon-resize mr-2"></i> 
                             <span>Tel. (222) 257 6165</span>
                         </a>
                     </p>
                     <p class="mt-3 d-flex align-items-center justify-content-center">
-                        <a href="tel:+2361069914">
+                        <a href="tel:2361069914">
                             <i class="fas fa-phone icon-resize mr-2"></i> 
                             <span>Tel. (222) 257 6198</span> Aqui test
                         </a>
@@ -62,7 +62,7 @@
                         </a>
                     </p>
                     <p class="mt-3 d-flex align-items-center justify-content-center">
-                        <a href="tel:+8442872742">
+                        <a href="tel:8442872742">
                             <i class="fas fa-phone icon-resize mr-2"></i> 
                             <span>Tel. (844) 287 2742</span>
                         </a>
