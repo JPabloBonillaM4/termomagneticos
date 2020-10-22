@@ -27,9 +27,9 @@
                         </a>
                     </p>
                     <p class="mt-3 d-flex align-items-center justify-content-center">
-                        <a href="tel:2361069914">
+                        <a href="tel:2222576198">
                             <i class="fas fa-phone icon-resize mr-2"></i> 
-                            <span>Tel. (222) 257 6198</span> Aqui test
+                            <span>Tel. (222) 257 6198</span>
                         </a>
                     </p>
                     {{-- <p class="mt-3 d-flex align-items-center justify-content-center">
