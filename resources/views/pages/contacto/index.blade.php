@@ -9,23 +9,34 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 m-auto py-5">
+            <h2>OMH - Termomagnéticos Y Control de Radiaciones</h2>
             <h4 class="text-center my-5 pb-5 display-5">Has contacto con alguno de nuestros representantes</h2>
             <div class="row border border-primary">
                 <div class="col-md-6 border-right border-primary text-center py-5">
-                    <p>Termomagnéticos Y Control  de Radiaciones</p>
-                    <small class="d-flex align-items-center">
+                    <p class="d-flex align-items-center justify-content-center">
                         <a target="_blank" href="https://www.google.com.mx/maps/place/Termomagneticos+Y+Control+De+Radiaciones,+S.A.+De+C.V./@19.0633196,-98.2011452,17z/data=!3m1!4b1!4m5!3m4!1s0x85cfc1178837c02d:0x44331205ab9f06c4!8m2!3d19.0633196!4d-98.1989565">
                             <i class="fas fa-map-marker-alt icon-resize mr-2"></i> 
                             <span>25 Poniente 4307-4 Col. Belisario Dominguez  puebla puebla</span>
                             <small>C.P. 72180</small>
                         </a>
-                        {{-- https://www.google.com.mx/maps/place/Termomagneticos+Y+Control+De+Radiaciones,+S.A.+De+C.V./@19.0632678,-98.1987183,20.13z/data=!4m5!3m4!1s0x85cfc1178837c02d:0x44331205ab9f06c4!8m2!3d19.0633196!4d-98.1989565 --}}
-                    </small>
+                    </p>
                     <p class="mt-3 d-flex align-items-center justify-content-center">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=522361201744&text=hola,%20estoy%20interesado%20en%20...">
-                            <i class="fab fa-whatsapp icon-resize mr-2"></i> <span>(222) 2 57 61 65</span>
+                        <a href="tel:+2222576165">
+                            <i class="fas fa-phone icon-resize mr-2"></i> 
+                            <span>Tel. (222) 257 6165</span>
                         </a>
                     </p>
+                    <p class="mt-3 d-flex align-items-center justify-content-center">
+                        <a href="tel:+2361069914">
+                            <i class="fas fa-phone icon-resize mr-2"></i> 
+                            <span>Tel. (222) 257 6198</span> Aqui test
+                        </a>
+                    </p>
+                    {{-- <p class="mt-3 d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=522222576165&text=hola,%20estoy%20interesado%20en%20...">
+                            <i class="fab fa-whatsapp icon-resize mr-2"></i> <span>(222) 257 6165</span>
+                        </a>
+                    </p> --}}
                     <p class="d-flex align-items-center justify-content-center">
                         <a target="_blank" href="mailto:termo_prom@hotmail.com">
                             <i class="fas fa-envelope icon-resize mr-2"></i> <span>termo_prom@hotmail.com</span>
@@ -37,19 +48,41 @@
                         </a>
                     </p>
                     <p class="d-flex align-items-center justify-content-center">
-                        <a target="_blank" href="https://www.facebook.com/NixDiyt/">
+                        <a target="_blank" href="https://www.facebook.com/Termomagneticos-y-Control-de-Radiaciones-135359068254318/">
                             <i class="fab fa-facebook-square icon-resize mr-2"></i> <span>Facebook</span>
                         </a>
                     </p>
                 </div>
                 <div class="col-md-6 text-center py-5">
-                    <p>BLVD Venustiano Carranza 4525-A</p>
-                    <p>Col. Virreyes Residencial Saltillo Coahuila</p>
-                    <p>C.P. 25230</p>
-                    <p>Tel. 844 287 27 42</p>
-                    <p>Cel 844 406 26 26</p>
-                    <p>Cel: (222) 3 21 17 42</p>
-                    <small>termomagneticosdelnorte@hotmail.com</small>
+                    <p class="d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="https://www.google.com.mx/maps/place/Termomagneticos+Y+Control+De+Radiaciones,+S.A.+De+C.V./@19.0633196,-98.2011452,17z/data=!3m1!4b1!4m5!3m4!1s0x85cfc1178837c02d:0x44331205ab9f06c4!8m2!3d19.0633196!4d-98.1989565">
+                            <i class="fas fa-map-marker-alt icon-resize mr-2"></i> 
+                            <span>BLVD Venustiano Carranza 4525-A, Col. Virreyes Residencial Saltillo Coahuila</span>
+                            <small>C.P. 25230</small>
+                        </a>
+                    </p>
+                    <p class="mt-3 d-flex align-items-center justify-content-center">
+                        <a href="tel:+8442872742">
+                            <i class="fas fa-phone icon-resize mr-2"></i> 
+                            <span>Tel. (844) 287 2742</span>
+                        </a>
+                    </p>
+                    <p class="mt-3 d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=528444062626&text=hola,%20estoy%20interesado%20en%20...">
+                            <i class="fab fa-whatsapp icon-resize mr-2"></i> <span>(844) 406 2626</span>
+                        </a>
+                    </p>
+                    <p class="mt-3 d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=522223211742&text=hola,%20estoy%20interesado%20en%20...">
+                            <i class="fab fa-whatsapp icon-resize mr-2"></i> <span>(222) 321 1742</span>
+                        </a>
+                    </p>
+                    <p class="d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="mailto:termomagneticosdelnorte@hotmail.com">
+                            <i class="fas fa-envelope icon-resize mr-2"></i> <span>termomagneticosdelnorte@hotmail.com</span>
+                        </a>
+                    </p>
+                    {{-- <small>termomagneticosdelnorte@hotmail.com</small> --}}
                 </div>
                 <div class="col-md-12">
                     <div class="font-weight-bold border-primary border-top p-4 text-center">
