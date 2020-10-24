@@ -3,7 +3,7 @@
         <i class="fas fa-calendar-alt"></i>
         <span>Calendario</span>
     </a>
-    <a href="{{ url('contacto#cotizacion') }}" title="Calendario">
+    <a href="{{ url('contacto#cotizacion') }}" data-scroll title="Calendario">
         <i class="fas fa-file-alt"></i>
         <span>Cotización</span>
     </a>

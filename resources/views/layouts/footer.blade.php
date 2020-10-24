@@ -6,11 +6,15 @@
         <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
         <script src="{{ asset('js/simple-lightbox.jquery.min.js') }}"></script>
         <script src="{{ asset('js/simple-lightbox.min.js') }}"></script>
-        {{-- <script src="{{ asset('js/simple-lightbox.modules.min.js') }}"></script> --}}
-        {{-- <script src="{{ asset('js/jquery.waypoints.js') }}"></script> --}}
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
                 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
                 crossorigin=""></script>
+        <script src="{{ asset('js/smooth-scroll.min.js') }}"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                            speed: 2000
+                        });
+        </script>
         <script src="{{ asset('js/functions.js') }}"></script>
         <script>
             $(window).on('load', function(){

@@ -98,7 +98,10 @@
 }
 
 .background-shadow{
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0,0,0, 0.3);
+}
+.background-shadow-2{
+    background-color: rgba(0,0,0, 0.7);
 }
 .background-simple{
     background-size: cover;
@@ -304,6 +307,10 @@
     overflow-x: hidden !important;
 }
 
+.adjust_title{
+    margin-top: -5%;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;
@@ -343,6 +350,10 @@
 
     .mobile_center{
         text-align: center;
+    }
+
+    .adjust_title{
+        margin-top: -20%;
     }
 }
 

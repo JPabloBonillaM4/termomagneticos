@@ -1,49 +1,10 @@
-{{-- <div class="parallax-medium section1">
-    <div class="text-white h-100 d-flex align-items-center justify-content-center">
-        <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">{{ $component->nombre }}</p>
-    </div>
-</div>
-<div class="container">
-    <div class="row"> --}}
-        {{-- <textarea name="editor1"></textarea> --}}
-        {{-- <div class="d-flex justify-content-center col-md-12 py-5">
-            <div id="componentImages" class="carousel slide sizeCarousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#componentImages" data-slide-to="0" class="active"></li>
-                    <li data-target="#componentImages" data-slide-to="1"></li>
-                    <li data-target="#componentImages" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ asset('images/logo.png') }}" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/logo.png') }}" alt="Second slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#componentImages" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#componentImages" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
-                </a>
-            </div>
-        </div>
-        <div class="pt-2">
-            {!! $component->descripcion !!}
-        </div>
-    </div>
-</div> --}}
-
-<div class="modal fade" id="modalComponent" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalComponentLabel" aria-hidden="true">
+<div class="modal fade" id="modalComponent" data-keyboard="false" tabindex="-1" aria-labelledby="modalComponentLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-lg">
         <div class="modal-content bg-transparent border-0">
             <div class="modal-header section1 text-white">
                 <h5 class="modal-title" id="modalComponentLabel"><span id="component_name" class="text-uppercase"></span></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="text-white">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1;text-shadow: 0 0 black;">
+                    <span aria-hidden="true" class="text-white">Cerrar</span>
                 </button>
             </div>
             <div class="modal-body bg-light p-0">
@@ -53,7 +14,7 @@
                 <div class="container p-0 overflow-x-hidden">
                     {{-- 1.- Protección electromagnética --}}
                     <div class="hide-section modal_background_1 parallax-simple" id="componente_1">
-                        <div class="background-shadow">
+                        <div class="background-shadow-2">
                             <div class="row text-center">
                                 <div class="col-md-12 my-4">
                                     <img src="{{ asset('images/componentes/modal_componente_1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
@@ -84,7 +45,7 @@
                     </div>
                     {{-- 2.- mcb´s y equipos de control --}}
                     <div class="hide-section modal_background_2 parallax-simple" id="componente_2">
-                        <div class="background-shadow container">
+                        <div class="background-shadow-2 container">
                             <div class="row text-center">
                                 <div class="col-md-4 my-4">
                                     <img src="{{ asset('images/componentes/modal_componente_2-1.jpg') }}" class="img-fluid img-gallery" alt="">
@@ -122,10 +83,10 @@
                     </div>
                     {{-- 3.- protección electromagnética --}}
                     <div class="hide-section modal_background_3 parallax-simple" id="componente_3">
-                        <div class="background-shadow container">
+                        <div class="background-shadow-2 container">
                             <div class="row py-4 text-center">
                                 <div class="col-md-12">
-                                    <img src="{{ asset('images/componentes/modal_componente_3-1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                    <img src="{{ asset('images/componentes/modal_componente_3-1.jpg') }}" class="img-fluid rounded-lg" alt="">
                                 </div>
                             </div>
                             <div class="text-justify container my-5 text-white">
@@ -157,7 +118,7 @@
                     </div>
                     {{-- 4.- contactores y guardamotores --}}
                     <div class="hide-section modal_background_4 parallax-simple" id="componente_4">
-                        <div class="background-shadow container">
+                        <div class="background-shadow-2 container">
                             <div class="row text-center py-4">
                                 <div class="col-md-6 mb-4">
                                     <img src="{{ asset('images/componentes/modal_componente_4-1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
@@ -195,7 +156,7 @@
                     </div>
                     {{-- 5.- arrancadores para motores --}}
                     <div class="hide-section modal_background_5 parallax-simple" id="componente_5">
-                        <div class="background-shadow text-white">
+                        <div class="background-shadow-2 text-white">
                             <div class="row text-center py-4">
                                 <div class="col-md-6 mb-4">
                                     <img src="{{ asset('images/componentes/modal_componente_5-1.jpg') }}" class="img-fluid rounded-lg img-gallery" alt="">
@@ -273,7 +234,7 @@
                     </div>
                     {{-- 6.- tabladores de distribución alumbrado/contactos --}}
                     <div class="hide-section parallax-simple modal_background_6" id="componente_6">
-                        <div class="background-shadow text-white">
+                        <div class="background-shadow-2 text-white">
                             <div class="text-justify container py-5 text-white">
                                 <h2 class="text-center">Modelos de tableros de distribución Eaton</h2>
                                 <p class="text-center">Existen tres tipos distintos de tableros de distribución Eaton: de alumbrado, tipo panel y autosoportado.</p>

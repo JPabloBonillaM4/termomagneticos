@@ -2,16 +2,16 @@
 @section('title','componentes')
 @section('content')
     <div class="parallax-medium titulo_componentes">
-        <div class="text-white h-100 d-flex align-items-center justify-content-center">
+        <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
             <p class="text-uppercase display-4 font-weight-bold r2_mobile">componentes</p>
         </div>
     </div>
     <div class="parallax-simple background_componentes">
-        <div class="background-shadow">
+        <div class="background-shadow py-5">
             <div class="pt-5 d-flex justify-content-center align-items-center">
                 <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-lg" alt="">
             </div>        
-            <div class="container">
+            <div class="container pb-5">
                 <div class="row">
                     @forelse ($components as $component)
                         <div class="col-md-4 text-center mt-5">
