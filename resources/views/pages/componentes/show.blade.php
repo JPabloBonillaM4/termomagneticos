@@ -48,13 +48,13 @@
                         <div class="background-shadow-2 container">
                             <div class="row text-center">
                                 <div class="col-md-4 my-4">
-                                    <img src="{{ asset('images/componentes/modal_componente_2-1.jpg') }}" class="img-fluid img-gallery" alt="">
+                                    <img src="{{ asset('images/componentes/modal_componente_2-1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
                                 <div class="col-md-4 my-4">
-                                    <img src="{{ asset('images/componentes/modal_componente_2-2.jpg') }}" class="img-fluid img-gallery" alt="">
+                                    <img src="{{ asset('images/componentes/modal_componente_2-2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
                                 <div class="col-md-4 my-4">
-                                    <img src="{{ asset('images/componentes/modal_componente_2-3.jpg') }}" class="img-fluid img-gallery" alt="">
+                                    <img src="{{ asset('images/componentes/modal_componente_2-3.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
                             </div>
                             <div class="text-justify container my-5 text-white">
@@ -120,16 +120,13 @@
                     <div class="hide-section modal_background_4 parallax-simple" id="componente_4">
                         <div class="background-shadow-2 container">
                             <div class="row text-center py-4">
-                                <div class="col-md-6 mb-4">
+                                <div class="col-md-4 mb-4">
                                     <img src="{{ asset('images/componentes/modal_componente_4-1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
-                                <div class="col-md-6 mb-4">
+                                <div class="col-md-4 mb-4">
                                     <img src="{{ asset('images/componentes/modal_componente_4-2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
-                                <div class="col-md-6 mb-4">
-                                    <img src="{{ asset('images/componentes/modal_componente_4-3.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
-                                </div>
-                                <div class="col-md-6 mb-4">
+                                <div class="col-md-4 mb-4">
                                     <img src="{{ asset('images/componentes/modal_componente_4-4.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
                                 </div>
                             </div>
@@ -241,10 +238,10 @@
                                 <div class="row container">
                                     <h3 class="col-md-12 text-center my-5">Tableros de alumbrado Eaton</h3>
                                     <div class="col-md-6 text-center">
-                                        <img src="{{ asset('images/componentes/alumbrado_eaton_1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                        <img src="{{ asset('images/componentes/alumbrado_eaton_1.jpg') }}" class="img-fluid img-gallery rounded-lg object-fit" alt="">
                                     </div>
                                     <div class="col-md-6 text-center">
-                                        <img src="{{ asset('images/componentes/alumbrado_eaton_2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                        <img src="{{ asset('images/componentes/alumbrado_eaton_2.jpg') }}" class="img-fluid img-gallery rounded-lg object-fit" alt="">
                                     </div>
                                     <ul class="list-unstyled pl-3 col-md-12">
                                         <li class="mt-5">
@@ -294,10 +291,10 @@
                                 <div class="row container">
                                     <h3 class="col-md-12 my-5">Tableros tipo panel</h3>
                                     <div class="col-md-6 text-center">
-                                        <img src="{{ asset('images/componentes/tableros_panel_1.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                        <img src="{{ asset('images/componentes/tableros_panel_1.jpg') }}" class="img-fluid img-gallery rounded-lg object-fit" alt="">
                                     </div>
                                     <div class="col-md-6 text-center">
-                                        <img src="{{ asset('images/componentes/tableros_panel_2.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                        <img src="{{ asset('images/componentes/tableros_panel_2.jpg') }}" class="img-fluid img-gallery rounded-lg object-fit" alt="">
                                     </div>
                                     <ul class="list-unstyled pl-3 col-md-12">
                                         <li class="mt-5">
@@ -341,7 +338,7 @@
                                 <div class="row container">
                                     <h3 class="col-md-12 my-5">Tableros de tipo autosoportado</h3>
                                     <div class="col-md-12 text-center">
-                                        <img src="{{ asset('images/componentes/tablero_autosoportado.jpg') }}" class="img-fluid img-gallery rounded-lg" alt="">
+                                        <img src="{{ asset('images/componentes/tablero_autosoportado.jpg') }}" class="img-fluid img-gallery rounded-lg object-fit" alt="">
                                     </div>
                                     <ul class="list-unstyled pl-3 col-md-12">
                                         <li class="mt-5">
