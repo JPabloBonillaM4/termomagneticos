@@ -375,18 +375,21 @@
                                                 </ul>
                                             </a>
                                         </li>
+
                                         <li class="mt-4">
                                             <a class="text-white d-block" href="javascript:void(0)">
                                                 <i class="fas fa-angle-right text-white"></i> &nbsp; 
                                                 <span>Se conectan con acoplamiento al transformador, con zapatas principales o interruptor principal.</span>
                                             </a>
                                         </li>
+
                                         <li class="mt-4">
                                             <a class="text-white d-block" href="javascript:void(0)">
                                                 <i class="fas fa-angle-right text-white"></i> &nbsp; 
                                                 <span>Son trifásicos únicamente.</span>
                                             </a>
                                         </li>
+                                        
                                         <li class="mt-4">
                                             <a class="text-white d-block" href="javascript:void(0)">
                                                 <i class="fas fa-angle-right text-white"></i> &nbsp; 
