@@ -9,7 +9,7 @@
     <div class="parallax-simple background_componentes">
         <div class="background-shadow py-5">
             <div class="pt-5 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-lg" alt="">
+                <img src="{{ asset('images/logo-png-2.png') }}" class="rounded-lg" alt="" style="max-width: 250px;">
             </div>        
             <div class="container pb-5">
                 <div class="row">

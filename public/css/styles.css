@@ -138,7 +138,10 @@
     background-image: url(../images/blindaje/titulo_blindaje.jpg);
 }
 .titulo_contacto{
-    background-image: url(../images/contacto/contacto_titulo.jpg);
+    background-image: url(../images/contacto/contacto_titulo_2.jpg);
+}
+.background_contacto{
+    background-image: url(../images/contacto/background_contacto.jpg);
 }
 .background_cotizacion{
     background-image: url(../images/contacto/fondo_cotizacion.jpg);

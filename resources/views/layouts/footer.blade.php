@@ -15,6 +15,8 @@
                             speed: 2000
                         });
         </script>
+        <script src="{{ asset('js/moment.min.js') }}"></script>
+        <script src="{{ asset('js/daterangepicker.js') }}"></script>
         <script src="{{ asset('js/functions.js') }}"></script>
         <script>
             $(window).on('load', function(){

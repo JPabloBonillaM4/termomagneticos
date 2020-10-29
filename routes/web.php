@@ -27,3 +27,4 @@ Route::view('puertas','pages.puertas.index')->name('puertas');
 Route::view('contacto','pages.contacto.index')->name('contacto');
 // Email
 Route::post('sendEmailCotizacion', 'EmailController@sendEmailCotizacion')->name('sendEmailCotizacion');
+Route::post('sendEmailCite', 'EmailController@sendEmailCite')->name('sendEmailCite');

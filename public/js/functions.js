@@ -1,6 +1,5 @@
 (()=>{
     // CKEDITOR.replace( 'editor1' );
-
     // OPEN MODAL FOR COMPONENTS
     $(document).on('click','.showComponent', function(){
         let route = $(this).data('route');
@@ -40,25 +39,94 @@
             }
         });
     })
-
     // Solo números
     $('.onlyNumeric').on('input', function (event) { 
         this.value = this.value.replace(/[^0-9]/g, '');
     });
-
     //MAPA
     if(document.getElementById('mapa')){
-        let mapa = L.map('mapa').setView([19.0633196, -98.1989565], 17);
+        let mapa = L.map('mapa').setView([19.0509849, -98.2359316], 17);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(mapa);
-        L.marker([19.0633196, -98.1989565]).addTo(mapa)
+        L.marker([19.0509849, -98.2359316]).addTo(mapa)
             .bindPopup('Ubicanos aquí')
             .openPopup()
             .bindTooltip("Termomagnéticos y control de radiaciones")
             .openTooltip();
     }
-
+    // DATE PICKER
+    let fecha_actual = new Date();
+    $('.datepickerSingle').daterangepicker({ //single DatePicker
+        "locale": {
+            // format: 'DD/MM/YYYY hh:mm A'
+            "format"      : 'YYYY/MM/DD',
+            "daysOfWeek"  : ["Lun","Mar","Mier","Jue","Vie","Sáb","Dom"],
+            "monthNames"  : ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
+            "applyLabel"  : "Confirmar fecha",
+            "cancelLabel" : "Cancelar",
+        },
+        "autoUpdateInput"  : false, //disable default date
+        "singleDatePicker" : true,
+        "showDropdowns"    : true,
+        "minDate"          : fecha_actual,
+        "minYear"          : fecha_actual.getFullYear() - 1,
+        "maxYear"          : fecha_actual.getFullYear() + 5,
+        "opens"            : "right",
+        "drops"            : "right",
+        "alwaysShowCalendars" : true
+    });
+    $('.datepickerSingle').on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('DD/MM/YYYY'));
+        processCite();
+    });
+    $('#btn_reagendar').on('click', function(){
+        document.getElementById('form_cite').reset();
+        $('#next_step').hide();
+        processCite();
+    });
+    function processCite(){
+        if($('#date_cite').val() != ''){
+            $('#cite_text').text('Fecha programada');
+            $('#next_step').show();
+            $('#btn_reagendar').show();
+        } else {
+            $('#cite_text').text('Seleccione una fecha');
+            $('#btn_reagendar').hide();
+        }
+    }
+    $('#form_cite input').on('input', function(){
+        enableButtonCite();
+    });
+    $('#form_cite textarea').on('input', function(){
+        enableButtonCite();
+    });
+    function enableButtonCite(){
+        let data         = $('#form_cite').serializeArray();
+        let radioChecked = existeInsideArray(data,'time_cite');
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                const element = data[key];
+                if(element.value == '' || radioChecked == false){
+                    $('#btn_agendar').hide();
+                    break;
+                } else {
+                    $('#btn_agendar').show();
+                }
+            }
+        }
+    }
+    function existeInsideArray(arr, name)
+    {
+        let response = false;
+        $.map(arr, function(value){
+            if(value.name == name){ 
+                response = true;
+                return false;
+            }
+        });
+        return response;
+    }
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     $('.cases-gallery-1 a').simpleLightbox();
