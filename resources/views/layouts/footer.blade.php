@@ -4,20 +4,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
-        <script src="{{ asset('js/simple-lightbox.jquery.min.js') }}"></script>
-        <script src="{{ asset('js/simple-lightbox.min.js') }}"></script>
+        <script src="{{ asset('js/simple-lightbox.jquery.min.js?v='.rand()) }}"></script>
+        <script src="{{ asset('js/simple-lightbox.min.js?v='.rand()) }}"></script>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
                 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
                 crossorigin=""></script>
-        <script src="{{ asset('js/smooth-scroll.min.js') }}"></script>
+        <script src="{{ asset('js/smooth-scroll.min.js?v='.rand()) }}"></script>
+        <script src="{{ asset('js/moment.min.js?v='.rand()) }}"></script>
+        <script src="{{ asset('js/daterangepicker.js?v='.rand()) }}"></script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]', {
-                            speed: 2000
-                        });
+                speed: 2000
+            });
         </script>
-        <script src="{{ asset('js/moment.min.js') }}"></script>
-        <script src="{{ asset('js/daterangepicker.js') }}"></script>
-        <script src="{{ asset('js/functions.js') }}"></script>
+        <script src="{{ asset('js/functions.js?v='.rand()) }}"></script>
         <script>
             $(window).on('load', function(){
                 setTimeout(() => {
