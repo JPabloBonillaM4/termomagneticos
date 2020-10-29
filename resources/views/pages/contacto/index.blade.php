@@ -102,7 +102,7 @@
         </div>
     </div>
 </div>
-<div class="row mb-5 background_cotizacion background-simple" id="cotizacion">
+<div class="mb-5 background_cotizacion background-simple" id="cotizacion">
     <div class="background-shadow col-md-12 py-5 text-white">
         <h3 class="text-center my-5 display-5">Cotización</h3>
         <p class="text-center">
