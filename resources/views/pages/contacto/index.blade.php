@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','contacto')
 @section('content')
-<div class="parallax-medium titulo_contacto">
+<div class="parallax-medium titulo_contacto_2">
     <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
         <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">contacto</p>
     </div>
