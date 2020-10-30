@@ -61,7 +61,7 @@
         "locale": {
             // format: 'DD/MM/YYYY hh:mm A'
             "format"      : 'YYYY/MM/DD',
-            "daysOfWeek"  : ["Lun","Mar","Mier","Jue","Vie","Sáb","Dom"],
+            "daysOfWeek"  : ["Dom","Lun","Mar","Mier","Jue","Vie","Sáb"],
             "monthNames"  : ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
             "applyLabel"  : "Confirmar fecha",
             "cancelLabel" : "Cancelar",

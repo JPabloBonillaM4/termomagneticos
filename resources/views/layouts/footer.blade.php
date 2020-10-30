@@ -12,11 +12,25 @@
         <script src="{{ asset('js/smooth-scroll.min.js?v='.rand()) }}"></script>
         <script src="{{ asset('js/moment.min.js?v='.rand()) }}"></script>
         <script src="{{ asset('js/daterangepicker.js?v='.rand()) }}"></script>
+        <script src="{{ asset('js/iziToast.min.js?v='.rand()) }}"></script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 2000
             });
         </script>
+        {{-- Mensaje de sesión --}}
+        @if (Session::has('type'))
+            <script>
+                $(document).ready(function(){
+                    iziToast.show({
+                        title    : "{{ Session::get('message.title') }}",
+                        message  : "{{ Session::get('message.text') }}",
+                        color    : "{{ Session::get('type') }}",
+                        position : "topRight"
+                    });    
+                });
+            </script>
+        @endif
         <script src="{{ asset('js/functions.js?v='.rand()) }}"></script>
         <script>
             $(window).on('load', function(){
