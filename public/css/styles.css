@@ -274,6 +274,10 @@
     width: 45px;
 }
 
+.menu-float a:last-of-type{
+    background-color: #00bb2d;
+}
+
 .menu-float a:hover{
     width: 130px;
     border-radius: 0;

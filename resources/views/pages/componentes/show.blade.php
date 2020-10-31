@@ -95,7 +95,7 @@
                                 <p>El surtido de disyuntores de circuitos NZM ofrece una interfaz para el sistema de comunicación smartwire-darwin.</p>
                                 
                                 <h5 class="fw-900 mt-5">Serie de modelos NZM1- NZM4</h5>
-                                <p>Solo cuatro interruptores compactos cubren todas las aplicaciones +++ 3 y 4 polos +++ Montaje flexible mediante grupos de funciones modulares +++ Corriente nominal completa hasta 50 C de temperatura ambiente +++ Adecuado para ude en todo el mundo.</p>
+                                <p>Solo cuatro interruptores compactos cubren todas las aplicaciones +++ 3 y 4 polos +++ Montaje flexible mediante grupos de funciones modulares +++ Corriente nominal completa hasta 50 °C de temperatura ambiente +++ Adecuado para uso en todo el mundo.</p>
                                 
                                 <h5 class="fw-900 mt-5">Manijas giratorias de acoplamiento de puerta</h5>
                                 <p>Amplia gama de variantes para cada aplicación +++ todas las aplicaciones tienen una plantilla de perforación idéntica +++ Centrado automático +++ Soporte del eje para años de seguridad operativa +++ Instalación en la pared lateral para una instalación del interruptor principal que ahorra espacio.</p>

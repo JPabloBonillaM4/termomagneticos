@@ -1,12 +1,17 @@
 @extends('index')
 @section('title','puertas')
 @section('content')
-<div class="parallax-medium section1">
-    <div class="text-white h-100 d-flex align-items-center justify-content-center">
-        <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">puertas</p>
+<div class="parallax section1">
+    <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
+        <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">puertas</p>
+        <a data-scroll href="#inicio" class="arrow_ancle">
+            <div class="arrow bounce mt-5 mobile_arrow">
+                <span class="fa fa-arrow-down fa-2x"></span>
+            </div>
+        </a>
     </div>
 </div>
-<div class="parallax-simple background_puertas">
+<div class="parallax-simple background_puertas" id="inicio">
     <div class="background-shadow">
         <div class="container text-white">
             <div class="row">

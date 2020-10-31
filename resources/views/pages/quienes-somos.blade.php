@@ -3,17 +3,17 @@
     <div class="parallax section1">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <h1 class="text-white text-uppercase text-center title adjust_title container">termomagnéticos y control de radiaciones S.A de C.V</h1>
-            <a data-scroll href="#inicio" class="arrow_ancle">
+            <a data-scroll href="#quienes_somos" class="arrow_ancle">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>
                 </div>
             </a>
         </div>
     </div>
-    <div class="parallax section2" id="inicio">
+    <div class="parallax section2" id="quienes_somos">
         <div class="h-100 dis-flex flex-column justify-content-center align-items-center background-shadow">
             <div class="mb-4 dis-flex justify-content-around w-100 align-items-center columnFlex">
-                <img src="{{ asset('images/logo-png-2.png') }}" class="mb-4 hide_on_mobile" alt="logo 3" style="max-width: 250px; margin-top: 3%;">
+                <img src="{{ asset('images/logo-white_2.png') }}" class="mb-4 hide_on_mobile" alt="logo 3" style="max-width: 250px; margin-top: 3%;">
                 <h2 class="text-white text-uppercase display-5 title_2 mb-4 text-center">¿quienes somos?</h2>
                 <img src="{{ asset('images/logo-png-1.png') }}" class="hide_on_mobile" alt="logo 2" style="max-width: 250px;">
             </div>
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax section3">
+    <div class="parallax section3" id="folosofia">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <div class="mb-4 dis-flex justify-content-around w-100 align-items-center columnFlex">
                 <h2 class="text-white text-uppercase display-5 title_2 mb-4">filosofía</h2>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="py-4">
+    <div class="py-4" id="clientes">
         <div class="col-md-12">
             <p class="display-4 text-center mb-4">Algunos de nuestros clientes</p>
         </div>

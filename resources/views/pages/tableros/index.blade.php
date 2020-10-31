@@ -1,12 +1,17 @@
 @extends('index')
 @section('title','tableros')
 @section('content')
-    <div class="parallax-medium titulo_tableros">
-        <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
-            <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">control y distribución</p>
+    <div class="parallax titulo_tableros">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
+            <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">control y distribución</p>
+            <a data-scroll href="#inicio" class="arrow_ancle">
+                <div class="arrow bounce mt-5 mobile_arrow">
+                    <span class="fa fa-arrow-down fa-2x"></span>
+                </div>
+            </a>
         </div>
     </div>
-    <div class="parallax-simple control_distribucion">
+    <div class="parallax-simple control_distribucion" id="inicio">
         <div class="background-shadow">
             <div class="container">
                 <div class="row">

@@ -1,12 +1,17 @@
 @extends('index')
 @section('title','contacto')
 @section('content')
-<div class="parallax-medium titulo_contacto_2">
-    <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
-        <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">contacto</p>
+<div class="parallax titulo_contacto_2">
+    <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
+        <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">contacto</p>
+        <a data-scroll href="#inicio" class="arrow_ancle">
+            <div class="arrow bounce mt-5 mobile_arrow">
+                <span class="fa fa-arrow-down fa-2x"></span>
+            </div>
+        </a>
     </div>
 </div>
-<div class="background-simple background_contacto">
+<div class="background-simple background_contacto" id="inicio">
     <div class="background-shadow">
         <div class="container">
             <div class="row">
@@ -19,7 +24,7 @@
                             <p class="d-flex align-items-center justify-content-center mt-5">
                                 <a class="text-white" target="_blank" href="https://www.google.com.mx/maps/place/Av+25+Pte+4307,+Reforma,+Puebla,+Pue./@19.0508183,-98.2368377,18.32z/data=!4m5!3m4!1s0x85cfc727642caa89:0x288a047ba4ed9019!8m2!3d19.0509849!4d-98.2359316">
                                     <i class="fas fa-map-marker-alt icon-resize mr-2"></i> 
-                                    <span>25 Poniente 4307-4 Col. Belisario Dominguez  puebla puebla</span>
+                                    <span>25 Poniente 4307-A Col. Belisario Dominguez  Puebla Puebla</span>
                                     <small>C.P. 72180</small>
                                 </a>
                             </p>

@@ -1,12 +1,17 @@
 @extends('index')
 @section('title','calidad')
 @section('content')
-    <div class="parallax-medium titulo_calidad">
-        <div class="text-white h-100 d-flex align-items-center justify-content-center background-shadow">
-            <p class="text-uppercase display-4 font-weight-bold r2_mobile text-center">calidad de energía</p>
+    <div class="parallax titulo_calidad">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
+            <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">calidad de energía</p>
+            <a data-scroll href="#inicio" class="arrow_ancle">
+                <div class="arrow bounce mt-5 mobile_arrow">
+                    <span class="fa fa-arrow-down fa-2x"></span>
+                </div>
+            </a>
         </div>
     </div>
-    <div class="parallax-simple background-calidad">
+    <div class="parallax-simple background-calidad" id="inicio">
         <div class="background-shadow text-white">
             <div class="container">
                 <div class="row">
