@@ -4,6 +4,12 @@
     position: absolute;
     bottom: -13%;
 }
+.arrow_2 {
+    text-align: center;
+    /* margin: 8% 0; */
+    /* position: absolute;
+    bottom: -13%; */
+}
 .arrow_ancle{
     color: #ffffff !important;
     text-decoration: none;

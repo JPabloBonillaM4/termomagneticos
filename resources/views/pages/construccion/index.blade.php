@@ -4,11 +4,11 @@
     <div class="parallax titulo_contruccion">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">construcción sistema media y baja tensión</p>
-            <a data-scroll href="#inicio" class="arrow_ancle">
+            {{-- <a data-scroll href="#inicio" class="arrow_ancle">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>
                 </div>
-            </a>
+            </a> --}}
         </div>
     </div>
     <div class="parallax-simple background_contruccion" id="inicio">

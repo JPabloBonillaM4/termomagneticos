@@ -15,7 +15,7 @@
                         <a class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == '/') active-option @endif" href="{{ route('/') }}">¿quiénes somos?</a>
                         <div class="dropdown-content t-13">
                             <a data-scroll href="{{ route('/').'#quienes_somos' }}" class="text-uppercase">Nosotros</a>
-                            <a data-scroll href="{{ route('/').'#folosofia' }}" class="text-uppercase">Filosofía</a>
+                            <a data-scroll href="{{ route('/').'#filosofia' }}" class="text-uppercase">Filosofía</a>
                             <a data-scroll href="{{ route('/').'#clientes' }}" class="text-uppercase">Clientes</a>
                         </div>
                     </div>
