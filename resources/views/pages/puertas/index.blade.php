@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','puertas')
 @section('content')
-<div class="parallax section1">
+<div class="parallax-medium section1">
     <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
         <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">puertas</p>
         {{-- <a data-scroll href="#inicio" class="arrow_ancle">

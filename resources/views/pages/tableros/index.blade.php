@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','tableros')
 @section('content')
-    <div class="parallax titulo_tableros">
+    <div class="parallax-medium titulo_tableros">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">control y distribución</p>
             {{-- <a data-scroll href="#inicio" class="arrow_ancle">

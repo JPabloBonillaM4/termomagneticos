@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','componentes')
 @section('content')
-    <div class="parallax titulo_componentes">
+    <div class="parallax-medium titulo_componentes">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">componentes</p>
             {{-- <a data-scroll href="#inicio" class="arrow_ancle">
@@ -14,7 +14,7 @@
     <div class="parallax-simple background_componentes" id="inicio">
         <div class="background-shadow py-5">
             <div class="pt-5 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('images/logo-white_2.png') }}" class="rounded-lg" alt="" style="max-width: 250px;">
+                <img src="{{ asset('images/eaton-logo-1.png') }}" class="rounded-lg" alt="" style="max-width: 250px;">
             </div>        
             <div class="container pb-5">
                 <div class="row">

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msvalidate.01" content="515110530E032658F4E8855E6EFDB616" />
         <title>Termomagnéticos | @yield('title','Inicio')</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
