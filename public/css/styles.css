@@ -325,15 +325,15 @@
     object-fit: contain;
 }
 
+/* ARROW UP */
 .arrow_up{
-    color: black;
     text-align: right;
 }
 
 .arrow_up a{
-    background-color: #e1e1e1;
+    background-color: #1f3c88;
     padding: 1rem;
-    color: black;
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
