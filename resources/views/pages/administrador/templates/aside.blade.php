@@ -36,10 +36,34 @@
 
                 <li class="nav-item has-treeview">
                     <a href="javascript:void(0);" class="nav-link text-white">
-                        <i class="fas fa-medal"></i>
+                        <i class="nav-icon fas fa-user"></i>
                         <p>
-                        Componentes
-                        <i class="fas fa-angle-left right"></i>
+                            Citas
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                        <a href="{{ route('cites.index') }}" class="nav-link text-white">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <p>Ver todos</p>
+                            </a>
+                        </li>
+                        {{-- <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fas fa-plus nav-icon"></i>
+                                <p>Agregar</p>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="javascript:void(0);" class="nav-link text-white">
+                        <i class="nav-icon fas fa-medal"></i>
+                        <p>
+                            Componentes
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -60,10 +84,10 @@
 
                 <li class="nav-item has-treeview">
                     <a href="javascript:void(0);" class="nav-link text-white">
-                        <i class="fas fa-archive"></i>
+                        <i class="nav-icon fas fa-archive"></i>
                         <p>
-                        Categorías
-                        <i class="fas fa-angle-left right"></i>
+                            Categorías
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -84,10 +108,10 @@
                 @role('superadmin')
                     <li class="nav-item has-treeview">
                         <a href="javascript:void(0);" class="nav-link text-white">
-                            <i class="fas fa-boxes"></i>
+                            <i class="nav-icon fas fa-boxes"></i>
                             <p>
-                            Subcategorías
-                            <i class="fas fa-angle-left right"></i>
+                                Subcategorías
+                                <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">

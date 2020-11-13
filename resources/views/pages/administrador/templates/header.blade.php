@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="{{ asset('lte/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/adminlte.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/admin.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/iziToast.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/dataTables.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/datepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/all.min.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/adminlte.min.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/admin.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/iziToast.min.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/dataTables.bootstrap4.min.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/datepicker.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/select2.min.css?v='.rand()) }}">
     <link rel="stylesheet" href="{{ asset('lte/css/select2-bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('lte/css/daterangepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('lte/css/fontawesome-iconpicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/daterangepicker.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/fontawesome-iconpicker.min.css?v='.rand()) }}">
     {{-- PRELOADER --}}
-    <link rel="stylesheet" href="{{ asset('lte/css/preloader.css') }}">
+    <link rel="stylesheet" href="{{ asset('lte/css/preloader.css?v='.rand()) }}">
 </head>
 {{-- HEADER --}}
 <body class="hold-transition sidebar-mini sidebar-collapse">

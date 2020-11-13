@@ -78,7 +78,37 @@
     });
     $('.datepickerSingle').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
-        processCite();
+        let route = $(this).data('route');
+        $('.checkboxCitesTime input[type="radio"]').prop('checked',false);
+        $.ajax({
+            "url"    : route,
+            "type"   : "GET",
+            "method" : "GET",
+            "cache"  : false,
+            "data"   : { "date" : $(this).val()},
+            success : function(response) {
+                if(!response.error){
+                    showToast('EXITO',response.message,'green');
+                    if(response.citesRegistered.length > 0){
+                        response.citesRegistered.forEach(element => {
+                            document.getElementById(`index_${element}`).style.display = 'none';
+                        });
+                    } else if(response.citesRegistered.length == 0){
+                        $('.checkboxCitesTime').show();
+                    }
+                    processCite();
+                    $('#btn_agendar').show();
+                } else {
+                    showToast('ERROR',response.message,'red');
+                    $('#cite_text').text('Seleccione una fecha');
+                    $('#date_cite').val('');
+                    $('#next_step').hide();
+                    $('#btn_agendar').hide();
+                    $('#btn_reagendar').hide();
+                }
+                
+            }
+        });
     });
     $('#btn_reagendar').on('click', function(){
         document.getElementById('form_cite').reset();
@@ -95,11 +125,17 @@
             $('#btn_reagendar').hide();
         }
     }
-    $('#form_cite input').on('input', function(){
-        enableButtonCite();
-    });
-    $('#form_cite textarea').on('input', function(){
-        enableButtonCite();
+    // $('#form_cite input').on('input', function(){
+    //     enableButtonCite();
+    // });
+    // $('#form_cite textarea').on('input', function(){
+    //     enableButtonCite();
+    // });
+    $('#form_cite').on('submit', function(event){
+        checkData = enableButtonCite();
+        if(checkData == false){
+            event.preventDefault();
+        }
     });
     function enableButtonCite(){
         let data         = $('#form_cite').serializeArray();
@@ -108,10 +144,11 @@
             if (data.hasOwnProperty(key)) {
                 const element = data[key];
                 if(element.value == '' || radioChecked == false){
-                    $('#btn_agendar').hide();
+                        showToast('ERROR','Favor de seleccionar una hora','red');
+                        return false;
                     break;
                 } else {
-                    $('#btn_agendar').show();
+                    return true
                 }
             }
         }
@@ -127,15 +164,32 @@
         });
         return response;
     }
+    function showToast(title, message, color){
+        iziToast.show({
+            "title"    : title,
+            "message"  : message,
+            "color"    : color,
+            "position" : "topRight"
+        });
+    }
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
-    $('.cases-gallery-1 a').simpleLightbox();
-    $('.cases-gallery-2 a').simpleLightbox();
-    $('.cases-gallery-3 a').simpleLightbox();
-    $('.cases-gallery-4 a').simpleLightbox();
-    $('.cases-gallery-5 a').simpleLightbox();
-    $('.cases-gallery-6 a').simpleLightbox();
-    $('.cases-gallery-7 a').simpleLightbox();
-    $('.cases-gallery-8 a').simpleLightbox();
-    $('.cases-gallery-9 a').simpleLightbox();
+    if($('.cases-gallery-1 a').length > 0)
+        $('.cases-gallery-1 a').simpleLightbox();
+    if($('.cases-gallery-2 a').length > 0)
+        $('.cases-gallery-2 a').simpleLightbox();
+    if($('.cases-gallery-3 a').length > 0)
+        $('.cases-gallery-3 a').simpleLightbox();
+    if($('.cases-gallery-4 a').length > 0)
+        $('.cases-gallery-4 a').simpleLightbox();
+    if($('.cases-gallery-5 a').length > 0)
+        $('.cases-gallery-5 a').simpleLightbox();
+    if($('.cases-gallery-6 a').length > 0)
+        $('.cases-gallery-6 a').simpleLightbox();
+    if($('.cases-gallery-7 a').length > 0)
+        $('.cases-gallery-7 a').simpleLightbox();
+    if($('.cases-gallery-8 a').length > 0)
+        $('.cases-gallery-8 a').simpleLightbox();
+    if($('.cases-gallery-9 a').length > 0)
+        $('.cases-gallery-9 a').simpleLightbox();
 })();

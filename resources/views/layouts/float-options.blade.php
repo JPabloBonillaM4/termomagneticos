@@ -27,121 +27,21 @@
                 <div class="modal-body">
                     <div class="form-group col-md-12">
                         <label class="font-weight-bold text-dark text-2" id="cite_text">Seleccione una fecha</label>
-                        <input class="d-block datepickerSingle form-control" placeholder="Click aquí para elegir fecha..." type="text" name="date_cite" id="date_cite">
+                        <input class="d-block datepickerSingle form-control" placeholder="Click aquí para elegir fecha..." type="text" name="date_cite" id="date_cite" autocomplete="off" data-route="{{ route('getCites') }}">
                     </div>
                     <div class="mt-3" id="next_step" style="display: none;">
                         <div class="form-group col-md-12">
                             <label class="font-weight-bold text-dark text-2" id="cite_text">Hora</label>
                             <div class="row container">
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_1" value="9:00">
-                                    <label class="form-check-label" for="time_cite_1">
-                                        9:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_2" value="9:30">
-                                    <label class="form-check-label" for="time_cite_2">
-                                        9:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_3" value="10:00">
-                                    <label class="form-check-label" for="time_cite_3">
-                                        10:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_4" value="10:30">
-                                    <label class="form-check-label" for="time_cite_4">
-                                        10:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_5" value="11:00">
-                                    <label class="form-check-label" for="time_cite_5">
-                                        11:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_6" value="11:30">
-                                    <label class="form-check-label" for="time_cite_6">
-                                        11:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_7" value="12:00">
-                                    <label class="form-check-label" for="time_cite_7">
-                                        12:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_8" value="12:30">
-                                    <label class="form-check-label" for="time_cite_8">
-                                        12:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_9" value="13:00">
-                                    <label class="form-check-label" for="time_cite_9">
-                                        13:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_10" value="13:30">
-                                    <label class="form-check-label" for="time_cite_10">
-                                        13:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_11" value="14:00">
-                                    <label class="form-check-label" for="time_cite_11">
-                                        14:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_12" value="14:30">
-                                    <label class="form-check-label" for="time_cite_12">
-                                        14:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_13" value="15:00">
-                                    <label class="form-check-label" for="time_cite_13">
-                                        15:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_14" value="15:30">
-                                    <label class="form-check-label" for="time_cite_14">
-                                        15:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_15" value="16:00">
-                                    <label class="form-check-label" for="time_cite_15">
-                                        16:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_16" value="16:30">
-                                    <label class="form-check-label" for="time_cite_16">
-                                        16:30
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_17" value="17:00">
-                                    <label class="form-check-label" for="time_cite_17">
-                                        17:00
-                                    </label>
-                                </div>
-                                <div class="form-check col-md-3">
-                                    <input class="form-check-input" type="radio" name="time_cite" id="time_cite_18" value="17:30">
-                                    <label class="form-check-label" for="time_cite_18">
-                                        17:30
-                                    </label>
-                                </div>
-                                <label class="font-weight-bold text-dark text-2 mt-3" id="cite_text">Llenar información de contacto</label>
+                                @foreach ($times_cite as $time) 
+                                    <div class="form-check col-md-3 checkboxCitesTime" id="index_{{ $time }}">
+                                        <input class="form-check-input" type="radio" name="time_cite" id="time_cite_{{ $loop->index + 1 }}" value="{{ $time }}">
+                                        <label class="form-check-label" for="time_cite_{{ $loop->index + 1 }}">
+                                            {{ $time }}
+                                        </label>
+                                    </div>
+                                @endforeach
+                                <label class="font-weight-bold text-dark text-2 mt-5" id="cite_text">Llenar información de contacto</label>
                                 <div class="form-group col-md-12 p-0">
                                     <label for="nombre">Nombre</label>
                                     <input type="text" maxlength="100" class="form-control" id="nombre_cita" name="nombre_cita" aria-describedby="nameHelp" placeholder="Escriba su nombre completo" required>

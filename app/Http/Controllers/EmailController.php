@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\cotizacionMail;
 use App\Mail\citaMail;
 use Illuminate\Support\Facades\Mail;
+use App\Cite;
 
 class EmailController extends Controller
 {
@@ -32,6 +33,7 @@ class EmailController extends Controller
 
     public function sendEmailCite(Request $request){
         try {
+            Cite::NewCite($request);
             Mail::to('dianagc0120@gmail.com')->send(new citaMail($request));
             return redirect()->back()->with(array(
                 'type'    => 'green',
