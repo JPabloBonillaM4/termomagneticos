@@ -28,3 +28,18 @@ Route::view('contacto','pages.contacto.index')->name('contacto');
 // Email
 Route::post('sendEmailCotizacion', 'EmailController@sendEmailCotizacion')->name('sendEmailCotizacion');
 Route::post('sendEmailCite', 'EmailController@sendEmailCite')->name('sendEmailCite');
+// MIDDLEWARE
+// ONLY ADMIN ROUTES
+Route::group(['middleware' => ['role:superadmin','auth']], function () {
+
+});
+
+// ADMIN && MODERATOR ROUTES
+Route::group(['middleware' => ['role:superadmin|moderator','auth']], function () {
+    Route::get('dashboard', 'admin\AdminController@index')->name('admin.index');
+});
+
+// ALL USERS ROUTES
+Route::group(['middleware' => ['role:superadmin|moderator|guest','auth']], function () {
+
+});

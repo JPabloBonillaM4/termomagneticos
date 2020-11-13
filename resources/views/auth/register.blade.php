@@ -1,4 +1,4 @@
-@extends('index')
+{{-- @extends('index')
 @section('title','Registrarse')
 @section('content')
 <div class="container my-5">
@@ -61,4 +61,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}

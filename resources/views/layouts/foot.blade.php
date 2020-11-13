@@ -4,4 +4,7 @@
     <div class="arrow_up bounce">
         <a data-scroll href="#"><i class="fas fa-arrow-up"></i></a>
     </div>
+    <div class="text-center">
+        <a class="text-dark" href="{{ route('login') }}"><i class="fas fa-cogs"></i></a>
+    </div>
 </div>

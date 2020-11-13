@@ -119,16 +119,16 @@
                             <div class="row my-5">
                                 <h4 class="mt-3 mb-5 text-uppercase text-center col-md-12 my-5 display-5 font-weight-bold r2_mobile text-white">Sistema TN-S / TN-C</h4>
                                 <div class="row">
-                                    <div class="cases-gallery-7 col-lg-6">
+                                    <div class="cases-gallery-7 col-lg-12">
                                         <a href="{{ asset('images/control_distribucion_energia/tns_1.jpg') }}">
                                             <img src="{{ asset('images/control_distribucion_energia/tns_1.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
                                     </div>
-                                    <div class="cases-gallery-7 col-lg-6">
+                                    {{-- <div class="cases-gallery-7 col-lg-6">
                                         <a href="{{ asset('images/control_distribucion_energia/tns_2.jpg') }}">
                                             <img src="{{ asset('images/control_distribucion_energia/tns_2.jpg') }}" class="img-fluid mt-2 rounded-lg" alt="">
                                         </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

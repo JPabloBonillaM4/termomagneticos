@@ -275,8 +275,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mt-4">
-                                        <p class="font-weight-bold">Capacior</p>
-                                        <p class="text-white">Capacior trifásico  de potencia tipo seco fabricado de polipropileno metalizado  con dieléctrico  aislante en gas inerte(N2), elevado al alto vacio, protección interna de sobre-presión  y resistencia  de descarga, (libre de PBC). CONEXIÓN  interna DELTA.</p>
+                                        <p class="font-weight-bold">Capacitor</p>
+                                        <p class="text-white">Capacitor trifásico  de potencia tipo seco fabricado de polipropileno metalizado  con dieléctrico  aislante en gas inerte(N2), elevado al alto vacio, protección interna de sobre-presión  y resistencia  de descarga, (libre de PBC). CONEXIÓN  interna DELTA.</p>
                                     </div>
                                     <div class="mt-4">
                                         <p class="font-weight-bold">Reactor</p>
