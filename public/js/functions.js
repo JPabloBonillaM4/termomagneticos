@@ -47,7 +47,7 @@
     if(document.getElementById('mapa')){
         let mapa = L.map('mapa').setView([19.0509849, -98.2359316], 17);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(mapa);
         L.marker([19.0509849, -98.2359316]).addTo(mapa)
             .bindPopup('Ubicanos aquí')
@@ -113,6 +113,7 @@
     $('#btn_reagendar').on('click', function(){
         document.getElementById('form_cite').reset();
         $('#next_step').hide();
+        $('#btn_agendar').hide();
         processCite();
     });
     function processCite(){
@@ -135,7 +136,16 @@
         checkData = enableButtonCite();
         if(checkData == false){
             event.preventDefault();
+            return false;
         }
+        $('#btn_agendar').attr('disabled', true);
+        $('#btn_agendar span.spinner-border').removeClass('d-none');
+        $('#btn_agendar span#text-submit').text('Agendando cita');
+    });
+    $('#form_cotizacion').on('submit', function(event){
+        $('#btn_cotizacion').attr('disabled', true);
+        $('#btn_cotizacion span.spinner-border').removeClass('d-none');
+        $('#btn_cotizacion span#text-submit').text('Enviando cotización');
     });
     function enableButtonCite(){
         let data         = $('#form_cite').serializeArray();

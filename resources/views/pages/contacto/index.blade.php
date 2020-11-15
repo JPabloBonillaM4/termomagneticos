@@ -113,7 +113,7 @@
         <p class="text-center">
             <i>Por favor introduce tus datos y te responderemos tan pronto nos sea posible</i>
         </p>
-        <form action="{{ route('sendEmailCotizacion') }}" method="POST" class="col-md-8 m-auto pb-5">
+        <form action="{{ route('sendEmailCotizacion') }}" method="POST" class="col-md-8 m-auto pb-5" id="form_cotizacion">
             @csrf
             <div class="form-group">
                 <label for="nombre">Nombre</label>
@@ -134,7 +134,10 @@
                 <label for="cotización">¿Qué desea cotizar?</label>
                 <textarea class="form-control" id="cotizacion" maxlength="250" name="cotizacion" rows="3" placeholder="Listado o descripción de su pedido" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100 mt-3">Enviar</button>
+            <button id="btn_cotizacion" type="submit" class="btn btn-primary w-100 mt-3">
+                <span class="spinner-border spinner-border-sm mr-1 d-none" role="status" aria-hidden="true"></span>
+                <span id="text-submit">Enviar</span>
+            </button>
         </form>
     </div>
 </div>

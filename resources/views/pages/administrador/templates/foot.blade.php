@@ -1,6 +1,6 @@
 <footer class="main-footer change_dark text-center">
     <div class="float-right d-none d-sm-block">
-        <b>Version</b> 1.0.0
+        {{-- <b>Version</b> 1.0.0 --}}
     </div>
     <strong>Copyright &copy; 2020 <a href="javascript:void(0);">Termomagnéticos</a>.</strong> Todos los derechos reservados.
 </footer>

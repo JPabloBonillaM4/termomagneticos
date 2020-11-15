@@ -7,17 +7,19 @@ use App\Mail\cotizacionMail;
 use App\Mail\citaMail;
 use Illuminate\Support\Facades\Mail;
 use App\Cite;
+use App\Quote;
 
 class EmailController extends Controller
 {
     public function sendEmailCotizacion(Request $request){
         try {
+            Quote::NewQuote($request);
             Mail::to('dianagc0120@gmail.com')->send(new cotizacionMail($request));
             return redirect()->back()->with(array(
                 'type'    => 'green',
                 'message' => array(
                     'title' => 'Éxito',
-                    'text'  => 'Envío de correo exitoso'
+                    'text'  => 'Envío de cotización exitoso'
                 )
             ));
         } catch (\Throwable $th) {
@@ -39,7 +41,7 @@ class EmailController extends Controller
                 'type'    => 'green',
                 'message' => array(
                     'title' => 'Éxito',
-                    'text'  => 'Envío de correo exitoso'
+                    'text'  => 'Envío de cita exitoso'
                 )
             ));
         } catch (\Throwable $th) {

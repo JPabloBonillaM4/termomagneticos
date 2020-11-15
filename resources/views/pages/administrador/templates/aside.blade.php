@@ -57,12 +57,35 @@
                         </li> --}}
                     </ul>
                 </li>
+                <li class="nav-item has-treeview">
+                    <a href="javascript:void(0);" class="nav-link text-white">
+                        <i class="nav-icon fas fa-comment-dollar"></i>
+                        <p>
+                            Cotizaciones
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                        <a href="{{ route('cites.index') }}" class="nav-link text-white">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <p>Ver todas</p>
+                            </a>
+                        </li>
+                        {{-- <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fas fa-plus nav-icon"></i>
+                                <p>Agregar</p>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </li>
 
                 <li class="nav-item has-treeview">
                     <a href="javascript:void(0);" class="nav-link text-white">
                         <i class="nav-icon fas fa-medal"></i>
                         <p>
-                            Componentes
+                            Proyectos
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -86,7 +109,7 @@
                     <a href="javascript:void(0);" class="nav-link text-white">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Categorías
+                            Categorías (Proyectos)
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -106,29 +129,7 @@
                     </ul>
                 </li>
                 @role('superadmin')
-                    <li class="nav-item has-treeview">
-                        <a href="javascript:void(0);" class="nav-link text-white">
-                            <i class="nav-icon fas fa-boxes"></i>
-                            <p>
-                                Subcategorías
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white">
-                                    <i class="fas fa-list-alt nav-icon"></i>
-                                    <p>Ver todos</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white">
-                                    <i class="fas fa-plus nav-icon"></i>
-                                    <p>Agregar</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                 {{-- Code example for especific role user --}}
                 @endrole
             </ul>
         </nav>

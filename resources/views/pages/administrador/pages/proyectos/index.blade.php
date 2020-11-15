@@ -37,6 +37,9 @@
                         <td class="align-middle" style="width: 5%;">{{ $cite->phone }}</td>
                         <td class="align-middle" style="width: 25%;">{{ $cite->description }}</td>
                         <td class="align-middle" style="width: 10%;">
+                            {{-- <button class="openModalAndGetValues btn btn-rounded btn-outline-info btn-xs mt-1" data-modal="editPlayer" data-route="{{ route('cites.edit', $cite->id) }}" title="Editar jugador">
+                                <i class="far fa-edit"></i>
+                            </button> --}}
                             <button class="deleteRegister btn btn-rounded btn-outline-danger btn-xs mt-1" data-modal="deleteRegister" data-route="{{ route('cites.destroy', $cite->id) }}" data-id="{{ $cite->id }}" title="Eliminar jugador">
                                 <i class="far fa-trash-alt"></i>
                             </button>

@@ -7,7 +7,7 @@
         <div class="col-md-12 d-flex flex-column">
             <div class="row">
                 {{-- CITAS --}}
-                <div class="col-12 col-sm-6 col-md-6">
+                <div class="col-12 col-sm-6 col-md-12">
                     <div class="info-box change-card">
                         <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-user"></i></span>
                         <div class="info-box-content">
@@ -28,41 +28,50 @@
                     </div>
                 </div>
                 {{-- COMPONENTES --}}
-                <div class="col-12 col-sm-6 col-md-6">
+                <div class="col-12 col-sm-6 col-md-12">
                     <div class="info-box change-card">
-                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-medal"></i></span>
+                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-comment-dollar"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">Componentes</span>
+                            <span class="info-box-text">Cotizaciones</span>
                             <span class="info-box-number">
-                                {{-- @if($data->tournaments->count() > 0)
-                                    {{ $data->tournaments->count() }}
+                                @if($data->quotes->count() > 0)
+                                    {{ $data->quotes->count() }}
                                 @else
-                                    Sin torneos
-                                @endif --}}
+                                    Sin cotizaciones
+                                @endif
                             </span>
                         </div>
+                        <a href="{{ route('quotes.index') }}">
+                            <button class="btn btn-primary h-100">Ver todas las cotizaciones</button>
+                        </a>
                     </div>
                 </div>
                 {{-- CATEGORÍAS --}}
-                <div class="col-12 col-sm-6 col-md-6">
+                <div class="col-12 col-sm-6 col-md-12">
                     <div class="info-box mb-3 change-card">
                         <span class="info-box-icon bg-success elevation-1"><i class="fas fa-archive"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">Categorías</span>
+                            <span class="info-box-text">Proyectos</span>
                             {{-- <span class="info-box-number">{{ $data->players->count() }}</span> --}}
                         </div>
+                        <a href="{{ route('cites.index') }}">
+                            <button class="btn btn-primary h-100">Ver todos los proyectos</button>
+                        </a>
                     </div>
                 </div>
                 <!-- fix for small devices only -->
                 <div class="clearfix hidden-md-up"></div>
                 {{-- SUBCATEGORÍAS --}}
-                <div class="col-12 col-sm-6 col-md-6">
+                <div class="col-12 col-sm-6 col-md-12">
                     <div class="info-box mb-3 change-card">
                         <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-boxes"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">Subcategorías</span>
+                            <span class="info-box-text">Categorías (Proyectos)</span>
                             {{-- <span class="info-box-number">{{ $data->players->count() }}</span> --}}
                         </div>
+                        <a href="{{ route('cites.index') }}">
+                            <button class="btn btn-primary h-100">Ver todos las categorías</button>
+                        </a>
                     </div>
                 </div>
             </div>

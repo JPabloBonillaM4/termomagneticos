@@ -38,8 +38,8 @@ Route::group(['middleware' => ['role:superadmin','auth']], function () {
 // ADMIN && MODERATOR ROUTES
 Route::group(['middleware' => ['role:superadmin|moderator','auth']], function () {
     Route::get('dashboard', 'admin\AdminController@index')->name('admin.index');
-    // Route::get('citas', 'admin\CitesController@index')->name('cites.index');
     Route::resource('citas', 'admin\CitesController')->names('cites')->parameters(['cites' => 'id']);
+    Route::resource('cotizaciones', 'admin\QuotesController')->names('quotes')->parameters(['quotes' => 'id']);
 });
 
 // ALL USERS ROUTES

@@ -52,13 +52,13 @@ class CitesController extends Controller
     public function getCites(Request $request){
         try {
             $citas = Cite::GetCitesByDate($request->date);
-            if(!is_null($citas) && $citas->count() < 20){
+            if(!is_null($citas) && $citas->count() < 19){
                 return response()->json([
                     'error'           => false,
                     'message'         => 'Fechas disponibles',
                     'citesRegistered' => $citas->pluck('time')
                 ]);
-            } else if(!is_null($citas) && $citas->count() == 20){
+            } else if(!is_null($citas) && $citas->count() == 19){
                 return response()->json([
                     'error'   => true,
                     'message' => 'Todas las citas han sido ocupadas, favor de elegir otra fecha',

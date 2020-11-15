@@ -17,7 +17,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modal_citaLabel">Reservar cita en línea</h5>
+                <h5 class="modal-title" id="modal_citaLabel">Reservar cita</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -65,7 +65,10 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary" id="btn_reagendar" style="display: none;">Seleccionar otra fecha</button>
-                    <button type="submit" class="btn btn-success" id="btn_agendar" style="display: none;">Agendar</button>
+                    <button type="submit" class="btn btn-success" id="btn_agendar" style="display: none;">
+                        <span class="spinner-border spinner-border-sm mr-1 d-none" role="status" aria-hidden="true"></span>
+                        <span id="text-submit">Agendar</span>
+                    </button>
                 </div>
             </form>
         </div>
