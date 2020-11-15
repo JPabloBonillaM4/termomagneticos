@@ -41,9 +41,11 @@
                                 @endif
                             </span>
                         </div>
-                        <a href="{{ route('quotes.index') }}">
-                            <button class="btn btn-primary h-100">Ver todas las cotizaciones</button>
-                        </a>
+                        @if($data->quotes->count() > 0)
+                            <a href="{{ route('quotes.index') }}">
+                                <button class="btn btn-primary h-100">Ver todas las cotizaciones</button>
+                            </a>
+                        @endif
                     </div>
                 </div>
                 {{-- CATEGORÍAS --}}
