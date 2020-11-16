@@ -24,7 +24,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text adjusting-append-icons"><i class="fas fa-globe"></i></span>
                 </div>
-                <select class="form-control select2" data-placeholder="Categoría" name="categorie_id" id="categorie_id" data-name="categoría" data-required="true">
+                <select class="form-control select2" data-placeholder="Seleccione un modulo" name="categorie_id" id="categorie_id" data-name="modulo" data-required="true">
                     <option value=""></option>
                     @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>

@@ -37,7 +37,7 @@
                         <td class="align-middle" style="width: 5%;">{{ $cite->phone }}</td>
                         <td class="align-middle" style="width: 25%;">{{ $cite->description }}</td>
                         <td class="align-middle" style="width: 10%;">
-                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('cites.destroy', $cite->id) }}" data-id="{{ $cite->id }}" title="Eliminar jugador">
+                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('cites.destroy', $cite->id) }}" data-id="{{ $cite->id }}" title="Eliminar cita">
                                 <i class="far fa-trash-alt"></i>
                             </button>
                         </td>

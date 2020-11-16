@@ -72,6 +72,8 @@ function resetDataForm(){
     $.each($('.message_repeat_password'),function(key,element){
         element.innerHTML = '';
     })
+    if($('#categorie_id').length > 0)
+        $('#categorie_id').trigger('change')
 }
 
 // CONEXION CONTROLLER

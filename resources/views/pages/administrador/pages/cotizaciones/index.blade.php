@@ -33,7 +33,7 @@
                         <td class="align-middle" style="width: 5%;">{{ $quote->phone }}</td>
                         <td class="align-middle" style="width: 25%;">{{ $quote->description }}</td>
                         <td class="align-middle" style="width: 10%;">
-                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('quotes.destroy', $quote->id) }}" data-id="{{ $quote->id }}" title="Eliminar jugador">
+                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('quotes.destroy', $quote->id) }}" data-id="{{ $quote->id }}" title="Eliminar cotización">
                                 <i class="far fa-trash-alt"></i>
                             </button>
                         </td>

@@ -32,9 +32,9 @@
                             <button class="openModalAndGetValues btn btn-rounded btn-outline-info mt-1" data-modal="editSubcategory" data-route="{{ route('subcategories.edit', $subcategorie->id) }}" title="Editar categoría">
                                 <i class="far fa-edit"></i>
                             </button>
-                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('subcategories.destroy', $subcategorie->id) }}" data-id="{{ $subcategorie->id }}" title="Eliminar categoría">
+                            {{-- <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('subcategories.destroy', $subcategorie->id) }}" data-id="{{ $subcategorie->id }}" title="Eliminar categoría">
                                 <i class="far fa-trash-alt"></i>
-                            </button>
+                            </button> --}}
                         </td>
                     </tr>
                 @endforeach

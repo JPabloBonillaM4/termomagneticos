@@ -34,8 +34,19 @@
                     <div class="dropdown">
                         <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'construccion' || $actual_route == 'casos-exito') active-option @endif">ingeniería eléctrica</a>
                         <div class="dropdown-content t-13">
-                            <a href="{{ route('construccion') }}" class="text-uppercase @if($actual_route == 'construccion') font-weight-bold text-dark @endif">contrucción</a>
-                            <a href="{{ route('casos-exito') }}" class="text-uppercase @if($actual_route == 'casos-exito') font-weight-bold text-dark @endif">casos de éxito</a>
+                            {{-- <a href="{{ route('construccion') }}" class="text-uppercase @if($actual_route == 'construccion') font-weight-bold text-dark @endif">contrucción</a>
+                            <a href="{{ route('casos-exito') }}" class="text-uppercase @if($actual_route == 'casos-exito') font-weight-bold text-dark @endif">casos de éxito</a> --}}
+                            @foreach($categories as $category)
+                                @if($category->id == 1)
+                                    @foreach($category->subcategories as $subcategory)
+                                        <a 
+                                        href="@if($subcategory->id == 1){{ route('construccion') }}@elseif($subcategory->id == 2){{ route('casos-exito') }}@endif" 
+                                        class="text-uppercase @if($actual_route == 'construccion')@endif">
+                                            {{ $subcategory->name }}
+                                        </a>
+                                    @endforeach
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </li>
@@ -43,9 +54,20 @@
                     <div class="dropdown">
                         <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 @if($actual_route == 'blindaje' || $actual_route == 'cristales' || $actual_route == 'puertas') active-option @endif">física de radiaciones</a>
                         <div class="dropdown-content t-13">
-                            <a href="{{ route('blindaje') }}" class="text-uppercase @if($actual_route == 'blindaje') font-weight-bold text-dark @endif">blindaje</a>
+                            {{-- <a href="{{ route('blindaje') }}" class="text-uppercase @if($actual_route == 'blindaje') font-weight-bold text-dark @endif">blindaje</a>
                             <a href="{{ route('cristales') }}" class="text-uppercase @if($actual_route == 'cristales') font-weight-bold text-dark @endif">cristales</a>
-                            <a href="{{ route('puertas') }}" class="text-uppercase @if($actual_route == 'puertas') font-weight-bold text-dark @endif">puertas</a>
+                            <a href="{{ route('puertas') }}" class="text-uppercase @if($actual_route == 'puertas') font-weight-bold text-dark @endif">puertas</a> --}}
+                            @foreach($categories as $category)
+                                @if($category->id == 2)
+                                    @foreach($category->subcategories as $subcategory)
+                                        <a 
+                                        href="@if($subcategory->id == 1){{ route('blindaje') }}@elseif($subcategory->id == 2){{ route('cristales') }}@elseif($subcategory->id == 3){{ route('puertas') }}@endif" 
+                                        class="text-uppercase @if($actual_route == 'blindaje')@endif">
+                                            {{ $subcategory->name }}
+                                        </a>
+                                    @endforeach
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </li>
