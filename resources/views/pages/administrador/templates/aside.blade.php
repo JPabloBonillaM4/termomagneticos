@@ -67,7 +67,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                        <a href="{{ route('cites.index') }}" class="nav-link text-white">
+                        <a href="{{ route('quotes.index') }}" class="nav-link text-white">
                                 <i class="fas fa-list-alt nav-icon"></i>
                                 <p>Ver todas</p>
                             </a>
@@ -115,13 +115,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                        <a href="#" class="nav-link text-white">
+                        <a href="{{ route('subcategories.index') }}" class="nav-link text-white">
                                 <i class="fas fa-list-alt nav-icon"></i>
                                 <p>Ver todos</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">
+                            <a href="{{ route('subcategories.create') }}" class="nav-link text-white">
                                 <i class="fas fa-plus nav-icon"></i>
                                 <p>Agregar</p>
                             </a>

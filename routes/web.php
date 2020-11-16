@@ -40,6 +40,8 @@ Route::group(['middleware' => ['role:superadmin|moderator','auth']], function ()
     Route::get('dashboard', 'admin\AdminController@index')->name('admin.index');
     Route::resource('citas', 'admin\CitesController')->names('cites')->parameters(['cites' => 'id']);
     Route::resource('cotizaciones', 'admin\QuotesController')->names('quotes')->parameters(['quotes' => 'id']);
+    Route::resource('categorias', 'admin\SubcategoriesController')->names('subcategories')->parameters(['subcategories' => 'id'])->except(['update']);
+    Route::post('categorias/{id}', 'admin\SubcategoriesController@update')->name('subcategories.update');
 });
 
 // ALL USERS ROUTES

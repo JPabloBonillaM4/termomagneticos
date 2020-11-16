@@ -5,7 +5,7 @@
             <a class="nav-link text-white" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ route('admin.index') }}" class="nav-link text-white">Inicio</a>
+            <a href="{{ route('/') }}" class="nav-link text-white">Inicio</a>
         </li>
     </ul>
     <!-- Left navbar links -->

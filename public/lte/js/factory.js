@@ -45,6 +45,7 @@ $(document).ready( function () {
 // GENERAL FUNCTION TO GET DATA
 function getDataForm(form_id){
     let data = new FormData(form_id);
+    console.log(...data);
     try {
         for (const dato of data.entries()) {
             const element = dato[1]; //dato[1] => valor

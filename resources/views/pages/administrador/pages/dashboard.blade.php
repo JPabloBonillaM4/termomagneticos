@@ -69,11 +69,17 @@
                         <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-boxes"></i></span>
                         <div class="info-box-content">
                             <span class="info-box-text">Categorías (Proyectos)</span>
-                            {{-- <span class="info-box-number">{{ $data->players->count() }}</span> --}}
+                            @if($data->subcategories->count() > 0)
+                                {{ $data->subcategories->count() }}
+                            @else
+                                Sin categorias
+                            @endif
                         </div>
-                        <a href="{{ route('cites.index') }}">
-                            <button class="btn btn-primary h-100">Ver todos las categorías</button>
-                        </a>
+                        @if($data->subcategories->count() > 0)
+                            <a href="{{ route('subcategories.index') }}">
+                                <button class="btn btn-primary h-100">Ver todos las categorías</button>
+                            </a>
+                        @endif
                     </div>
                 </div>
             </div>
