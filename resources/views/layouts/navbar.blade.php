@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-lg-3 d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="{{ route('/') }}">
-                <img src="{{ asset('images/logo-png-1.png') }}" alt="logo" style="max-width: 150px">
+                <img src="{{ asset('images/logo-png-1.png') }}" alt="logo" style="max-width: 200px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

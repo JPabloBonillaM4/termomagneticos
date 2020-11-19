@@ -300,8 +300,9 @@
 
 .active-option{
     color: blue !important;
-    /* font-weight: 900; */
-    text-decoration: overline;
+    font-weight: 700;
+    border-top: 1.5px solid blue;
+    border-bottom: 1.5px solid blue;
 }
 
 .icon-solution-panel{

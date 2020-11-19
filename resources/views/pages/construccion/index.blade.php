@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">instalación de trasformadores de media y baja tensión</h2>
+                    <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">instalación de transformadores de media y baja tensión</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-3 row">
                             <a href="{{ asset('images/construccion/transformadores_1.jpg') }}" class="col-md-3 mb-4">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">instalaciones subterráneas de media y baja tensión norvativa CFE</h2>
+                    <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">instalaciones subterráneas de media y baja tensión normativa CFE</h2>
                     <div class="col-md-12 my-5">
                         <div class="cases-gallery-4 row">
                             <a href="{{ asset('images/construccion/registros_1.jpg') }}" class="col-md-3 mb-4">
