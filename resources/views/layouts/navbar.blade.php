@@ -61,7 +61,7 @@
                                 @if($category->id == 2)
                                     @foreach($category->subcategories as $subcategory)
                                         <a 
-                                        href="@if($subcategory->id == 1){{ route('blindaje') }}@elseif($subcategory->id == 2){{ route('cristales') }}@elseif($subcategory->id == 3){{ route('puertas') }}@endif" 
+                                        href="@if($subcategory->id == 3){{ route('blindaje') }}@elseif($subcategory->id == 4){{ route('cristales') }}@elseif($subcategory->id == 5){{ route('puertas') }}@endif" 
                                         class="text-uppercase @if($actual_route == 'blindaje')@endif">
                                             {{ $subcategory->name }}
                                         </a>
