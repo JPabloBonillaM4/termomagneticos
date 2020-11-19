@@ -100,4 +100,20 @@
             </ul>
         </div>
     </div>
+    <div class="numbers_nav">
+        <p class="mt-3 d-flex align-items-center justify-content-center">
+            <a href="tel:2222576165" class="text-primary">
+                <i class="fas fa-phone-square"></i> 
+                <span>Tel. (222) 257 6165</span>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="text-primary">|</span>
+        </p>
+        <p class="mt-3 d-flex align-items-center justify-content-center">
+            <a href="tel:2222576198" class="text-primary">
+                <i class="fas fa-phone-square"></i> 
+                <span>Tel. (222) 257 6198</span>
+            </a>
+        </p>
+    </div>
 </nav>

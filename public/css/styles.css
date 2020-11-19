@@ -337,6 +337,22 @@
     color: #ffffff;
 }
 
+.numbers_nav{
+    display: flex;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 0.9rem;
+}
+
+.numbers_nav p{
+    margin-right: 1rem;
+}
+
+.numbers_nav i{
+    font-size: 0.9rem;
+}
+
 @media only screen and (max-width: 768px) {
     .title,.title_2{
         font-size: 2rem;

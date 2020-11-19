@@ -1,16 +1,11 @@
 @extends('index')
 @section('title','componentes')
 @section('content')
-    <div class="parallax-medium titulo_componentes">
+    {{-- <div class="parallax-medium titulo_componentes">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">componentes</p>
-            {{-- <a data-scroll href="#inicio" class="arrow_ancle">
-                <div class="arrow bounce mt-5 mobile_arrow">
-                    <span class="fa fa-arrow-down fa-2x"></span>
-                </div>
-            </a> --}}
         </div>
-    </div>
+    </div> --}}
     <div class="parallax-simple background_componentes" id="inicio">
         <div class="background-shadow py-5">
             <div class="pt-5 d-flex justify-content-center align-items-center">
