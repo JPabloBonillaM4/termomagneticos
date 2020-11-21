@@ -85,7 +85,7 @@
             "type"   : "GET",
             "method" : "GET",
             "cache"  : false,
-            "data"   : { "date" : $(this).val()},
+            "data"   : { "date" : $(this).val() },
             success : function(response) {
                 if(!response.error){
                     showToast('EXITO',response.message,'green');

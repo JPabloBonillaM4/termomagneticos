@@ -36,6 +36,12 @@
                             <a href="{{ asset('images/casos-exito/elementa_6.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/elementa_6.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
+                            <a href="{{ asset('images/casos-exito/elementa_7.jpg') }}" class="col-md-3 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_7.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </a>
+                            <a href="{{ asset('images/casos-exito/elementa_8.jpg') }}" class="col-md-3 mb-4">
+                                <img src="{{ asset('images/casos-exito/elementa_8.jpg') }}" class="img-fluid img-gallery" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +99,6 @@
                             <a href="{{ asset('images/casos-exito/cervezeras_4.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_4.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-
                             <a href="{{ asset('images/casos-exito/cervezeras_5.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_5.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
@@ -106,33 +111,21 @@
                             <a href="{{ asset('images/casos-exito/cervezeras_8.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_8.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-
                             <a href="{{ asset('images/casos-exito/cervezeras_9.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_9.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
                             <a href="{{ asset('images/casos-exito/cervezeras_10.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_10.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-                            {{-- <a href="{{ asset('images/casos-exito/cervezeras_11.jpeg') }}" class="col-md-3 mb-4">
-                                <img src="{{ asset('images/casos-exito/cervezeras_11.jpeg') }}" class="img-fluid img-gallery" alt="">
-                            </a> --}}
                             <a href="{{ asset('images/casos-exito/cervezeras_12.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_12.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-
-                            {{-- <a href="{{ asset('images/casos-exito/cervezeras_13.jpg') }}" class="col-md-3 mb-4">
-                                <img src="{{ asset('images/casos-exito/cervezeras_13.jpg') }}" class="img-fluid img-gallery" alt="">
-                            </a> --}}
-                            {{-- <a href="{{ asset('images/casos-exito/cervezeras_14.jpg') }}" class="col-md-3 mb-4">
-                                <img src="{{ asset('images/casos-exito/cervezeras_14.jpg') }}" class="img-fluid img-gallery" alt="">
-                            </a> --}}
                             <a href="{{ asset('images/casos-exito/cervezeras_15.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_15.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
                             <a href="{{ asset('images/casos-exito/cervezeras_16.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_16.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-
                             <a href="{{ asset('images/casos-exito/cervezeras_17.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_17.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
@@ -142,10 +135,6 @@
                             <a href="{{ asset('images/casos-exito/cervezeras_19.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_19.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-                            {{-- <a href="{{ asset('images/casos-exito/cervezeras_20.jpg') }}" class="col-md-3 mb-4">
-                                <img src="{{ asset('images/casos-exito/cervezeras_20.jpg') }}" class="img-fluid img-gallery" alt="">
-                            </a> --}}
-
                             <a href="{{ asset('images/casos-exito/cervezeras_21.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_21.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
@@ -158,16 +147,12 @@
                             <a href="{{ asset('images/casos-exito/cervezeras_24.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_24.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-
                             <a href="{{ asset('images/casos-exito/cervezeras_25.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_25.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
                             <a href="{{ asset('images/casos-exito/cervezeras_26.jpg') }}" class="col-md-3 mb-4">
                                 <img src="{{ asset('images/casos-exito/cervezeras_26.jpg') }}" class="img-fluid img-gallery" alt="">
                             </a>
-                            {{-- <a href="{{ asset('images/casos-exito/cervezeras_27.jpeg') }}" class="col-md-3 mb-4">
-                                <img src="{{ asset('images/casos-exito/cervezeras_27.jpeg') }}" class="img-fluid img-gallery" alt="">
-                            </a> --}}
                         </div>
                     </div>
                 </div>
