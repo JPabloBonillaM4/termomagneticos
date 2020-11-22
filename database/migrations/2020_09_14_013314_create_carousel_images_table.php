@@ -15,12 +15,9 @@ class CreateCarouselImagesTable extends Migration
     {
         Schema::create('carousel_images', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('component_id')->default(0);
             $table->text('image_url')->nullable();
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('component_id')->references('id')->on('componentes');
         });
     }
 

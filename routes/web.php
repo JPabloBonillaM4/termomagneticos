@@ -19,11 +19,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('componentes', 'ComponenteController')->names('componentes')->only(['index','show']);
 Route::get('tableros-distribucion', 'TablerosController@index')->name('tableros_distribucion');
 Route::get('calidad-energía', 'CalidadController@index')->name('calidad_energía');
-Route::view('construccion','pages.construccion.index')->name('construccion');
-Route::view('casos-exito','pages.casos-exito.index')->name('casos-exito');
-Route::view('blindaje','pages.blindaje.index')->name('blindaje');
-Route::view('cristales','pages.cristales.index')->name('cristales');
-Route::view('puertas','pages.puertas.index')->name('puertas');
+Route::get('construccion','ProjectsController@indexConstruccion')->name('construccion');
+Route::get('casos-exito','ProjectsController@indexCasosExito')->name('casos-exito');
+Route::get('blindaje','ProjectsController@indexBlindaje')->name('blindaje');
+Route::get('cristales','ProjectsController@indexCristales')->name('cristales');
+Route::get('puertas','ProjectsController@indexPuertas')->name('puertas');
 Route::view('contacto','pages.contacto.index')->name('contacto');
 Route::get('getCites', 'admin\CitesController@getCites')->name('getCites');
 // Email
@@ -34,7 +34,6 @@ Route::post('sendEmailCite', 'EmailController@sendEmailCite')->name('sendEmailCi
 Route::group(['middleware' => ['role:superadmin','auth']], function () {
     // Route::resource('citas', 'admin\CitesController@index')->names('tournaments')->parameters(['tournaments' => 'id'])->except(['update']);
 });
-
 // ADMIN && MODERATOR ROUTES
 Route::group(['middleware' => ['role:superadmin|moderator','auth']], function () {
     Route::get('dashboard', 'admin\AdminController@index')->name('admin.index');
@@ -42,9 +41,10 @@ Route::group(['middleware' => ['role:superadmin|moderator','auth']], function ()
     Route::resource('cotizaciones', 'admin\QuotesController')->names('quotes')->parameters(['quotes' => 'id']);
     Route::resource('categorias', 'admin\SubcategoriesController')->names('subcategories')->parameters(['subcategories' => 'id'])->except(['update']);
     Route::post('categorias/{id}', 'admin\SubcategoriesController@update')->name('subcategories.update');
+    Route::resource('proyectos', 'admin\ProjectsController')->names('projects')->parameters(['projects' => 'id'])->except(['update']);
+    Route::post('proyectos/{id}', 'admin\ProjectsController@update')->name('projects.update');
 });
-
 // ALL USERS ROUTES
 Route::group(['middleware' => ['role:superadmin|moderator|guest','auth']], function () {
-
+    //
 });

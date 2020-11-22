@@ -189,7 +189,7 @@
 }
 
 .rounded-img{
-    border-radius: 50%;
+    border-radius: 30%;
     width: 125px;
     height: 125px;
 }
@@ -264,7 +264,7 @@
 }
 
 .menu-float a{
-    background-color: #1f3c88;
+    background-color: #51adcf;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -272,6 +272,14 @@
     text-decoration: none;
     transition: linear .2s;
     width: 45px;
+}
+
+.menu-float a:nth-child(2){
+    background-color: #1f6f8b;
+}
+
+.menu-float a:nth-child(3){
+    background-color: #3b5998;
 }
 
 .menu-float a:last-of-type{
@@ -296,6 +304,29 @@
 
 .icon-resize{
     font-size: 1.3rem;
+}
+
+.active-option-fixed-x{
+    color: #000000 !important;
+    font-weight: 700;
+    border-right: 1.5px solid #000000;
+    border-left: 1.5px solid #000000;
+    /* border: 1.5px solid #000000; */
+}
+
+.active-option-x{
+    color: blue !important;
+    font-weight: 700;
+    border-right: 1.5px solid blue;
+    border-left: 1.5px solid blue;
+    /* border: 1.5px solid blue; */
+}
+
+.active-option-fixed{
+    color: #000000 !important;
+    font-weight: 700;
+    border-top: 1.5px solid #000000;
+    border-bottom: 1.5px solid #000000;
 }
 
 .active-option{
@@ -340,8 +371,8 @@
 .numbers_nav{
     display: flex;
     position: absolute;
-    top: -10px;
-    right: 10px;
+    right: -5px;
+    bottom: -10px;
     font-size: 0.9rem;
 }
 

@@ -8,11 +8,11 @@
 <div class="card change-card m-0">
     <div class="card-header row justify-content-between align-items-center">
         <div class="col-md-6">
-            <h3 class="card-title">Admistración de categorias</h3>
+            <h3 class="card-title">Admistración de categorias de los proyectos</h3>
         </div>
-        <div class="col-md-12 d-flex justify-content-end">
+        {{-- <div class="col-md-12 d-flex justify-content-end">
             <a href="{{ route('subcategories.create') }}" class="btn btn-success">Nueva categoría &nbsp;<i class="fa fa-plus"></i></a>
-        </div>
+        </div> --}}
     </div>
     <div class="card-body table-overflow">
         <table class="dataTable table table-bordered table-striped change-table over-auto-datatable">

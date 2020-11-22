@@ -7,6 +7,10 @@
         <i class="fas fa-file-alt"></i>
         <span>Cotización</span>
     </a>
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=100053532734263">
+        <i class="fab fa-facebook-square"></i>
+        <span>Facebook</span>
+    </a>
     <a target="_blank" href="https://api.whatsapp.com/send?phone=522223850413&text=hola,%20estoy%20interesado%20en%20...">
         <i class="fab fa-whatsapp"></i>
         <span>Whatsapp</span>

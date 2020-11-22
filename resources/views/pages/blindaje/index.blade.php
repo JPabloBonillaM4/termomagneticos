@@ -1,5 +1,5 @@
 @extends('index')
-@section('title','tableros')
+@section('title','blindaje')
 @section('content')
     <div class="parallax-medium titulo_blindaje">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
@@ -14,66 +14,18 @@
     <div class="container" id="inicio">
         <div class="row text-center">
             <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">proyectos</h2>
-            <p class="text-uppercase text-center col-md-12 mt-3 font-weight-bold">hospital</p>
-            <div class="col-md-12 mb-5 mt-3">
-                <div class="cases-gallery-1 row m-auto">
-                    <a href="{{ asset('images/blindaje/blindaje_1.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_1.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_2.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_2.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_3.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_3.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_4.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_4.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-
-                    <a href="{{ asset('images/blindaje/blindaje_5.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_5.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_6.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_6.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_7.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_7.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_8.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_8.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-
-                    <a href="{{ asset('images/blindaje/blindaje_9.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_9.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_10.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_10.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_11.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_11.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_12.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_12.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-
-                    <a href="{{ asset('images/blindaje/blindaje_13.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_13.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_14.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_14.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_15.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_15.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-                    <a href="{{ asset('images/blindaje/blindaje_16.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_16.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
-
-                    <a href="{{ asset('images/blindaje/blindaje_17.webp') }}" class="col-md-3 mb-4">
-                        <img src="{{ asset('images/blindaje/blindaje_17.webp') }}" class="img-fluid img-gallery" alt="">
-                    </a>
+            @foreach ($proyectos as $proyecto)
+                <p class="text-uppercase text-center col-md-12 mt-3 font-weight-bold">{{ $proyecto->title }}</p>
+                <div class="col-md-12 mb-5 mt-3">
+                    <div class="cases-gallery-1 row m-auto">
+                        @foreach ($proyecto->images as $imagen)
+                            <a href="{{ asset($imagen->image_url) }}" class="col-md-3 mb-4">
+                                <img src="{{ asset($imagen->image_url) }}" class="img-fluid img-gallery" alt="">
+                            </a>
+                        @endforeach
+                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 @endsection

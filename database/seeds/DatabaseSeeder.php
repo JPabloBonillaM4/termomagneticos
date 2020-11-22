@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
             ComponenteSeeder::class,
             UserSeeder::class,
             ProjectCategorieSeeder::class,
-            ProjectSubcategorieSeeder::class
+            ProjectSubcategorieSeeder::class,
+            ProjectSeeder::class
         ]);
     }
 }

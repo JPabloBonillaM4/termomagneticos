@@ -83,33 +83,9 @@
 
                 <li class="nav-item has-treeview">
                     <a href="javascript:void(0);" class="nav-link text-white">
-                        <i class="nav-icon fas fa-medal"></i>
-                        <p>
-                            Proyectos
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                        <a href="#" class="nav-link text-white">
-                                <i class="fas fa-list-alt nav-icon"></i>
-                                <p>Ver todos</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white">
-                                <i class="fas fa-plus nav-icon"></i>
-                                <p>Agregar</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item has-treeview">
-                    <a href="javascript:void(0);" class="nav-link text-white">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Categorías (Proyectos)
+                            Categorías
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -120,8 +96,32 @@
                                 <p>Ver todos</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{ route('subcategories.create') }}" class="nav-link text-white">
+                                <i class="fas fa-plus nav-icon"></i>
+                                <p>Agregar</p>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="javascript:void(0);" class="nav-link text-white">
+                        <i class="nav-icon fas fa-medal"></i>
+                        <p>
+                            Proyectos
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                        <a href="{{ route('projects.index') }}" class="nav-link text-white">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <p>Ver todos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('projects.create') }}" class="nav-link text-white">
                                 <i class="fas fa-plus nav-icon"></i>
                                 <p>Agregar</p>
                             </a>

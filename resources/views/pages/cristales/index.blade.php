@@ -13,29 +13,20 @@
 </div>
 <div class="container" id="inicio">
     <div class="row text-center">
-        <p class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">Hospital</p>
-        <div class="col-md-12 mb-5 mt-3">
-            <div class="cases-gallery-1 row w-75 m-auto">
-                <a href="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
-                <a href="{{ asset('images/casos-exito/elementa_2.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_2.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
-                <a href="{{ asset('images/casos-exito/elementa_3.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_3.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
-                <a href="{{ asset('images/casos-exito/elementa_4.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_4.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
-                <a href="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_1.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
-                <a href="{{ asset('images/casos-exito/elementa_2.jpg') }}" class="col-md-4 mb-4">
-                    <img src="{{ asset('images/casos-exito/elementa_2.jpg') }}" class="img-fluid img-gallery" alt="">
-                </a>
+        @foreach ($proyectos as $proyecto)
+            <div class="row text-center">
+                <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
+                <div class="col-md-12 my-5">
+                    <div class="cases-gallery-4 row">
+                        @foreach ($proyecto->images as $imagen)
+                            <a href="{{ asset($imagen->image_url) }}" class="col-md-3 mb-4">
+                                <img src="{{ asset($imagen->image_url) }}" class="img-fluid img-gallery" alt="">
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
             </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection

@@ -74,6 +74,8 @@ function resetDataForm(){
     })
     if($('#categorie_id').length > 0)
         $('#categorie_id').trigger('change')
+    if($("#imagesFilesProject").val(null))
+        $("#imagesFilesProject").val(null);
 }
 
 // CONEXION CONTROLLER

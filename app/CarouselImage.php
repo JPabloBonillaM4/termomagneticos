@@ -11,11 +11,15 @@ class CarouselImage extends Model
 
     protected $table = 'carousel_images';
     protected $fillable = [
-        'product_id',
+        'project_id',
         'image_url'
     ];
 
-    public function component(){
-        return $this->belongsTo('App\Models\Component');
+    // public function component(){
+    //     return $this->belongsTo('App\Componente');
+    // }
+
+    public function project(){
+        return $this->belongsTo('App\Project','project_id','id');
     }
 }

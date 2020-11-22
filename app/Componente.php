@@ -17,7 +17,7 @@ class Componente extends Model
     ];
 
     public function images(){
-        return $this->hasMany('App\Models\CarouselImage');
+        return $this->hasMany('App\CarouselImage');
     }
 
     public function scopeGetAllComponents($query){
