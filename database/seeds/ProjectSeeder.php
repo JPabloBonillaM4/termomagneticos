@@ -115,11 +115,11 @@ class ProjectSeeder extends Seeder
         Project::create([
             'title'          => 'hospital',
             'subcategory_id' => 3
-        ])->images()->saveMany([
-            new CarouselImage(['image_url' => 'images/blindaje/blindaje_1.webp']),
-            new CarouselImage(['image_url' => 'images/blindaje/blindaje_2.webp']),
+        ])->images()->saveMany([            
             new CarouselImage(['image_url' => 'images/blindaje/blindaje_3.webp']),
             new CarouselImage(['image_url' => 'images/blindaje/blindaje_4.webp']),
+            new CarouselImage(['image_url' => 'images/blindaje/blindaje_1.webp']),
+            new CarouselImage(['image_url' => 'images/blindaje/blindaje_2.webp']),
             new CarouselImage(['image_url' => 'images/blindaje/blindaje_5.webp']),
             new CarouselImage(['image_url' => 'images/blindaje/blindaje_6.webp']),
             new CarouselImage(['image_url' => 'images/blindaje/blindaje_7.webp']),

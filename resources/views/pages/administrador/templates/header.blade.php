@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('lte/css/preloader.css?v='.rand()) }}">
 </head>
 {{-- HEADER --}}
-<body class="hold-transition sidebar-mini sidebar-collapse">
+<body class="hold-transition sidebar-mini">
     <div class="loader_bg">
         <div class="loader"></div>
     </div>

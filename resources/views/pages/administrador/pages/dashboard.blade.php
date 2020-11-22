@@ -1,7 +1,7 @@
 @extends('pages.administrador.index')
 @section('title','Termomagnéticos | Administrador')
 @section('contenido')
-@section('content-header','DASHBOARD')
+@section('content-header','PANEL PRINCIPAL')
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 d-flex flex-column">

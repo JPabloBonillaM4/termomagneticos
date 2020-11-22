@@ -21,7 +21,7 @@
                     <a href="javascript:void(0);" class="nav-link text-white">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                        Dashboard
+                        Panel principal
                         <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
