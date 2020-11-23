@@ -14,6 +14,10 @@ class ProjectsController extends Controller
         return view('pages.administrador.pages.proyectos.index',compact('projects'));
     }
 
+    public static function getAllProjects(){
+        return Project::GetAllProjects();
+    }
+
     public function create()
     {
         $subcategories = ProjectSubcategorie::all();

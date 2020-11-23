@@ -12,9 +12,9 @@
         </div>
     </div>
     <div class="container" id="inicio">
-        <div class="row text-center">
-            <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">proyectos</h2>
-            @foreach ($proyectos as $proyecto)
+        <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">proyectos</h2>
+        @foreach ($proyectos as $proyecto)
+            <div class="row text-center" id="{{ $proyecto->id }}"
                 <p class="text-uppercase text-center col-md-12 mt-3 font-weight-bold">{{ $proyecto->title }}</p>
                 <div class="col-md-12 mb-5 mt-3">
                     <div class="cases-gallery-1 row m-auto">
@@ -25,7 +25,8 @@
                         @endforeach
                     </div>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
+@include('layouts.menu-projects')
 @endsection

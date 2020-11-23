@@ -27,8 +27,8 @@
                 @foreach($projects as $project)
                     <tr class="text-center">
                         <td class="align-middle" style="width: 45%;">{{ $project->title }}</td>
-                        <td class="align-middle" style="width: 45%;">{{ $project->subcategory->first()->name }}</td>
-                        <td class="align-middle" style="width: 10%;">
+                        <td class="align-middle" style="width: 25%;">{{ $project->subcategory->first()->name }}</td>
+                        <td class="align-middle" style="width: 30%;">
                             <button class="openModalAndGetValues btn btn-rounded btn-outline-info mt-1" data-modal="editProject" data-route="{{ route('projects.edit', $project->id) }}" title="Editar proyecto">
                                 <i class="far fa-edit"></i>
                             </button>

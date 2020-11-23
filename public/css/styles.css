@@ -257,35 +257,31 @@
 .menu-float{
     position: fixed;
     top: 25%;
-    right: 2%;
+    right: 1%;
     display: flex;
     flex-direction: column;
     z-index: 999;
 }
-
 .menu-float a{
-    background-color: #51adcf;
-    padding: 1rem;
-    border-radius: 50%;
     margin-bottom: 1rem;
     color: white;
     text-decoration: none;
     transition: linear .2s;
-    width: 45px;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #51adcf;
 }
-
 .menu-float a:nth-child(2){
-    background-color: #1f6f8b;
+    border-bottom: 50px solid #1f6f8b;
 }
-
 .menu-float a:nth-child(3){
-    background-color: #3b5998;
+    border-bottom: 50px solid #3b5998;
 }
-
 .menu-float a:last-of-type{
-    background-color: #00bb2d;
+    border-bottom: 50px solid #00bb2d;
 }
-
 .menu-float a:hover{
     width: 130px;
     border-radius: 0;
@@ -293,19 +289,49 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.menu-float a:nth-child(1):hover{
+    background-color: #51adcf;
+}
+.menu-float a:nth-child(2):hover{
+    background-color: #1f6f8b;
+}
+.menu-float a:nth-child(3):hover{
+    background-color: #3b5998;
+}
+.menu-float a:last-of-type:hover{
+    background-color: #00bb2d;
+}
+.menu-float i{
+    margin-top: 23px;
+    margin-left: -7px;
+}
 .menu-float span{
+    margin-top: 23px;
+    margin-left: -7px;
     display: none;
 }
-
+.menu-float a:hover i{
+    margin-top: 3rem;
+}
 .menu-float a:hover span{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
     display: block;
 }
-
+.menu-project{
+    position: fixed;
+    top: 25%;
+    display: flex;
+    background-color: #e1e1e1;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    left: 1%;
+    align-items: center;
+}
 .icon-resize{
     font-size: 1.3rem;
 }
-
 .active-option-fixed-x{
     color: #000000 !important;
     font-weight: 700;
@@ -313,7 +339,6 @@
     border-left: 1.5px solid #000000;
     /* border: 1.5px solid #000000; */
 }
-
 .active-option-x{
     color: blue !important;
     font-weight: 700;

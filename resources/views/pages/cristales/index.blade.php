@@ -14,7 +14,7 @@
 <div class="container" id="inicio">
     <div class="row text-center">
         @foreach ($proyectos as $proyecto)
-            <div class="row text-center">
+            <div class="row text-center" id="{{ $proyecto->id }}">
                 <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
                 <div class="col-md-12 my-5">
                     <div class="cases-gallery-4 row">
@@ -29,4 +29,5 @@
         @endforeach
     </div>
 </div>
+@include('layouts.menu-projects')
 @endsection

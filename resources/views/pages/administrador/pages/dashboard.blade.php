@@ -54,9 +54,13 @@
                         <span class="info-box-icon bg-success elevation-1"><i class="fas fa-archive"></i></span>
                         <div class="info-box-content">
                             <span class="info-box-text">Proyectos</span>
-                            {{-- <span class="info-box-number">{{ $data->players->count() }}</span> --}}
+                            @if($data->projects->count() > 0)
+                                {{ $data->projects->count() }}
+                            @else
+                                Sin proyectos
+                            @endif
                         </div>
-                        <a href="{{ route('cites.index') }}">
+                        <a href="{{ route('projects.index') }}">
                             <button class="btn btn-primary h-100">Ver todos los proyectos</button>
                         </a>
                     </div>

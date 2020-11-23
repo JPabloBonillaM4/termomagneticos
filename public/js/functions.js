@@ -1,5 +1,8 @@
 (()=>{
     // CKEDITOR.replace( 'editor1' );
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
     // OPEN MODAL FOR COMPONENTS
     $(document).on('click','.showComponent', function(){
         let route = $(this).data('route');
