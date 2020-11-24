@@ -3,14 +3,42 @@
     <div class="parallax section1">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <h1 class="text-white text-uppercase text-center title adjust_title container">termomagnéticos y control de radiaciones S.A de C.V</h1>
-            <a data-scroll href="#quienes_somos" class="arrow_ancle">
+            {{-- <a data-scroll href="#quienes_somos" class="arrow_ancle">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>
                 </div>
-            </a>
+            </a> --}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center mt-5">
+                        <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="quienes_somos">
+                            <div class="animationScale">
+                                <img src="{{ asset('images/seccion_inicio/section_2.jpg') }}" class="rounded-img" alt="img_componente">
+                            </div>
+                            <p class="text-uppercase font-weight-bold mt-3 text-white">¿quienes somos?</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center mt-5">
+                        <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="filosofia">
+                            <div class="animationScale">
+                                <img src="{{ asset('images/seccion_inicio/section_3.jpg') }}" class="rounded-img" alt="img_componente">
+                            </div>
+                            <p class="text-uppercase font-weight-bold mt-3 text-white">filosofía</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center mt-5">
+                        <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="clientes">
+                            <div class="animationScale">
+                                <img src="{{ asset('images/seccion_inicio/volkswagen_logo.jpg') }}" class="rounded-img" alt="img_componente">
+                            </div>
+                            <p class="text-uppercase font-weight-bold mt-3 text-white">Algunos de nuestros clientes</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="parallax section2" id="quienes_somos">
+    {{-- <div class="parallax section2" id="quienes_somos">
         <div class="h-100 dis-flex flex-column justify-content-center align-items-center background-shadow">
             <div class="mb-4 dis-flex justify-content-around w-100 align-items-center columnFlex">
                 <img src="{{ asset('images/eaton-logo-1.png') }}" class="mb-4 hide_on_mobile" alt="logo 3" style="max-width: 250px; margin-top: 3%;">
@@ -26,8 +54,8 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="parallax section3" id="filosofia">
+    </div> --}}
+    {{-- <div class="parallax section3" id="filosofia">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <div class="mb-4 dis-flex justify-content-around w-100 align-items-center columnFlex">
                 <h2 class="text-white text-uppercase display-5 title_2 mb-4">filosofía</h2>
@@ -42,8 +70,8 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="py-4" id="clientes">
+    </div> --}}
+    {{-- <div class="py-4" id="clientes">
         <div class="col-md-12">
             <p class="display-4 text-center mb-4">Algunos de nuestros clientes</p>
         </div>
@@ -77,5 +105,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+@include('pages.modals-index')
 @endsection

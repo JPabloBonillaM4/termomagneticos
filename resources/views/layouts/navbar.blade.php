@@ -13,18 +13,18 @@
                 <li class="nav-item d-flex justify-content-center mr-3 py-3">
                     <div class="dropdown">
                         <a class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == '/') active-option @endif" href="{{ route('/') }}">¿quiénes somos?</a>
-                        <div class="dropdown-content t-13">
+                        {{-- <div class="dropdown-content t-13">
                             <a data-scroll href="{{ route('/').'#quienes_somos' }}" class="text-uppercase">Nosotros</a>
                             <a data-scroll href="{{ route('/').'#filosofia' }}" class="text-uppercase">Filosofía</a>
                             <a data-scroll href="{{ route('/').'#clientes' }}" class="text-uppercase">Clientes</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </li>
                 <li class="nav-item d-flex justify-content-center mr-3 py-3">
                     <div class="dropdown">
                         <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">venta componentes</a>
                         <div class="dropdown-content t-13">
-                            <a href="{{ route('componentes.index') }}" class="text-uppercase @if($actual_route == 'componentes.index') font-weight-bold text-dark @endif">componentes</a>
+                            <a href="{{ route('componentes.index') }}" class="text-uppercase @if($actual_route == 'componentes.index') font-weight-bold text-dark @endif">componentes eaton</a>
                             <a href="{{ route('tableros_distribucion') }}" class="text-uppercase @if($actual_route == 'tableros_distribucion') font-weight-bold text-dark @endif">control y distribución</a>
                             <a href="{{ route('calidad_energía') }}" class="text-uppercase @if($actual_route == 'calidad_energía') font-weight-bold text-dark @endif">Calidad de la energía</a>
                         </div>

@@ -1,19 +1,10 @@
 @extends('index')
 @section('title','tableros')
 @section('content')
-    <div class="parallax-medium titulo_contruccion">
+    <div class="parallax-simple titulo_contruccion">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
-            <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">construcción sistemas media y baja tensión</p>
-            {{-- <a data-scroll href="#inicio" class="arrow_ancle">
-                <div class="arrow bounce mt-5 mobile_arrow">
-                    <span class="fa fa-arrow-down fa-2x"></span>
-                </div>
-            </a> --}}
-        </div>
-    </div>
-    <div class="parallax-simple background_contruccion" id="inicio">
-        <div class="background-shadow">
-            <div class="container text-white">
+            <p class="mt-5 text-white text-uppercase text-center title container r2_mobile">construcción sistemas media y baja tensión</p>
+            <div class="container text-white mt-5">
                 {{-- @foreach ($proyectos as $proyecto)
                     <div class="row text-center" id="{{ $proyecto->id }}">
                         <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
@@ -32,5 +23,10 @@
             </div>
         </div>
     </div>
+    {{-- <div class="parallax-simple background_contruccion" id="inicio">
+        <div class="background-shadow">
+            
+        </div>
+    </div> --}}
 {{-- @include('layouts.menu-projects') --}}
 @endsection
