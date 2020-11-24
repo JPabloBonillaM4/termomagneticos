@@ -14,7 +14,7 @@
     <div class="parallax-simple section_cases" id="inicio">
         <div class="background-shadow">
             <div class="container">
-                @foreach ($proyectos as $proyecto)
+                {{-- @foreach ($proyectos as $proyecto)
                     <div class="row text-center" id="{{ $proyecto->id }}">
                         <h2 class="text-white text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
                         <div class="col-md-12 my-5">
@@ -27,9 +27,10 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @endforeach --}}
+                @include('layouts.menu-circle-projects')
             </div>
         </div>
     </div>
-@include('layouts.menu-projects')
+{{-- @include('layouts.menu-projects') --}}
 @endsection

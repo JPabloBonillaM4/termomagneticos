@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('subtitle')->nullable();
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

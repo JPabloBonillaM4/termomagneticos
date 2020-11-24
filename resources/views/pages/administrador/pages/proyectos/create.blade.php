@@ -17,7 +17,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text adjusting-append-icons"><i class="fab fa-elementor"></i></span>
                 </div>
-                <input type="text" class="form-control" id="name" name="name" data-name="nombre(s)" placeholder="Titulo del proyecto" data-required="true">
+                <input type="text" class="form-control" id="title" name="title" data-name="nombre(s)" placeholder="Titulo del proyecto" data-required="true">
             </div>
             <!-- Categoría -->
             <div class="input-group mb-3" style="color: #495057;">
@@ -34,7 +34,7 @@
             <!-- Fotos -->
             <p class="text-muted">Seleccione las imágenes para el proyecto</p>
             <div class="input-group mb-3">
-                <input type="file" name="images[]" multiple id="imagesFilesProject" >
+                <input type="file" name="images[]" multiple id="imagesFilesProject" accept="image/*">
             </div>
         </div>
         <div class="card-footer d-flex justify-content-center">

@@ -57,6 +57,12 @@ function getDataForm(form_id){
                 return false;
             }
         }
+        if($("#imagesFilesProject").length > 0){
+            if($("#imagesFilesProject").val() == null || $("#imagesFilesProject").val() == ''){
+                showAlert('CUIDADO',`Seleccione una imagen o imagenes para el proyecto`,'yellow');
+                return false;
+            }
+        }
         return data;
     } catch (error) {
         console.error('El ID y el NAME de los inputs debe ser igual, DATA-NAME se usa para detectar el nombre del input vacío');

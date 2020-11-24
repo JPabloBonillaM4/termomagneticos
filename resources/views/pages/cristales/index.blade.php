@@ -11,23 +11,26 @@
         </a> --}}
     </div>
 </div>
-<div class="container" id="inicio">
-    <div class="row text-center">
-        @foreach ($proyectos as $proyecto)
-            <div class="row text-center" id="{{ $proyecto->id }}">
-                <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
-                <div class="col-md-12 my-5">
-                    <div class="cases-gallery-4 row">
-                        @foreach ($proyecto->images as $imagen)
-                            <a href="{{ asset($imagen->image_url) }}" class="col-md-3 mb-4">
-                                <img src="{{ asset($imagen->image_url) }}" class="img-fluid img-gallery" alt="">
-                            </a>
-                        @endforeach
+<div class="parallax-simple section_cases" id="inicio">
+    <div class="background-shadow">
+        <div class="container">
+            {{-- @foreach ($proyectos as $proyecto)
+                <div class="row text-center" id="{{ $proyecto->id }}">
+                    <h2 class="text-uppercase text-center col-md-12 mt-5 display-5 font-weight-bold r2_mobile">{{ $proyecto->title }}</h2>
+                    <div class="col-md-12 my-5">
+                        <div class="cases-gallery-4 row">
+                            @foreach ($proyecto->images as $imagen)
+                                <a href="{{ asset($imagen->image_url) }}" class="col-md-3 mb-4">
+                                    <img src="{{ asset($imagen->image_url) }}" class="img-fluid img-gallery" alt="">
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach --}}
+            @include('layouts.menu-circle-projects')
+        </div>
     </div>
 </div>
-@include('layouts.menu-projects')
+{{-- @include('layouts.menu-projects') --}}
 @endsection

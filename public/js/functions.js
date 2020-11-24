@@ -185,6 +185,10 @@
             "position" : "topRight"
         });
     }
+
+    $('.modal-project').click(function(){
+        $(`#${$(this).data('modal')}`).modal('show');
+    });
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     if($('.cases-gallery-1 a').length > 0)
