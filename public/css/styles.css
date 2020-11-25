@@ -411,7 +411,20 @@
     font-size: 0.9rem;
 }
 
+.left-corner{
+    position: absolute;
+    top: 22%;
+    left: 1%;
+    color: #ffffff;
+    text-align: center;
+    width: 35%;
+}
+
 @media only screen and (max-width: 768px) {
+    .left-corner{
+        width: 80%;
+        top: 25%;
+    }
     .title,.title_2{
         font-size: 2rem;
     }

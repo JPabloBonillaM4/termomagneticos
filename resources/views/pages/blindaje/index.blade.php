@@ -7,6 +7,7 @@
             <div class="container">
                 <h2 class="text-uppercase text-white text-center col-md-12 pt-5 display-5 font-weight-bold r2_mobile">proyectos</h2>
                 @include('layouts.menu-circle-projects')
+                @include('pages.menus.radiaciones-menu')
             </div>
         </div>
     </div>

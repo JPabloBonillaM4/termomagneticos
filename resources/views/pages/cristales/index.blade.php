@@ -6,6 +6,7 @@
         <p class="text-white text-uppercase text-center title mt-5 container r2_mobile">cristales</p>
         <div class="container">
             @include('layouts.menu-circle-projects')
+            @include('pages.menus.radiaciones-menu')
         </div>
     </div>
 </div>

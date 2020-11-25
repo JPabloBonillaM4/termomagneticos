@@ -52,11 +52,11 @@
                 </li>
                 <li class="nav-item d-flex justify-content-center mr-3 py-3">
                     <div class="dropdown">
-                        <a href="javascript:void(0)" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'blindaje' || $actual_route == 'cristales' || $actual_route == 'puertas') active-option @endif">física de radiaciones</a>
-                        <div class="dropdown-content t-13">
-                            {{-- <a href="{{ route('blindaje') }}" class="text-uppercase @if($actual_route == 'blindaje') font-weight-bold text-dark @endif">blindaje</a>
+                        <a href="{{ route('radiaciones') }}" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'radiaciones' || $actual_route == 'blindaje' || $actual_route == 'cristales' || $actual_route == 'puertas') active-option @endif">física de radiaciones</a>
+                        {{-- <div class="dropdown-content t-13">
+                            <a href="{{ route('blindaje') }}" class="text-uppercase @if($actual_route == 'blindaje') font-weight-bold text-dark @endif">blindaje</a>
                             <a href="{{ route('cristales') }}" class="text-uppercase @if($actual_route == 'cristales') font-weight-bold text-dark @endif">cristales</a>
-                            <a href="{{ route('puertas') }}" class="text-uppercase @if($actual_route == 'puertas') font-weight-bold text-dark @endif">puertas</a> --}}
+                            <a href="{{ route('puertas') }}" class="text-uppercase @if($actual_route == 'puertas') font-weight-bold text-dark @endif">puertas</a>
                             @foreach($categories as $category)
                                 @if($category->id == 2)
                                     @foreach($category->subcategories as $subcategory)
@@ -68,7 +68,7 @@
                                     @endforeach
                                 @endif
                             @endforeach
-                        </div>
+                        </div> --}}
                     </div>
                 </li>
                 <li class="nav-item d-flex justify-content-center mr-3 py-3">

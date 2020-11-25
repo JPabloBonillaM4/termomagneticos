@@ -26,7 +26,7 @@
                     <div class="animationScale">
                         <img src="{{ asset('images/seccion_inicio/volkswagen_logo.jpg') }}" class="rounded-img" alt="img_componente">
                     </div>
-                    <p class="text-uppercase font-weight-bold mt-3 text-white">Algunos de nuestros clientes</p>
+                    <p class="text-uppercase font-weight-bold mt-3 @if($actual_route != 'clientes') text-white @endif">Algunos de nuestros clientes</p>
                 </a>
             </div>
         {{-- @endif --}}
