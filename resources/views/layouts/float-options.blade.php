@@ -90,7 +90,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="{{ route('sendEmailCotizacion') }}" method="POST" id="form_cite">
+            <form action="{{ route('sendEmailCotizacion') }}" method="POST" id="form_cotizacion">
                 @csrf
                 <div class="modal-body">
                     <div class="form-group">

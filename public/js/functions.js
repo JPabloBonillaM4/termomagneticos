@@ -82,13 +82,20 @@
     $('.datepickerSingle').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
         let route = $(this).data('route');
+        let date_selected = new Date(picker.startDate.format('YYYY/MM/DD'));
+        let dayOfWeek = date_selected.getDay();
+        if(dayOfWeek == 0){
+            showToast('LO SENTIMOS','Los días domingo no tenemos servicio de citas','yellow');
+            resetCites();
+            return false;
+        }
         $('.checkboxCitesTime input[type="radio"]').prop('checked',false);
         $.ajax({
             "url"    : route,
             "type"   : "GET",
             "method" : "GET",
             "cache"  : false,
-            "data"   : { "date" : $(this).val() },
+            "data"   : { "date" : $(this).val(), "dayOfWeek" : dayOfWeek },
             success : function(response) {
                 if(!response.error){
                     showToast('EXITO',response.message,'green');
@@ -99,15 +106,13 @@
                     } else if(response.citesRegistered.length == 0){
                         $('.checkboxCitesTime').show();
                     }
+                    if(dayOfWeek == 6)
+                        citesDisabledForSaturday()
                     processCite();
                     $('#btn_agendar').show();
                 } else {
                     showToast('ERROR',response.message,'red');
-                    $('#cite_text').text('Seleccione una fecha');
-                    $('#date_cite').val('');
-                    $('#next_step').hide();
-                    $('#btn_agendar').hide();
-                    $('#btn_reagendar').hide();
+                    resetCites();
                 }
                 
             }
@@ -119,6 +124,19 @@
         $('#btn_agendar').hide();
         processCite();
     });
+    function citesDisabledForSaturday(){
+        let cites = ['13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00'];
+        cites.forEach(element => {
+            document.getElementById(`index_${element}`).style.display = 'none';
+        });
+    }
+    function resetCites(){
+        $('#cite_text').text('Seleccione una fecha');
+        $('#date_cite').val('');
+        $('#next_step').hide();
+        $('#btn_agendar').hide();
+        $('#btn_reagendar').hide();
+    }
     function processCite(){
         if($('#date_cite').val() != ''){
             $('#cite_text').text('Fecha programada');
