@@ -39,6 +39,7 @@
                             @endif
                         </div>
                     </div> --}}
+                    @include('pages.menus.components-menu')
                 </div>
             </div>
         </div>

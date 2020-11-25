@@ -6,13 +6,8 @@
             <p class="text-white text-uppercase text-center title mt-5 container r2_mobile">proyectos específica media y baja tensión</p>
             <div class="container">
                 @include('layouts.menu-circle-projects')
+                @include('pages.menus.ingenieria-menu')
             </div>
         </div>
     </div>
-    {{-- <div class="parallax-simple section_cases" id="inicio">
-        <div class="background-shadow">
-            
-        </div>
-    </div> --}}
-{{-- @include('layouts.menu-projects') --}}
 @endsection

@@ -15,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 // Public routes
 Auth::routes();
 Route::view('/','pages.quienes-somos')->name('/');
+Route::view('nosotros','pages.pages-home.somos')->name('quienes_somos');
+Route::view('filosofia','pages.pages-home.filosofia')->name('filosofia');
+Route::view('clientes','pages.pages-home.clientes')->name('clientes');
+
+Route::view('ingenieria-electrica','pages.ingenieria')->name('ingenieria');
+Route::view('fisica-radiaciones','pages.radiaciones')->name('radiaciones');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('componentes', 'ComponenteController')->names('componentes')->only(['index','show']);
 Route::get('tableros-distribucion', 'TablerosController@index')->name('tableros_distribucion');

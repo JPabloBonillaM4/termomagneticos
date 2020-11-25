@@ -20,6 +20,7 @@
                     </div>
                 @endforeach --}}
                 @include('layouts.menu-circle-projects')
+                @include('pages.menus.ingenieria-menu')
             </div>
         </div>
     </div>

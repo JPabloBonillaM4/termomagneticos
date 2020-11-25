@@ -1,14 +1,15 @@
 @extends('index')
 @section('title','tableros')
 @section('content')
-    <div class="parallax-medium titulo_tableros">
+    <div class="parallax titulo_tableros">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
-            <p class="text-white text-uppercase text-center title adjust_title container r2_mobile">control y distribución</p>
-            {{-- <a data-scroll href="#inicio" class="arrow_ancle">
+            <p class="text-white text-uppercase text-center title container r2_mobile mb-0">control y distribución</p>
+            @include('pages.menus.components-menu')
+            <a data-scroll href="#inicio" class="arrow_ancle hide_on_mobile">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>
                 </div>
-            </a> --}}
+            </a>
         </div>
     </div>
     <div class="parallax-simple control_distribucion" id="inicio">
@@ -400,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 @endsection
