@@ -7,7 +7,7 @@
                     <div class="col-md-4 text-center mt-5">
                         <a href="@if($subcategory->id == 3){{ route('blindaje') }}@elseif($subcategory->id == 4){{ route('cristales') }}@elseif($subcategory->id == 5){{ route('puertas') }}@endif" class="text-decoration-none text-dark">
                             <div class="animationScale">
-                                <img src="{{ asset('images/seccion_inicio/section_2.jpg') }}" class="rounded-img" alt="img_componente">
+                                <img src="@if($subcategory->id == 3){{ asset('images/blindaje/titulo_blindaje.jpg') }}@elseif($subcategory->id == 4){{ asset('images/seccion_inicio/section_1.jpg') }}@elseif($subcategory->id == 5){{ asset('images/seccion_inicio/section_1.jpg') }}@endif" class="rounded-img" alt="img_componente">
                             </div>
                             <p class="text-uppercase font-weight-bold mt-3 text-white">{{ $subcategory->name  }}</p>
                         </a>
