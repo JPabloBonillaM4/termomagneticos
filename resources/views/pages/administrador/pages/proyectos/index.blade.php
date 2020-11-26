@@ -32,9 +32,18 @@
                             <button class="openModalAndGetValues btn btn-rounded btn-outline-info mt-1" data-modal="editProject" data-route="{{ route('projects.edit', $project->id) }}" title="Editar proyecto">
                                 <i class="far fa-edit"></i>
                             </button>
-                            <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('projects.destroy', $project->id) }}" data-id="{{ $project->id }}" title="Eliminar proyecto">
-                                <i class="far fa-trash-alt"></i>
+                            <button class="editImages btn btn-rounded btn-outline-warning mt-1" data-modal="editImagesProject" data-route="{{ route('projects.getImages', $project->id) }}" data-delete="{{ route('projects.deleteImage') }}" title="Editar imágenes del proyecto">
+                                <i class="fas fa-images"></i>
                             </button>
+                            @if($project->status == 0)
+                                <button class="reactiveRegister btn btn-rounded btn-outline-success mt-1" data-modal="reactiveRegister" data-route="{{ route('projects.reactive', $project->id) }}" data-id="{{ $project->id }}" title="Reactivar proyecto">
+                                    <i class="far fa-check-square"></i>
+                                </button>
+                            @else
+                                <button class="deleteRegister btn btn-rounded btn-outline-danger mt-1" data-modal="deleteRegister" data-route="{{ route('projects.destroy', $project->id) }}" data-id="{{ $project->id }}" title="Eliminar proyecto">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            @endif
                         </td>
                     </tr>
                 @endforeach
@@ -43,4 +52,6 @@
     </div>
 </div>
 @include('pages.administrador.pages.proyectos.edit')
+@include('pages.administrador.pages.proyectos.images')
+@include('pages.administrador.pages.modal_reactive')
 @endsection

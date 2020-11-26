@@ -22,4 +22,8 @@ class CarouselImage extends Model
     public function project(){
         return $this->belongsTo('App\Project','project_id','id');
     }
+
+    public function scopeDeleteImage($query,$id){
+        return $this->find($id)->delete();
+    }
 }

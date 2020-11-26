@@ -50,6 +50,9 @@ Route::group(['middleware' => ['role:superadmin|moderator','auth']], function ()
     Route::post('categorias/{id}', 'admin\SubcategoriesController@update')->name('subcategories.update');
     Route::resource('proyectos', 'admin\ProjectsController')->names('projects')->parameters(['projects' => 'id'])->except(['update']);
     Route::post('proyectos/{id}', 'admin\ProjectsController@update')->name('projects.update');
+    Route::post('reactiveProject/{id}', 'admin\ProjectsController@reactiveProject')->name('projects.reactive');
+    Route::get('getImagesProject/{id}', 'admin\ProjectsController@getImagesProject')->name('projects.getImages');
+    Route::post('deleteImageProject/{id?}', 'admin\ProjectsController@deleteImageProject')->name('projects.deleteImage');
 });
 // ALL USERS ROUTES
 Route::group(['middleware' => ['role:superadmin|moderator|guest','auth']], function () {

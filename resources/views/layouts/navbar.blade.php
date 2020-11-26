@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item d-flex justify-content-center mr-3 py-3">
                     <div class="dropdown">
-                        <a href="{{ route('componentes.index') }}" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">venta componentes</a>
+                        <a href="{{ route('componentes.index') }}" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">venta de componentes eaton</a>
                         {{-- <div class="dropdown-content t-13">
                             <a href="{{ route('componentes.index') }}" class="text-uppercase @if($actual_route == 'componentes.index') font-weight-bold text-dark @endif">componentes eaton</a>
                             <a href="{{ route('tableros_distribucion') }}" class="text-uppercase @if($actual_route == 'tableros_distribucion') font-weight-bold text-dark @endif">control y distribución</a>

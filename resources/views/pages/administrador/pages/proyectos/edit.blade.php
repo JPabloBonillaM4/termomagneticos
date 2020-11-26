@@ -2,69 +2,37 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content change-modal-color">
             <div class="modal-header">
-                <h5 class="modal-title" id="editProjectLabel">Editar cita</h5>
+                <h5 class="modal-title" id="editProjectLabel">Editar proyecto</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="edit-register" method="POST" modal-id="editProject">
+            <form id="edit-register" method="POST" modal-id="editProject" enctype="multipart/form-data">
                 <div class="modal-body">
                     @csrf
-                    <!-- Nombre del jugador -->
+                    <!-- Nombre -->
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text adjusting-append-icons"><i class="fab fa-elementor"></i></span>
                         </div>
-                        <input type="text" class="form-control" id="name" name="name" data-name="nombre(s)" placeholder="Nombre(s) del jugador" data-required="true">
+                        <input type="text" class="form-control" id="title" name="title" data-name="nombre(s)" placeholder="Titulo del proyecto" data-required="true">
                     </div>
-                    <!-- Apellidos del jugador -->
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text adjusting-append-icons"><i class="fab fa-elementor"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="lastname" name="lastname" data-name="apellido(s)" placeholder="Apellidos(s) del jugador" data-required="true">
-                    </div>
-                    <!-- Correo del jugador -->
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text adjusting-append-icons"><i class="fas fa-at"></i></span>
-                        </div>
-                        <input type="email" class="form-control" id="email" name="email" data-name="correo" placeholder="Correo del jugador" data-required="true">
-                    </div>
-                    <!-- Contraseña del jugador -->
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text adjusting-append-icons"><i class="fas fa-key"></i></span>
-                        </div>
-                        <input type="password" class="form-control" id="password" name="password" data-name="contraseña" placeholder="Nueva contraseña del jugador">
-                    </div>
-                    <!-- EPIC ID -->
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text adjusting-append-icons"><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="number" class="form-control" id="epic_id" name="epic_id" data-name="epic ID" placeholder="EPIC ID">
-                    </div>
-                    <!-- País del jugador -->
+                    <!-- Categoría -->
                     <div class="input-group mb-3" style="color: #495057;">
                         <div class="input-group-prepend">
                             <span class="input-group-text adjusting-append-icons"><i class="fas fa-globe"></i></span>
                         </div>
-                        <select class="form-control select2" data-placeholder="País del jugador" name="country_id" id="country_id" data-name="país" data-required="true">
+                        <select class="form-control select2" data-placeholder="Seleccione un modulo" name="subcategory_id" id="subcategory_id" data-name="modulo" data-required="true">
                             <option value=""></option>
+                            @foreach($subcategories as $subcategory)
+                                <option value="{{ $subcategory->id }}">{{ $subcategory->name }}</option>
+                            @endforeach
                         </select>
                     </div>
-                    <!-- Teléfono del jugador -->
+                    <!-- Fotos -->
+                    <p class="text-muted">Seleccione las nuevas imágenes para el proyecto</p>
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text adjusting-append-icons"><i class="fas fa-phone"></i></span>
-                        </div>
-                        <input type="tel" class="form-control" id="mobile" name="mobile" data-name="teléfono" placeholder="Teléfono de contacto" data-required="true" data-inputmask="'mask': ['999-999-9999']" data-mask>
-                    </div>
-                    {{-- Imagen del jugador --}}
-                    <div class="form-group">
-                        <label for="profile_picture">Nueva imagen</label>
-                        <input type="file" class="form-control-file" id="profile_picture" name="profile_picture">
+                        <input type="file" name="images[]" multiple accept="image/*">
                     </div>
                     {{-- ID --}}
                     <input type="hidden" id="id" name="id">

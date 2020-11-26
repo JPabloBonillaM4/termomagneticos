@@ -82,6 +82,132 @@
             });
         }
     });
+    // GENERAL FUNCTION TO REACTIVE REGISTER
+    $(document).on('submit','#reactive-register', function(event){
+        event.preventDefault();
+        let dataObtainded = reactiveRegister($(this));
+        if(dataObtainded !== undefined){
+            loadButton();
+            dataObtainded.then(response => {
+                loadButton();
+                if(!response.error){
+                    swal({
+                        title: "¡EXITO!",
+                        text: response.message,
+                        icon: "success",
+                    }).then(() => {
+                        $(`#${$(this).attr('modal-id')}`).modal('hide');
+                        window.location.reload();
+                    });
+                } else {
+                    swal({
+                        title: "¡ERROR!",
+                        text: response.message,
+                        icon: "error",
+                    });
+                }
+            });
+        }
+    });
+    // OPEN EDIT IMAGES MODAL
+    $(document).on('click','.editImages',function(){
+        let route        = $(this).attr('data-route'),
+            modal        = $(this).attr('data-modal'),
+            route_delete = $(this).attr('data-delete');
+        conexionController(route,'GET').then(response => {
+            if(!response.error){
+                $('#id_images').val(response.project.id);
+                $('#route_images').val(route_delete);
+                let images = response.project.images;
+                $('#images_project_table').dataTable().fnDestroy();
+                let tabla  = $('#images_project_table').DataTable({
+                    "ordering" : false,
+                    "language" : {
+                        "sProcessing"        : "Procesando...",
+                        "sLengthMenu"        : "Mostrar _MENU_ registros",
+                        "sZeroRecords"       : "No se encontraron resultados",
+                        "sEmptyTable"        : "Ningún dato disponible",
+                        "sInfo"              : "Registros del _START_ al _END_ (_TOTAL_ registros)",
+                        "sInfoEmpty"         : "0 Registros",
+                        "sInfoFiltered"      : "- (filtrado de un total de _MAX_ registros)",
+                        "sInfoPostFix"       : "",
+                        "sSearch"            : '<span class="fa fa-search"></span>',
+                        "sSearchPlaceholder" : "Buscar",
+                        "sUrl"               : "",
+                        "sInfoThousands"     :  ",",
+                        "sLoadingRecords"    : "Cargando...",
+                        "oPaginate"          : {
+                            "sFirst"    : "Primero",
+                            "sLast"     : "Último",
+                            "sNext"     : "Siguiente",
+                            "sPrevious" : "Anterior"
+                        },
+                        "oAria"              : {
+                            "sSortAscending"  : ": Activar para ordenar la columna de manera ascendente",
+                            "sSortDescending" : ": Activar para ordenar la columna de manera descendente"
+                        }
+                    },
+                    "lengthMenu" : [[5,10,25,50,-1],["5","10","25","50","Todos"]],
+                    "fixedColumns": true
+                });
+                tabla.clear().draw();
+                images.forEach(element => {
+                    rowsCss = tabla.row.add([
+                        `
+                            <img src="${window.location.origin}/${element.image_url}" width="100" height="100" class="img-fluid" alt="img_proyecto">
+                        `,
+                        `
+                            <button type="button" class="btn btn-danger spinEfect deleteImageRegister" data-id="${element.id}">
+                                <span class="spinner-border spinner-border-sm mr-1 d-none" role="status" aria-hidden="true"></span>
+                                <span id="button-text">
+                                    <i class="fas fa-times-circle"></i>
+                                </span>
+                            </button>
+                        `
+                    ]).draw().node();
+                    $(rowsCss).css({"text-align":'center',"vertical-align":'middle !important'});
+                });
+                $(`#${modal}`).modal('show')
+            } else {
+                swal({
+                    title : "¡ERROR!",
+                    text  : response.message,
+                    icon  : "error"
+                })
+            }
+        })
+    })
+    $(document).on('click','.deleteImageRegister',function(){
+        let route = $('#route_images').val() + '/' + $(this).data('id');
+        swal({
+            title: "Eliminar imagen del proyecto",
+            text: `¿Está seguro que desea eliminar esta imagen?`,
+            icon: "warning",
+            buttons: ['Cancelar','Si, eliminar'],
+        })
+        .then((isChange) => {
+            if (isChange) {
+                conexionController(route,'POST').then(response => {
+                    console.log(response);
+                    if(!response.error){
+                        swal({
+                            title: "¡EXITO!",
+                            text: response.message,
+                            icon: "success",
+                        }).then(() => {
+                            $(this).parents('tr').remove()
+                        });
+                    } else {
+                        swal({
+                            title: "¡ERROR!",
+                            text: response.message,
+                            icon: "error",
+                        });
+                    }
+                });
+            }
+        });
+    })
     // CAMBIAR ESTATUS DE TORNEO
     $(document).on('click','.changeStatusTournament', function(){
         let data  = new FormData(),

@@ -342,11 +342,28 @@ $(document).on('click','.deleteRegister', function(){
     $(`#${$(this).attr('data-modal')}`).modal('show');
 });
 
+// Function to open reactive modal and set values
+$(document).on('click','.reactiveRegister', function(){
+    $(`#${$(this).attr('data-modal')} #id_reactive`).val($(this).attr('data-id'));
+    $(`#${$(this).attr('data-modal')} #route_reactive`).val($(this).attr('data-route'));
+    $(`#${$(this).attr('data-modal')}`).modal('show');
+});
+
 // Function to delete register
 function deleteRegister(_this){
     let form       = _this.attr('id'),
         data       = getDataForm(_this[0]),
         url        = data.get("route");
+    if(typeof data === 'object'){
+        let typeMethod = data.get("_method") || _this.attr('method');
+        return conexionController(url,typeMethod);
+    }
+}
+// Function to update register
+function reactiveRegister(_this){
+    let form       = _this.attr('id'),
+        data       = getDataForm(_this[0]),
+        url        = data.get("route_reactive");
     if(typeof data === 'object'){
         let typeMethod = data.get("_method") || _this.attr('method');
         return conexionController(url,typeMethod);

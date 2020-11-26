@@ -13,7 +13,8 @@ class Project extends Model
     protected $fillable = [
         'title',
         'subtitle',
-        'subcategory_id'
+        'subcategory_id',
+        'status'
     ];
     protected $with = ['images','subcategory'];
 
@@ -29,7 +30,18 @@ class Project extends Model
         return $this->all();
     }
 
+    public function scopeUpdateProject($query,$data){
+        return $query->find($data->id)->update([
+            'title'          => $data->title,
+            'subcategory_id' => $data->subcategory_id
+        ]);
+    }
+
     public function scopeDeleteProject($query,$id){
-        return $query->find($id)->delete();
+        return $query->find($id)->update(['status' => 0]);
+    }
+
+    public function scopeReactiveProject($query,$id){
+        return $query->find($id)->update(['status' => 1]);
     }
 }
