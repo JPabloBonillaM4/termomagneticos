@@ -381,7 +381,7 @@
         });
     });
     // DOWNLOAD EXCEL BY TOURNAMENT
-    $('#downloadExcel').click(function(){
-        window.location.href = `${window.location.origin}/excel-tournament/${$(this).attr('data-id')}/${$('#complete').is(':checked')}/${$('#incomplete').is(':checked')}`;
+    $('#excel-cite-download').click(function(){
+        window.location.href = `${window.location.origin}/excel-cites`;
     });
 })();

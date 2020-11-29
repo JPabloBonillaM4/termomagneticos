@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Cite;
+use App\Exports\CitesExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CitesController extends Controller
 {
@@ -92,5 +94,9 @@ class CitesController extends Controller
                 'message' => 'Ocurrío un error al obtener las citas'
             ]);
         }
+    }
+
+    public function download_excel(){
+        return Excel::download(new CitesExport(),strtoupper('reporte_citas_').date('d-m-Y').'.xlsx');
     }
 }

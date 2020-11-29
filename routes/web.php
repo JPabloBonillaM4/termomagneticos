@@ -56,5 +56,5 @@ Route::group(['middleware' => ['role:superadmin|moderator','auth']], function ()
 });
 // ALL USERS ROUTES
 Route::group(['middleware' => ['role:superadmin|moderator|guest','auth']], function () {
-    //
+    Route::get('excel-cites', 'admin\CitesController@download_excel')->name('cites.excel');
 });
