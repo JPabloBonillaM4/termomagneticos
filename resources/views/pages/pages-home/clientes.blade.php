@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','Quienes somos')
 @section('content')
-    <div class="py-4" id="clientes">
+    <div class="py-4" id="clientes" style="height: 100vh;">
         <div class="col-md-12">
             <p class="display-4 text-center mb-4">Algunos de nuestros clientes</p>
         </div>

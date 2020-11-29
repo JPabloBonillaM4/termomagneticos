@@ -387,6 +387,8 @@
 /* ARROW UP */
 .arrow_up{
     text-align: right;
+    width: 10px;
+    float: right;
 }
 
 .arrow_up a{
@@ -418,6 +420,44 @@
     color: #ffffff;
     text-align: center;
     width: 35%;
+}
+
+.home_menu{
+    background-color: #e1e1e1;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contents_img{
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.img_content{
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+.especial_background{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: white;
+    font-weight: 2rem !important;
+    font-size: 2rem;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_menu:hover .contents_img{
+    height: 10rem;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {

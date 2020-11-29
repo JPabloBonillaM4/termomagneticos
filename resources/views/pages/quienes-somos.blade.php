@@ -8,7 +8,7 @@
                     <span class="fa fa-arrow-down fa-2x"></span>
                 </div>
             </a> --}}
-            @include('pages.menus.home-menu')
         </div>
     </div>
+    @include('pages.menus.home-menu')
 @endsection

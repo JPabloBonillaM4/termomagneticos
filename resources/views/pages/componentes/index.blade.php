@@ -39,11 +39,11 @@
                             @endif
                         </div>
                     </div> --}}
-                    @include('pages.menus.components-menu')
                 </div>
             </div>
         </div>
     </div>
+    @include('pages.menus.components-menu')
 
 @include('pages.componentes.show')
 @endsection

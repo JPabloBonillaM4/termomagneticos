@@ -2,7 +2,7 @@
 @section('title','Quienes somos')
 @section('content')
     <div class="parallax section2" id="quienes_somos">
-        <div class="h-100 dis-flex flex-column justify-content-center align-items-center background-shadow">
+        <div class="h-100 dis-flex flex-column justify-content-center align-items-center background-shadow" style="margin-top: -5rem;">
             <div class="dis-flex justify-content-around w-100 align-items-center columnFlex">
                 <img src="{{ asset('images/eaton-logo-1.png') }}" class="hide_on_mobile" alt="logo 3" style="max-width: 250px;">
                 <h2 class="text-white text-uppercase display-5 title_2 text-center">¿quienes somos?</h2>
