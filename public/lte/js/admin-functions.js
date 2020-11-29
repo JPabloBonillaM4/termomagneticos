@@ -380,8 +380,12 @@
             }
         });
     });
-    // DOWNLOAD EXCEL BY TOURNAMENT
+    // DOWNLOAD EXCEL BY CITES
     $('#excel-cite-download').click(function(){
         window.location.href = `${window.location.origin}/excel-cites`;
+    });
+    // DOWNLOAD EXCEL BY QUOTES
+    $('#excel-quote-download').click(function(){
+        window.location.href = `${window.location.origin}/excel-quotes`;
     });
 })();

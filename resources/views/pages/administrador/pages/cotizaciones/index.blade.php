@@ -10,9 +10,11 @@
         <div class="col-md-6">
             <h3 class="card-title">Admistración de cotizaciones</h3>
         </div>
-        {{-- <div class="col-md-12 d-flex justify-content-end">
-            <a href="#" class="btn btn-success">Nuevo jugador &nbsp;<i class="fa fa-plus"></i></a>
-        </div> --}}
+        @if($quotes->count() > 0)
+            <div class="col-md-12 d-flex justify-content-end">
+                <a href="#" id="excel-quote-download" class="btn btn-success">Descargar Excel &nbsp;<i class="fa fa-plus"></i></a>
+            </div>
+        @endif
     </div>
     <div class="card-body table-overflow">
         <table class="dataTable table table-bordered table-striped change-table over-auto-datatable">

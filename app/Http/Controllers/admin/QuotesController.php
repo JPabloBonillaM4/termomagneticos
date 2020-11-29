@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Quote;
+use App\Exports\QuotesExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class QuotesController extends Controller
 {
@@ -58,5 +60,9 @@ class QuotesController extends Controller
             'message'   => $message,
             'errorData' => $errorData
         ]);
+    }
+
+    public function download_excel(){
+        return Excel::download(new QuotesExport(),strtoupper('reporte_cotizaciones_').date('d-m-Y').'.xlsx');
     }
 }

@@ -4,7 +4,6 @@ namespace App\Exports;
 
 use App\Cite;
 use Maatwebsite\Excel\Concerns\FromCollection;
-// use Illuminate\Contracts\Support\Responsable;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -22,7 +21,6 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
 class CitesExport implements 
 FromCollection,
-// Responsable,
 WithMapping,
 WithHeadings,
 WithTitle,
@@ -55,8 +53,8 @@ WithCustomValueBinder
         return [
             'Fecha',
             'Solicitante',
-            'Telefono',
-            'Correo'
+            'Teléfono de contacto',
+            'Correo de contacto'
         ];
     }
     // TITULO
@@ -67,7 +65,7 @@ WithCustomValueBinder
     public function drawings()
     {
         $drawing = new Drawing();
-        $drawing->setPath(public_path('images\logo.png'));
+        $drawing->setPath(public_path('images/logo.png'));
         $drawing->setHeight(60)->setWidth(130);
         $drawing->setCoordinates('A1');
 
