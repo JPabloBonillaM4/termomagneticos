@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="row justify-content-center contents_img">
-        <div class="col-md-4 p-0 img_content" style="background-image: url('{{ asset('images/componentes/background_componentes.jpg') }}')">
+        <div class="col-md-4 p-0 img_content" style="background-image: url('{{ asset('images/componentes/componentes_newback.jpg') }}')">
             <a href="{{ route('componentes.index') }}" class="text-decoration-none text-dark">
                 <div class="especial_background">
                     <p>Ver sección</p>

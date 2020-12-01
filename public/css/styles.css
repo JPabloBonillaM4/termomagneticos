@@ -131,6 +131,9 @@
 .titulo_tableros{
     background-image: url(../images/control_distribucion_energia/titulo_control_distribucion.jpg);
 }
+.titulo_ingenieria{
+    background-image: url(../images/ingenieria_electrica/ingenieriaElectrica_newback.jpg);
+}
 .titulo_calidad{
     background-image: url(../images/calidad_energia/titulo_calidad_energia.jpg);
 }
@@ -150,7 +153,7 @@
     background-image: url(../images/contacto/fondo_cotizacion.jpg);
 }
 .background_componentes{
-    background-image: url(../images/componentes/background_componentes.jpg);
+    background-image: url(../images/componentes/componentes_newback.jpg);
 }
 .titulo_componentes{
     background-image: url(../images/componentes/titulo_componentes.jpg);
@@ -455,12 +458,55 @@
     align-items: center;
 }
 
+.img_content .especial_background p{
+    transition: all 1s ease;
+}
+
+.img_content:hover .especial_background p{
+    transform: scale(1.2);
+}
+
 .home_menu:hover .contents_img{
     height: 10rem;
     opacity: 1;
 }
 
+.object_img{
+    border-right: 2px solid #000000;
+}
+
+.img_content{
+    border-right: 2px solid #ffffff;
+}
+
+.card-contact{
+    background-color: rgba(255,255,255,0.3);
+    color: #ffffff !important;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.card-contact:hover{
+    background-color: rgba(255,255,255,1);
+    color: #0056b3 !important;
+    transform: scale(1.1);
+}
+.card-contact:hover a{
+    color: #0056b3 !important;
+}
+
+.img-logo-index{
+    width: 8rem;
+}
+
+.logos-inicio{
+    margin-top: -10rem;
+}
+
 @media only screen and (max-width: 768px) {
+    .logos-inicio{
+        margin-top: 0;
+    }
     .left-corner{
         width: 80%;
         top: 25%;

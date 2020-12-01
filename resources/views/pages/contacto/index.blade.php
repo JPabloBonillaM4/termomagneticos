@@ -2,15 +2,15 @@
 @section('title','contacto')
 @section('content')
 <div class="parallax-simple titulo_contacto_2">
-    <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
-        <h2 class="left-corner">Termomagnéticos y Control de Radiaciones S.A de C.V</h2>
-        <p class="mt-5 pt-5 text-white text-uppercase text-center title container r2_mobile">contacto</p>
+    <div class="h-100 d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(0,0,0, 0.5);">
+        <h4 class="left-corner">Termomagnéticos y Control de Radiaciones S.A de C.V</h4>
+        <p class="mt-5 pt-3 text-white text-uppercase text-center title container r2_mobile">contáctanos</p>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 m-auto pb-5 text-white">
                     {{-- <h4 class="text-center my-5 pb-5 display-5">Has contacto con alguno de nuestros representantes</h4> --}}
                     <div class="row">
-                        <div class="col-md-6 border-right border-white text-center py-3">
+                        <div class="col-md-6 border-right border-white text-center py-3 pr-5 card-contact">
                             <h3 class="text-center mb-3 text-uppercase">oficina central</h3>
                             <p class="d-flex align-items-center justify-content-center mt-5">
                                 <a class="text-white" target="_blank" href="https://www.google.com.mx/maps/place/Av+25+Pte+4307,+Reforma,+Puebla,+Pue./@19.0508183,-98.2368377,18.32z/data=!4m5!3m4!1s0x85cfc727642caa89:0x288a047ba4ed9019!8m2!3d19.0509849!4d-98.2359316">
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 text-center py-3">
+                        <div class="col-md-6 text-center py-3 card-contact pr-5">
                             <h3 class="text-center mb-3 text-uppercase">sucursal del norte saltillo coahuila</h3>
                             <p class="d-flex align-items-center justify-content-center">
                                 <a class="text-white" target="_blank" href="https://www.google.com.mx/maps/place/Blvd.+Venustiano+Carranza+4525,+Virreyes+Residencial,+25230+Saltillo,+Coah./@25.4629554,-100.9839822,17z/data=!3m1!4b1!4m5!3m4!1s0x86886d355c7d7f47:0x91888c63123a7203!8m2!3d25.4629554!4d-100.9817935">
@@ -86,7 +86,7 @@
                             </div>
                             {{-- <small>termomagneticosdelnorte@hotmail.com</small> --}}
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 card-contact">
                             <div class="font-weight-bold border-white border-top p-4 text-center">
                                 <p>Ubicanos</p>
                             </div>
