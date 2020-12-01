@@ -9,7 +9,7 @@
                 <img src="{{ asset('images/logos_inicio/tdk.png') }}" class="mt-2 img-fluid img-logo-index" alt="logo tdk">
                 <img src="{{ asset('images/logos_inicio/finder.png') }}" class="img-fluid img-logo-index" alt="logo finder">
             </div>
-            <h1 class="text-white text-uppercase text-center title adjust_title container col-md-10">termomagnéticos y control de radiaciones S.A de C.V</h1>
+            <h1 class="title-our text-white text-uppercase text-center title adjust_title container col-md-10">termomagnéticos y control de radiaciones S.A de C.V</h1>
             {{-- <a data-scroll href="#quienes_somos" class="arrow_ancle">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>

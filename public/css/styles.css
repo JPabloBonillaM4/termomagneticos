@@ -201,7 +201,14 @@
     transition: .5s all ease;
 }
 .animationScale:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.animationScale_2{
+    transition: .5s all ease;
+}
+.animationScale_2:hover{
+    transform: scale(1.4);
 }
 
 .sizeCarousel{
@@ -243,6 +250,11 @@
     transition: all .5s ease-in-out;
     width: 250px;
     height: 250px;
+}
+.img-gallery-2{
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain;
 }
 .img-effect{
     transition: all .5s ease-in-out;
@@ -503,7 +515,16 @@
     margin-top: -10rem;
 }
 
+.title-our{
+    margin-left: -4rem;
+    margin-top: -10rem;
+}
+
 @media only screen and (max-width: 768px) {
+    .title-our{
+        margin-left: 0;
+    }
+
     .logos-inicio{
         margin-top: 0;
     }
