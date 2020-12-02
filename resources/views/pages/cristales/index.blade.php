@@ -6,10 +6,10 @@
         <p class="text-white text-uppercase text-center title mt-5 container r2_mobile">cristales</p>
         <div class="container">
             @include('layouts.menu-circle-projects')
-            @include('pages.menus.radiaciones-menu')
         </div>
     </div>
 </div>
+@include('pages.menus.radiaciones-menu')
 {{-- <div class="parallax-simple section_cases" id="inicio">
     <div class="background-shadow">
         

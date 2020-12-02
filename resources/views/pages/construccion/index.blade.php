@@ -20,10 +20,10 @@
                     </div>
                 @endforeach --}}
                 @include('layouts.menu-circle-projects')
-                @include('pages.menus.ingenieria-menu')
             </div>
         </div>
     </div>
+    @include('pages.menus.ingenieria-menu')
     {{-- <div class="parallax-simple background_contruccion" id="inicio">
         <div class="background-shadow">
             

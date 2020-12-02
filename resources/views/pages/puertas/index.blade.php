@@ -7,10 +7,10 @@
         <div class="container text-white">
             <h2 class="text-uppercase text-center col-md-12 pt-5 mb-4 display-5 font-weight-bold r2_mobile">últimos proyectos</h2>
             @include('layouts.menu-circle-projects')
-            @include('pages.menus.radiaciones-menu')
         </div>
     </div>
 </div>
+@include('pages.menus.radiaciones-menu')
 {{-- <div class="parallax-simple background_puertas" id="inicio">
     <div class="background-shadow">
         

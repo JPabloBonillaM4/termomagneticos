@@ -501,7 +501,7 @@
 .card-contact:hover{
     background-color: rgba(255,255,255,1);
     color: #0056b3 !important;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .card-contact:hover a{
     color: #0056b3 !important;
@@ -513,20 +513,29 @@
 
 .logos-inicio{
     margin-top: -10rem;
+    width: 20%;
 }
 
 .title-our{
     margin-left: -4rem;
     margin-top: -10rem;
+    padding-right: 5rem;
+}
+
+.show_on_mobile{
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
     .title-our{
         margin-left: 0;
+        padding-right: 0;
+        padding: 0;
     }
 
     .logos-inicio{
         margin-top: 0;
+        width: 100%;
     }
     .left-corner{
         width: 80%;
@@ -549,7 +558,11 @@
     }
 
     .hide_on_mobile{
-        display: none;
+        display: none !important;
+    }
+
+    .show_on_mobile{
+        display: block;
     }
 
     .line_mobile{
@@ -574,6 +587,14 @@
 
     .adjust_title{
         margin-top: -20%;
+    }
+
+    .adjust_title_mobile{
+        margin-top: 0%;
+    }
+
+    .margin-top-mobile{
+        margin-top: 8rem !important;
     }
 }
 
