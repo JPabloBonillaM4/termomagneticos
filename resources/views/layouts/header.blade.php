@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{ asset('css/fontawesome-free/css/all.min.css?v='.rand()) }}">
         <link rel="stylesheet" href="{{ asset('css/simple-lightbox.min.css?v='.rand()) }}">
         <link rel="stylesheet" href="{{ asset('css/styles.css?v='.rand()) }}">
+        <link rel="stylesheet" href="{{ asset('css/card-styles.css?v='.rand()) }}">
         <link rel="stylesheet" href="{{ asset('css/preloader.css?v='.rand()) }}">
         <link rel="stylesheet" href="{{ asset('css/arrowAnimated.css?v='.rand()) }}">
         <link rel="stylesheet" href="{{ asset('css/daterangepicker.css?v='.rand()) }}">

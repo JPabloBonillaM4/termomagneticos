@@ -526,6 +526,11 @@
     display: none;
 }
 
+.gear_login{
+    position: absolute;
+    top: 0;
+}
+
 @media only screen and (max-width: 768px) {
     .title-our{
         margin-left: 0;

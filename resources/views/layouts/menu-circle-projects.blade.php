@@ -1,12 +1,25 @@
 <div class="row pb-5">
     @forelse ($proyectos as $proyecto)
-        <div class="col-md-4 text-center mt-5">
+        {{-- <div class="col-md-4 text-center mt-5">
             <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="{{ $proyecto->id }}">
                 <div class="animationScale">
-                    <img src="{{ asset($proyecto->images->first()->image_url) }}" class="rounded-img" alt="img_componente">
+                    <img src="" class="rounded-img" alt="">
                 </div>
                 <p class="text-uppercase font-weight-bold mt-3 text-white">{{ $proyecto->title }}</p>
             </a>
+        </div> --}}
+        <div class="col-md-4 mb-5">
+            <div class="card_styled">
+                <div class="card_container">
+                    <img src="{{ asset($proyecto->images->first()->image_url) }}" alt="img_componente">
+                </div>
+                <div class="details">
+                    <h3>{{ $proyecto->title }}</h3>
+                </div>
+                <div class="button_down">
+                    <button class="btn btn-primary modal-project w-100 h-100" data-modal="{{ $proyecto->id }}">Ver imágenes del proyecto</button>
+                </div>
+            </div>
         </div>
         <div class="modal fade" id="{{ $proyecto->id }}" data-keyboard="false" tabindex="-1" aria-labelledby="{{ $proyecto->id }}Label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-lg">
