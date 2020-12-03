@@ -2,8 +2,11 @@
     background-color: rgba(28,27,41,0.7);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-    height: 24rem;
+    height: 26rem;
     transition: all 0.5s ease-in-out;
+    color: #ffffff !important;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .card_styled:hover{
@@ -29,6 +32,13 @@
 .details{
     padding: 1rem;
     height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details h3{
+    font-size: 1.5rem;
 }
 
 .button_down{

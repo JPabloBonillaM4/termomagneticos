@@ -1,4 +1,4 @@
-<div class="row pb-5">
+<div class="row py-5 justify-content-center">
     @forelse ($proyectos as $proyecto)
         {{-- <div class="col-md-4 text-center mt-5">
             <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="{{ $proyecto->id }}">
