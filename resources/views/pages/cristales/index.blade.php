@@ -3,7 +3,7 @@
 @section('content')
 <div class="parallax-simple section1">
     <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
-        <p class="text-white text-uppercase text-center title mt-5 container r2_mobile">cristales</p>
+        <p class="text-white text-uppercase text-center title mt-1 container r2_mobile">cristales</p>
         <div class="container">
             @include('layouts.menu-circle-projects')
         </div>

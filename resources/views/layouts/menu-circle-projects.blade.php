@@ -1,14 +1,6 @@
-<div class="row py-5 justify-content-center">
+<div class="row pb-5 justify-content-center">
     @forelse ($proyectos as $proyecto)
-        {{-- <div class="col-md-4 text-center mt-5">
-            <a href="javascript:void(0)" class="text-decoration-none text-dark modal-project" data-modal="{{ $proyecto->id }}">
-                <div class="animationScale">
-                    <img src="" class="rounded-img" alt="">
-                </div>
-                <p class="text-uppercase font-weight-bold mt-3 text-white">{{ $proyecto->title }}</p>
-            </a>
-        </div> --}}
-        <div class="col-md-4 mb-5">
+        <div class="col-md-3 mb-5">
             <div class="card_styled">
                 <div class="card_container">
                     <img src="{{ asset($proyecto->images->first()->image_url) }}" alt="img_componente">
