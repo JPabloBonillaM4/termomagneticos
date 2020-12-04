@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 px-4 sticky-top">
     <div class="container">
-        <div class="col-lg-3 d-flex justify-content-between align-items-center">
+        <div class="col-lg-2 d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="{{ route('/') }}">
                 <img src="{{ asset('images/logo-png-1.png') }}" alt="logo" style="max-width: 200px">
             </a>
@@ -8,7 +8,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse col-lg-9" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col-lg-10 pl-5" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 {{-- INICIO --}}
                 <li class="hide_on_mobile nav-item d-flex justify-content-center mr-3 py-3">
@@ -30,7 +30,12 @@
                 {{-- COMPONENTES --}}
                 <li class="hide_on_mobile nav-item d-flex justify-content-center mr-3 py-3">
                     <div class="dropdown">
-                        <a href="{{ route('componentes.index') }}" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">venta de componentes eaton</a>
+                        <a href="{{ route('componentes.index') }}" class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'componentes.index' || $actual_route == 'tableros_distribucion' || $actual_route == 'calidad_energía') active-option @endif">
+                            <div class="d-flex align-items-center">
+                                <span style="width: 11rem;">venta de componentes</span>
+                                <img src="{{ asset('images/eaton-logo-1.png') }}" class="rounded-lg card-contact" alt="" style="max-width: 80px;">
+                            </div>
+                        </a>
                     </div>
                 </li>
                 <li class="show_on_mobile nav-item dropdown text-center text-uppercase">
