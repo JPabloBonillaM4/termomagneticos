@@ -430,7 +430,7 @@
 
 .left-corner{
     position: absolute;
-    top: 22%;
+    top: 18%;
     left: 1%;
     color: #ffffff;
     text-align: center;
@@ -447,7 +447,7 @@
 }
 
 .view_h{
-    height: 80vh;
+    height: 85vh;
 }
 
 .home_menu_2{
@@ -501,6 +501,13 @@
     opacity: 1;
 }
 
+.home_menu:hover i{
+    transition: all 0.5s ease-in-out;
+}
+.home_menu:hover i{
+    transform: rotate(180deg) !important;
+}
+
 .object_img{
     border-right: 2px solid #000000;
 }
@@ -530,8 +537,14 @@
 }
 
 .logos-inicio{
-    margin-top: -8rem;
+    margin-top: -11rem;
     width: 20%;
+}
+
+.adjust-img-navbar{
+    max-width: 80px;
+    top: 2.2rem;
+    right: 2.5rem;
 }
 
 .title-our{

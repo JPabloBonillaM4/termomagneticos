@@ -3,7 +3,7 @@
 @section('content')
 <div class="parallax-simple titulo_contacto_2">
     <div class="h-100 d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(0,0,0, 0.5);">
-        <h4 class="left-corner">Termomagnéticos y Control de Radiaciones S.A de C.V</h4>
+        <h4 class="left-corner card-contact"><i>Termomagnéticos y Control de Radiaciones S.A de C.V</i></h4>
         <p class="mt-5 pt-3 text-white text-uppercase text-center title container r2_mobile margin-top-mobile">contáctanos</p>
         <div class="container">
             <div class="row">

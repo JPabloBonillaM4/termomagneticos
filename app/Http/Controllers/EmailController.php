@@ -14,7 +14,7 @@ class EmailController extends Controller
     public function sendEmailCotizacion(Request $request){
         try {
             Quote::NewQuote($request);
-            Mail::to('dianagc0120@gmail.com')->send(new cotizacionMail($request));
+            Mail::to('ventas.termo@hotmail.com')->send(new cotizacionMail($request));
             return redirect()->back()->with(array(
                 'type'    => 'green',
                 'message' => array(
@@ -36,7 +36,7 @@ class EmailController extends Controller
     public function sendEmailCite(Request $request){
         try {
             Cite::NewCite($request);
-            Mail::to('dianagc0120@gmail.com')->send(new citaMail($request));
+            Mail::to('termo_prom@hotmail.com')->send(new citaMail($request));
             return redirect()->back()->with(array(
                 'type'    => 'green',
                 'message' => array(
