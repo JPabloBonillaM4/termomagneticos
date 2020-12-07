@@ -8,9 +8,9 @@
     </div> --}}
     <div class="parallax-simple background_componentes" id="inicio">
         <div class="background-shadow pb-5" style="background-color: rgba(0,0,0, 0.5);">
-            {{-- <div class="pt-4 d-flex justify-content-center align-items-center">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
                 <img src="{{ asset('images/eaton-logo-1.png') }}" class="rounded-lg card-contact" alt="" style="max-width: 180px;">
-            </div>         --}}
+            </div>        
             <div class="container pb-5">
                 <div class="row slick-menu container">
                     @forelse ($components as $component)
@@ -22,7 +22,7 @@
                                 <p class="text-uppercase font-weight-bold mt-3 text-white">{{ $component->nombre }}</p>
                             </a>
                         </div> --}}
-                        <div class="col-md-4 text-center mt-5 p-3">
+                        <div class="col-md-4 text-center mt-2 p-3">
                             <div class="card card-contact pt-2" style="width: 18rem; height: 18rem;">
                                 <div class="animationScale d-flex justify-content-center">
                                     <img src="{{ asset($component->imagen) }}" class="card-img-top img-gallery-2" alt="img_componente">
