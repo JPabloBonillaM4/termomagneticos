@@ -7,12 +7,12 @@
         </div>
     </div> --}}
     <div class="parallax-simple background_componentes" id="inicio">
-        <div class="background-shadow py-5" style="background-color: rgba(0,0,0, 0.5);">
-            <div class="pt-5 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('images/eaton-logo-1.png') }}" class="rounded-lg card-contact" alt="" style="max-width: 250px;">
-            </div>        
+        <div class="background-shadow pb-5" style="background-color: rgba(0,0,0, 0.5);">
+            {{-- <div class="pt-4 d-flex justify-content-center align-items-center">
+                <img src="{{ asset('images/eaton-logo-1.png') }}" class="rounded-lg card-contact" alt="" style="max-width: 180px;">
+            </div>         --}}
             <div class="container pb-5">
-                <div class="row">
+                <div class="row slick-menu container">
                     @forelse ($components as $component)
                         {{-- <div class="col-md-4 text-center mt-5">
                             <a href="javascript:void(0)" class="text-decoration-none text-dark showComponent" data-route="{{ route('componentes.show',$component->id) }}">
@@ -24,7 +24,7 @@
                         </div> --}}
                         <div class="col-md-4 text-center mt-5 p-3">
                             <div class="card card-contact pt-2" style="width: 18rem; height: 18rem;">
-                                <div class="animationScale">
+                                <div class="animationScale d-flex justify-content-center">
                                     <img src="{{ asset($component->imagen) }}" class="card-img-top img-gallery-2" alt="img_componente">
                                 </div>
                                 <div class="card-body">
@@ -51,6 +51,14 @@
                             @endif
                         </div>
                     </div> --}}
+                </div>
+                <div class="text-center text-white">
+                    <button class="btn btn-primary prev">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </button>
+                    <button class="btn btn-primary next">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </button>
                 </div>
             </div>
         </div>

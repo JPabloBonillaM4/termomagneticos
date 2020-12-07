@@ -13,6 +13,7 @@
         <script src="{{ asset('js/moment.min.js?v='.rand()) }}"></script>
         <script src="{{ asset('js/daterangepicker.js?v='.rand()) }}"></script>
         <script src="{{ asset('js/iziToast.min.js?v='.rand()) }}"></script>
+        <script src="{{ asset('js/slick.min.js?v='.rand()) }}"></script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 2000

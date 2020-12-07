@@ -207,6 +207,42 @@
     $('.modal-project').click(function(){
         $(`#${$(this).data('modal')}`).modal('show');
     });
+
+    $('.slick-menu').slick({
+        "dots": true,
+        "infinite": true,
+        "speed": 300,
+        "slidesToShow": 3,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev'),
+        "nextArrow": $('.next'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     if($('.cases-gallery-1 a').length > 0)
