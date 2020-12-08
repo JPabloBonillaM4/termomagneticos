@@ -3,7 +3,9 @@
 @section('content')
     <div class="parallax-simple titulo_contruccion">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
-            <p class="mt-5 text-white text-uppercase text-center title container r2_mobile">construcción sistemas media y baja tensión</p>
+            <p class="mt-4 text-white text-uppercase text-center container r2_mobile title_section">
+                <span class="card-contact p-2">construcción sistemas media y baja tensión</span>
+            </p>
             <div class="container text-white mt-5">
                 {{-- @foreach ($proyectos as $proyecto)
                     <div class="row text-center" id="{{ $proyecto->id }}">
