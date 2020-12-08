@@ -11,7 +11,7 @@
                 <img src="{{ asset('images/logos_inicio/moeltek.png') }}" class="mr-3 efect-back-white mt-2 img-fluid img-logo-index p-2 col-md-9" alt="logo moeltek">
                 <img src="{{ asset('images/logos_inicio/finder-cut.png') }}" class="efect-back-white mt-2 img-fluid img-logo-index col-md-9" alt="logo finder">
             </div>
-            <h1 class="title-our text-white text-uppercase text-center title adjust_title adjust_title_mobile container">termomagnéticos y control de radiaciones S.A de C.V</h1>
+            <h1 class="title-our text-white text-uppercase text-center title adjust_title adjust_title_mobile container pl-5">termomagnéticos y control de radiaciones S.A de C.V</h1>
             {{-- <a data-scroll href="#quienes_somos" class="arrow_ancle">
                 <div class="arrow bounce mt-5 mobile_arrow">
                     <span class="fa fa-arrow-down fa-2x"></span>
