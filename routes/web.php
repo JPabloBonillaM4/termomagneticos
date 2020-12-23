@@ -33,6 +33,8 @@ Route::get('cristales','ProjectsController@indexCristales')->name('cristales');
 Route::get('puertas','ProjectsController@indexPuertas')->name('puertas');
 Route::view('contacto','pages.contacto.index')->name('contacto');
 Route::get('getCites', 'admin\CitesController@getCites')->name('getCites');
+// AVISO PRIVACIDAD
+Route::view('aviso-privacidad','aviso_privacidad')->name('aviso_privacidad');
 // Email
 Route::post('sendEmailCotizacion', 'EmailController@sendEmailCotizacion')->name('sendEmailCotizacion');
 Route::post('sendEmailCite', 'EmailController@sendEmailCite')->name('sendEmailCite');

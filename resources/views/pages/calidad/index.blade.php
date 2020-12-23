@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','calidad')
 @section('content')
-    <div class="parallax titulo_calidad">
+    {{-- <div class="parallax titulo_calidad">
         <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
             <p class="text-white text-uppercase text-center title container r2_mobile" style="margin-bottom: 12rem;">calidad de energía</p>
             @include('pages.menus.components-menu')
@@ -11,9 +11,20 @@
                 </div>
             </a>
         </div>
-    </div>
-    <div class="parallax-simple background-calidad" id="inicio">
-        <div class="background-shadow text-white">
+    </div> --}}
+    <div class="parallax-simple background-calidad">
+        <div class="parallax" style="background: transparent;">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
+                <p class="text-white text-uppercase text-center title container r2_mobile" style="margin-bottom: 12rem;">calidad de energía</p>
+                @include('pages.menus.components-menu')
+                <a data-scroll href="#inicio" class="arrow_ancle hide_on_mobile">
+                    <div class="arrow bounce mt-5 mobile_arrow">
+                        <span class="fa fa-arrow-down fa-2x"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="background-shadow text-white" id="inicio">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 m-auto">

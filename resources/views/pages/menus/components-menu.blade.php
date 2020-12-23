@@ -55,7 +55,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-4 img_content p-0" style="background-image: url('{{ asset('images/control_distribucion_energia/titulo_control_distribucion.jpg') }}')">
+        <div class="col-md-4 img_content p-0" style="background-image: url('{{ asset('images/control_distribucion_energia/fondo.jpg') }}')">
             <a href="{{ route('tableros_distribucion') }}" class="text-decoration-none text-dark">
                 <div class="especial_background">
                     <p>Ver sección</p>
