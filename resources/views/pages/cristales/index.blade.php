@@ -1,7 +1,7 @@
 @extends('index')
 @section('title','cristales')
 @section('content')
-<div class="parallax-simple section1">
+<div class="parallax-simple section_glass" style="background-attachment: inherit;">
     <div class="h-100 d-flex flex-column justify-content-center align-items-center background-shadow">
         <p class="text-white text-uppercase text-center title mt-3 container r2_mobile">
             <span class="card-contact p-2">cristales</span>

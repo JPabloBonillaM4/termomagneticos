@@ -128,6 +128,9 @@
 .control_distribucion{
     background-image: url(../images/control_distribucion_energia/fondo.jpg);
 }
+.section_glass{
+    background-image: url(../images/cristales/background.jpeg);
+}
 .background-calidad{
     background-image: url(../images/calidad_energia/fondo_calidad.jpg);
 }
