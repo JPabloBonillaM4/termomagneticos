@@ -25,7 +25,7 @@
                     @foreach($categories as $category)
                         @if($category->id == 2)
                             @foreach($category->subcategories as $subcategory)
-                                <div class="col-md-4 p-0 img_content" style="background-image: url('@if($subcategory->id == 3){{ asset('images/blindaje/titulo_blindaje.jpg') }}@elseif($subcategory->id == 4){{ asset('images/seccion_inicio/section_1.jpg') }}@elseif($subcategory->id == 5){{ asset('images/seccion_inicio/section_1.jpg') }}@endif')">
+                                <div class="col-md-4 p-0 img_content" style="background-image: url('@if($subcategory->id == 3){{ asset('images/blindaje/titulo_blindaje.jpg') }}@elseif($subcategory->id == 4){{ asset('images/cristales/background.jpeg') }}@elseif($subcategory->id == 5){{ asset('images/seccion_inicio/section_1.jpg') }}@endif')">
                                     <a href="@if($subcategory->id == 3){{ route('blindaje') }}@elseif($subcategory->id == 4){{ route('cristales') }}@elseif($subcategory->id == 5){{ route('puertas') }}@endif" class="text-decoration-none text-dark">
                                         <div class="especial_background">
                                             <p>Ver sección</p>
