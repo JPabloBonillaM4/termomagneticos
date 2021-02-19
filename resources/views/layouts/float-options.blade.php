@@ -7,7 +7,7 @@
         <i class="fas fa-file-alt"></i>
         <span>Cotización</span>
     </a>
-    <a target="_blank" href="https://www.facebook.com/profile.php?id=100053532734263">
+    <a target="_blank" href="https://m.me/135359068254318">
         <i class="fab fa-facebook-square"></i>
         <span>Facebook</span>
     </a>
