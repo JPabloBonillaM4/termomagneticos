@@ -33,6 +33,7 @@ Route::get('cristales','ProjectsController@indexCristales')->name('cristales');
 Route::get('puertas','ProjectsController@indexPuertas')->name('puertas');
 Route::view('contacto','pages.contacto.index')->name('contacto');
 Route::get('getCites', 'admin\CitesController@getCites')->name('getCites');
+Route::view('catalogos','pages.catalogos.index')->name('catalogos');
 // AVISO PRIVACIDAD
 Route::view('aviso-privacidad','aviso_privacidad')->name('aviso_privacidad');
 // Email
@@ -61,3 +62,5 @@ Route::group(['middleware' => ['role:superadmin|moderator|guest','auth']], funct
     Route::get('excel-cites', 'admin\CitesController@download_excel')->name('cites.excel');
     Route::get('excel-quotes', 'admin\QuotesController@download_excel')->name('quotes.excel');
 });
+// DOWNLOADS PDF
+Route::get('downloadFile/{file}', 'DownloadController@downloadFile')->name('downloadFile');

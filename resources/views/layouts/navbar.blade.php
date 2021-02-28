@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 px-4 sticky-top">
-    <div class="container">
-        <div class="col-lg-3 d-flex justify-content-between align-items-center">
+    <div class="container-fluid">
+        <div class="col-lg-2 d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="{{ route('/') }}">
                 <img src="{{ asset('images/logo-png-1.png') }}" alt="logo" style="max-width: 150px">
             </a>
@@ -8,7 +8,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse col-lg-9 pl-5" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col-lg-10 pl-5" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 {{-- INICIO --}}
                 <li class="hide_on_mobile nav-item d-flex justify-content-center mr-3 py-3">
@@ -93,6 +93,15 @@
                             @endif
                         @endforeach
                     </div>
+                </li>
+                {{-- DESCARGAS --}}
+                <li class="hide_on_mobile nav-item d-flex justify-content-center mr-3 py-3">
+                    <div class="dropdown">
+                        <a class="linehover nav-link text-uppercase text-dark t-13 active-option-fixed-x @if($actual_route == 'catalogos') active-option @endif" href="{{ route('catalogos') }}">catálogos</a>
+                    </div>
+                </li>
+                <li class="show_on_mobile nav-item text-center mb-5">
+                    <a class="nav-link text-uppercase" href="{{ route('catalogos') }}">catálogos</a>
                 </li>
                 {{-- CONTACTO --}}
                 <li class="hide_on_mobile nav-item d-flex justify-content-center mr-3 py-3">
