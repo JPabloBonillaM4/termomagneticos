@@ -111,6 +111,9 @@
     background-repeat: no-repeat;
     background-position: inherit;
 }
+.img-pdf{
+    width: 150px !important;
+}
 
 /* IMAGES BACKGROUND */
 .section1{
