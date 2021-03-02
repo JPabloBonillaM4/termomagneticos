@@ -243,6 +243,286 @@
             }
         ]
     });
+    $('.slick-menu-pdf-1').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-1'),
+        "nextArrow": $('.next-1'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-2').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-2'),
+        "nextArrow": $('.next-2'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-3').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-3'),
+        "nextArrow": $('.next-3'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-4').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-4'),
+        "nextArrow": $('.next-4'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-5').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-5'),
+        "nextArrow": $('.next-5'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-6').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-6'),
+        "nextArrow": $('.next-6'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-7').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-7'),
+        "nextArrow": $('.next-7'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
+    $('.slick-menu-pdf-8').slick({
+        // "dots": true,
+        "infinite": false,
+        "speed": 300,
+        "slidesToShow": 4,
+        "slidesToScroll": 1,
+        "arrows": true,
+        "prevArrow": $('.prev-8'),
+        "nextArrow": $('.next-8'),
+        "responsive": [
+            {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    dots: true
+                }
+            },
+            {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+            }
+        ]
+    });
     // SIMPLE-LIGHT.BOX
     // CASOS DE ÉXITO
     if($('.cases-gallery-1 a').length > 0)
